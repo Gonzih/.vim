@@ -10,3 +10,6 @@
 [submodule "bundle/color_molokai"]
 	path = bundle/color_molokai
 	url = https://github.com/mrtazz/molokai.vim.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
