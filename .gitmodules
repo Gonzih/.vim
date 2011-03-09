@@ -7,3 +7,6 @@
 [submodule "bundle/objj"]
 	path = bundle/objj
 	url = https://github.com/nanki/vim-objj.git
+[submodule "bundle/color_molokai"]
+	path = bundle/color_molokai
+	url = https://github.com/mrtazz/molokai.vim.git
