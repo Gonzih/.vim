@@ -4,3 +4,6 @@
 [submodule "bundle/nerd_commenter"]
 	path = bundle/nerd_commenter
 	url = https://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/objj"]
+	path = bundle/objj
+	url = https://github.com/nanki/vim-objj.git
