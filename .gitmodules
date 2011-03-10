@@ -25,3 +25,6 @@
 [submodule "bundle/snip_mate"]
 	path = bundle/snip_mate
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/snip_mate_ruby"]
+	path = bundle/snip_mate_ruby
+	url = https://github.com/Gonzih/vim-snipmate-ruby-snippets.git
