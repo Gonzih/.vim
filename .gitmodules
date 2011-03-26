@@ -31,3 +31,6 @@
 [submodule "bundle/neverland"]
 	path = bundle/neverland
 	url = https://github.com/trapd00r/neverland-vim-theme.git
+[submodule "cucumber"]
+	path = cucumber
+	url = https://github.com/tpope/vim-cucumber.git
