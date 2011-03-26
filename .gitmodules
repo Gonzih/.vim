@@ -31,3 +31,6 @@
 [submodule "bundle/neverland"]
 	path = bundle/neverland
 	url = https://github.com/trapd00r/neverland-vim-theme.git
+[submodule "simplefold"]
+	path = simplefold
+	url = https://github.com/vim-scripts/simplefold.git
