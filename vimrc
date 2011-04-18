@@ -220,3 +220,5 @@ no T <C-w><C-r>
 no H 8<Down>
 no T 8<Up>
 no D <C-w><C-r>
+"Remaping for Dvorak
+let NERDTreeMapOpenInTab='c'
