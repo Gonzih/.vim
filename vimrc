@@ -220,5 +220,6 @@ no H 8<Down>
 no T 8<Up>
 no D <C-w><C-r>
 imap <C-Space> <C-x><C-o>
+map ,, <plug>NERDCommenterToggle
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
