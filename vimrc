@@ -205,6 +205,8 @@ set ofu=syntaxcomplete#Complete
 "Dvorak it!
 no d h
 no h j
+no k t
+no K T
 no t k
 no n l
 no ; :
