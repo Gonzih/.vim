@@ -236,3 +236,5 @@ imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
+"Gui font
+set guifont=Terminus
