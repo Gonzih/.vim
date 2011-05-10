@@ -22,6 +22,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-cucumber'
 Bundle 'edsono/vim-matchit'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
 "Bundle 'git://git.wincent.com/command-t.git'
 
 " When started as "evim", evim.vim will already have done these settings.
