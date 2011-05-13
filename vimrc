@@ -239,3 +239,7 @@ map ,, <plug>NERDCommenterToggle
 let NERDTreeMapOpenInTab='c'
 "Gui font
 set guifont=Terminus
+"Auto cleaning fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+"Git branch in statusline
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
