@@ -23,6 +23,7 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'edsono/vim-matchit'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-unimpaired'
 "Bundle 'git://git.wincent.com/command-t.git'
 
 " When started as "evim", evim.vim will already have done these settings.
