@@ -1,7 +1,7 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/vundle.git/ 
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Bundles
@@ -24,6 +24,7 @@ Bundle 'edsono/vim-matchit'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'gmarik/vundle'
 "Bundle 'git://git.wincent.com/command-t.git'
 
 " When started as "evim", evim.vim will already have done these settings.
