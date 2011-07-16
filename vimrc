@@ -227,23 +227,31 @@ no ; :
 no j d
 no l n
 no L N
+
 "Added benefits
 no - $
 no _ ^
-no N <C-w><C-w>
-no T <C-w><C-r>
-no H 8<Down>
-no T 8<Up>
-no D <C-w><C-r>
+
+"Tabs
+no N <C-w>l
+no T <C-w>k
+no D <C-w>h
+no H <C-w>j
+
 imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
+
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
+
 "Gui font
 set guifont=Terminus
+
 "Auto cleaning fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
 "Git branch in statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 "Fugitive aliases
 autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
