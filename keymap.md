@@ -182,3 +182,9 @@
 + `<ctrl> r` Redo
 + `J` Join line below to current line
 + `.` Repeat last command
++ `<ctrl> <space>` Autocomplit
++ `;` Equal to `:`
+
+#Plugins
++ `,,` NERDCommenter toggle
++ `c` NERDTree open in tab
