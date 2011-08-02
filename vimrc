@@ -25,6 +25,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'gmarik/vundle'
+Bundle 'Bogdanp/rbrepl.vim'
 "Bundle 'git://git.wincent.com/command-t.git'
 
 " When started as "evim", evim.vim will already have done these settings.
