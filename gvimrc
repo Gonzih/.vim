@@ -1,1 +1,1 @@
-"colorscheme neverland-darker
+colorscheme neverland-darker
