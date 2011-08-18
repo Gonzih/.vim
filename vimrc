@@ -189,7 +189,7 @@ set shiftwidth=2
 set backup                     " Enable creation of backup file.
 set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
-colorscheme neverland-darker
+colorscheme darkblue
 "let g:molokai_original = 1
 "helptags ~/.vim/doc 
 "let loaded_project=1
