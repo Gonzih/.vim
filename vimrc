@@ -26,7 +26,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'gmarik/vundle'
 Bundle 'Bogdanp/rbrepl.vim'
-Bundle 'briancollins/vim-jst'
 
 "Bundle 'git://git.wincent.com/command-t.git'
 
@@ -258,3 +257,6 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 "Fugitive aliases
 autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
+
+"EJS files highlighting
+au BufRead,BufNewFile *.ejs set filetype=html.javascript
