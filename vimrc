@@ -260,3 +260,6 @@ autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
 
 "EJS files highlighting
 au BufRead,BufNewFile *.ejs set filetype=html.javascript
+
+"W command that write files as root
+command W w !sudo tee % > /dev/null
