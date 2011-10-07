@@ -3,6 +3,7 @@ filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+
 filetype on
 
 " Bundles
@@ -138,27 +139,23 @@ map Б W
 map Ю V
 
 set autowrite
-"set nu
-"set ts=2
-"set bs=2
-"set shiftwidth=2
 set backup                     " Enable creation of backup file.
 set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
+
 colorscheme darkblue
+
 let g:rsenseUseOmniFunc = 1
+
 set listchars=tab:->,trail:~,extends:>,precedes:<
 set list
+
 nmap <silent> <C-N> :silent noh<CR>
+
 set guioptions=ai
 
 au BufNewFile,BufRead *.j,Jakefile setf objj
 
-"ruby
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 let g:SuperTabDefaultCompletionType = "\<C-X>\<C-O>"
 let g:SuperTabDefaultCompletionType = "context"
@@ -207,11 +204,19 @@ autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
 
 "EJS files highlighting
 au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
+au BufRead,BufNewFile *.coffee setlocal filetype=coffee
 
 "W command that write files as root
 command W w !sudo tee % > /dev/null
 
 "File types
-autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
+"ruby
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
+
+autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
+
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
