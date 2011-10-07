@@ -202,20 +202,26 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 "Fugitive aliases
 autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
 
-"EJS files highlighting
-au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
-au BufRead,BufNewFile *.coffee setlocal filetype=coffee
-
 "W command that write files as root
 command W w !sudo tee % > /dev/null
 
 "File types
+au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
+au BufRead,BufNewFile *.coffee setlocal filetype=coffee
+
+au BufRead,BufNewFile Guardfile setlocal filetype=ruby
+
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
+
+autocmd Filetype coffee setlocal ts=2 sts=2 sw=2 expandtab
+
+autocmd Filetype coffee scss ts=2 sts=2 sw=2 expandtab
+autocmd Filetype coffee sass ts=2 sts=2 sw=2 expandtab
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 
