@@ -3,15 +3,14 @@ filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+filetype on
 
 " Bundles
 " original repos on github
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/The-NERD-Commenter'
-Bundle 'nanki/vim-objj'
 Bundle 'mrtazz/molokai.vim'
 Bundle 'vim-ruby/vim-ruby'
-"Bundle 'vim-scripts/AutoComplPop'
 Bundle 'tpope/vim-haml'
 Bundle 'msanders/snipmate.vim'
 Bundle 'Gonzih/vim-snipmate-ruby-snippets'
@@ -27,92 +26,48 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'gmarik/vundle'
 Bundle 'Bogdanp/rbrepl.vim'
 
+" other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
+" Enable filetype
+set autoindent
+filetype plugin indent on
+syntax on
+set hlsearch
+set nowrap
 
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
+" Mouse
+if has('mouse')
+  set mouse=a
+endif
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-"if has("vms")
-  "set nobackup   " do not keep a backup file, use versions instead
-  "else
-  "set backup   " keep a backup file
-"endif
+" history
 set history=50    " keep 50 lines of command line history
 set ruler   " show the cursor position all the time
 set showcmd   " display incomplete commands
 set incsearch   " do incremental searching
 
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+" Also don't do it when the mark is in the first line, that is the default
+" position when opening a file.
+autocmd BufReadPost *
+	\ if line("'\"") > 1 && line("'\"") <= line("$") |
+	\   exe "normal! g`\"" |
+	\ endif
 
-" Don't use Ex mode, use Q for formatting
-map Q gq
+augroup END
 
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
-
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
-endif
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
-
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
-
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  " Also don't do it when the mark is in the first line, that is the default
-  " position when opening a file.
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
-
-  augroup END
-
-"else
-
-  set autoindent    " always set autoindenting on
-
-"endif " has("autocmd")
-
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
       \ | wincmd p | diffthis
 endif
-"Dvorak it
+
+" Dvorak it
 map ё $
 map й ;
 map ц ,
@@ -183,29 +138,20 @@ map Б W
 map Ю V
 
 set autowrite
-set nu
-set nowrap
-set ts=2
-set bs=2
-set shiftwidth=2
+"set nu
+"set ts=2
+"set bs=2
+"set shiftwidth=2
 set backup                     " Enable creation of backup file.
 set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 colorscheme darkblue
-"let g:molokai_original = 1
-"helptags ~/.vim/doc 
-"let loaded_project=1
 let g:rsenseUseOmniFunc = 1
 set listchars=tab:->,trail:~,extends:>,precedes:<
 set list
-set expandtab
-set tabstop=2
 nmap <silent> <C-N> :silent noh<CR>
-"rvm
-"set statusline+=%{rvm#statusline()} 
 set guioptions=ai
 
-set runtimepath+=~/.vim/vim-objj
 au BufNewFile,BufRead *.j,Jakefile setf objj
 
 "ruby
@@ -260,7 +206,12 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
 
 "EJS files highlighting
-au BufRead,BufNewFile *.ejs set filetype=html.javascript
+au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
 
 "W command that write files as root
 command W w !sudo tee % > /dev/null
+
+"File types
+autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
