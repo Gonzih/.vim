@@ -197,7 +197,8 @@ set guifont=Terminus
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
 "Git branch in statusline
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %y\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
 
 "Fugitive aliases
 autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
