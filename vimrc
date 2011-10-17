@@ -36,6 +36,7 @@ filetype plugin indent on
 syntax on
 set hlsearch
 set nowrap
+set number
 
 " Mouse
 if has('mouse')
