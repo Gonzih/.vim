@@ -38,6 +38,7 @@ syntax on
 set hlsearch
 set nowrap
 set number
+set expandtab "allows use retab!
 
 " Mouse
 if has('mouse')
