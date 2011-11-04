@@ -150,7 +150,7 @@ colorscheme darkblue
 
 let g:rsenseUseOmniFunc = 1
 
-set listchars=tab:->,trail:~,extends:>,precedes:<
+set listchars=tab:->,trail:·,extends:>,precedes:<
 set list
 
 nmap <silent> <C-N> :silent noh<CR>
