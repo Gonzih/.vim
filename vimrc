@@ -27,6 +27,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'gmarik/vundle'
 Bundle 'Bogdanp/rbrepl.vim'
 Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/Arduino-syntax-file'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
