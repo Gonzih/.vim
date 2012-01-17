@@ -158,8 +158,6 @@ nmap <silent> <C-N> :silent noh<CR>
 
 set guioptions=ai
 
-au BufNewFile,BufRead *.j,Jakefile setf objj
-
 
 let g:SuperTabDefaultCompletionType = "\<C-X>\<C-O>"
 let g:SuperTabDefaultCompletionType = "context"
@@ -215,6 +213,10 @@ au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
 au BufRead,BufNewFile *.coffee setlocal filetype=coffee
 
 au BufRead,BufNewFile Guardfile setlocal filetype=ruby
+
+au BufNewFile,BufRead *.j,Jakefile setf objj
+
+au BufRead,BufNewFile *.pde setlocal filetype=arduino
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
