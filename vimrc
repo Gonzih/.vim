@@ -189,6 +189,10 @@ no H <C-w>j
 imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
 
+"Tab navigation
+map <C-n> :tabnext<CR>
+map <C-d> :tabprev<CR>
+
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
 
