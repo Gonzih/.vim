@@ -28,6 +28,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Bogdanp/rbrepl.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/Arduino-syntax-file'
+Bundle 'rainux/vim-vala'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -222,6 +223,8 @@ au BufNewFile,BufRead *.j,Jakefile setf objj
 
 au BufRead,BufNewFile *.pde setlocal filetype=arduino
 
+au BufRead,BufNewFile *.vala setlocal filetype=vala
+
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
@@ -238,5 +241,7 @@ autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype eruby setlocal ts=2 sts=2 sw=2 expandtab
 
 autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+autocmd Filetype arduino setlocal ts=2 sts=2 sw=2 expandtab
 
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
