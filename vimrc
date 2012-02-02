@@ -196,6 +196,7 @@ map kd :tabprev<CR>
 imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
 nmap <Leader>t :TagbarToggle<CR>
+nmap <Leader>o :FufFile<CR>
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
