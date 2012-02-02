@@ -29,6 +29,8 @@ Bundle 'Bogdanp/rbrepl.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/Arduino-syntax-file'
 Bundle 'rainux/vim-vala'
+Bundle 'majutsushi/tagbar'
+Bundle 'vim-scripts/FuzzyFinder'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -193,6 +195,7 @@ map kd :tabprev<CR>
 
 imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
+nmap <Leader>t :TagbarToggle<CR>
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
