@@ -190,8 +190,8 @@ no D <C-w>h
 no H <C-w>j
 
 "Tab navigation
-map kn :tabnext<CR>
-map kd :tabprev<CR>
+map <C-k>n :tabnext<CR>
+map <C-k>d :tabprev<CR>
 
 imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
