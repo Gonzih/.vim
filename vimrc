@@ -17,7 +17,6 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'Gonzih/vim-snipmate-ruby-snippets'
 Bundle 'ervandew/supertab'
 Bundle 'trapd00r/neverland-vim-theme'
-Bundle 'vim-scripts/simplefold'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-cucumber'
 Bundle 'edsono/vim-matchit'
@@ -266,3 +265,6 @@ autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
   \ 'ctagsbin' : 'coffeetags',
   \ 'ctagsargs' : ' ',
   \}
+
+" Set folding
+set foldmethod=syntax
