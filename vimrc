@@ -30,6 +30,7 @@ Bundle 'vim-scripts/Arduino-syntax-file'
 Bundle 'rainux/vim-vala'
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/FuzzyFinder'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -268,3 +269,6 @@ autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
 
 " Set folding
 set foldmethod=syntax
+
+" Enable indent guides
+let g:indent_guides_enable_on_vim_startup = 1
