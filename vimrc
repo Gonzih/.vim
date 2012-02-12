@@ -31,6 +31,7 @@ Bundle 'rainux/vim-vala'
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'vim-scripts/rubycomplete.vim'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -272,3 +273,9 @@ set foldmethod=syntax
 
 " Enable indent guides
 let g:indent_guides_enable_on_vim_startup = 1
+
+" ruby autocomplete
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
