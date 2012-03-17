@@ -228,6 +228,7 @@ au BufRead,BufNewFile Guardfile setlocal filetype=ruby
 au BufNewFile,BufRead *.j,Jakefile setf objj
 
 au BufRead,BufNewFile *.pde setlocal filetype=arduino
+au BufRead,BufNewFile *.ino setlocal filetype=arduino
 
 au BufRead,BufNewFile *.vala setlocal filetype=vala
 
