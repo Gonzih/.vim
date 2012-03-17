@@ -204,7 +204,7 @@ nmap <Leader>o :FufFile<CR>
 let NERDTreeMapOpenInTab='c'
 
 "Gui font
-set guifont=Terminus
+set guifont=Inconsolata\ 14
 
 "Auto cleaning fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
