@@ -34,6 +34,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'wgibbs/vim-irblack'
 Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
+Bundle 'ciaranm/inkpot'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -153,12 +154,8 @@ set backup                     " Enable creation of backup file.
 set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 
-if $COLORTERM == 'gnome-terminal'
-        set term=gnome-256color
-        colorscheme railscasts
-else
-        colorscheme default
-endif
+set t_Co=256
+colorscheme inkpot
 
 let g:rsenseUseOmniFunc = 1
 
