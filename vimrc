@@ -33,7 +33,6 @@ Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'wgibbs/vim-irblack'
-Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
 Bundle 'ciaranm/inkpot'
 
 " other git repos
