@@ -33,6 +33,7 @@ Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'wgibbs/vim-irblack'
+Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -152,7 +153,12 @@ set backup                     " Enable creation of backup file.
 set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 
-colorscheme ir_black
+if $COLORTERM == 'gnome-terminal'
+        set term=gnome-256color
+        colorscheme railscasts
+else
+        colorscheme default
+endif
 
 let g:rsenseUseOmniFunc = 1
 
