@@ -10,13 +10,11 @@ filetype on
 " original repos on github
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/The-NERD-Commenter'
-Bundle 'mrtazz/molokai.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-haml'
 Bundle 'msanders/snipmate.vim'
 Bundle 'Gonzih/vim-snipmate-ruby-snippets'
 Bundle 'ervandew/supertab'
-Bundle 'trapd00r/neverland-vim-theme'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-cucumber'
 Bundle 'edsono/vim-matchit'
@@ -32,8 +30,13 @@ Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
+
+" Themes
+Bundle 'mrtazz/molokai.vim'
+Bundle 'trapd00r/neverland-vim-theme'
 Bundle 'wgibbs/vim-irblack'
 Bundle 'ciaranm/inkpot'
+Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
