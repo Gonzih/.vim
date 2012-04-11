@@ -87,7 +87,7 @@ set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
-colorscheme inkpot
+colorscheme neverland-darker
 
 let g:rsenseUseOmniFunc = 1
 
