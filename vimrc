@@ -30,6 +30,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
+Bundle 'vim-scripts/VimClojure'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -43,8 +44,8 @@ Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
 
 " Enable filetype
 set autoindent
-filetype plugin indent on
 syntax on
+filetype plugin indent on
 set hlsearch
 set nowrap
 set number
@@ -166,6 +167,8 @@ au BufRead,BufNewFile *.pde setlocal filetype=arduino
 au BufRead,BufNewFile *.ino setlocal filetype=arduino
 
 au BufRead,BufNewFile *.vala setlocal filetype=vala
+
+au BufRead,BufNewFile *.clj setlocal filetype=clojure
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
