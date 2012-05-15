@@ -168,7 +168,8 @@ au BufRead,BufNewFile *.ino setlocal filetype=arduino
 
 au BufRead,BufNewFile *.vala setlocal filetype=vala
 
-au BufRead,BufNewFile *.clj setlocal filetype=clojure
+au BufRead,BufNewFile *.clj  setlocal filetype=clojure
+au BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
