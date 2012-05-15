@@ -209,7 +209,7 @@ autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
   \}
 
 " Set folding
-set foldmethod=syntax
+"set foldmethod=syntax
 
 " Enable indent guides
 let g:indent_guides_enable_on_vim_startup = 1
