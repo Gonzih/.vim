@@ -32,6 +32,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'Gonzih/paredit-vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
