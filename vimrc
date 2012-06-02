@@ -31,6 +31,7 @@ Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -223,3 +224,9 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+
+" RainbowParentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
