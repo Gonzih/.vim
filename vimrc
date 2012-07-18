@@ -237,3 +237,4 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 " VimClojure
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
+let vimclojure#WantNailgun = 1
