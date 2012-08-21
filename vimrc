@@ -114,10 +114,14 @@ no k t
 no K T
 no t k
 no n l
-no ; :
 no j d
 no l n
 no L N
+"no ; :
+
+"Command Window
+nnoremap ; q:i
+nnoremap : q:i
 
 "Added benefits
 no - $
