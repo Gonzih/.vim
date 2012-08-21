@@ -138,6 +138,11 @@ map ,, <plug>NERDCommenterToggle
 nmap <Leader>a :TagbarToggle<CR>
 nmap <Leader>o :FufFile<CR>
 
+"Copy/Paste made easy
+vmap <C-y> "+y
+nmap <C-y><C-y> "+yy
+nmap <C-p> "+p
+
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
 
