@@ -146,6 +146,9 @@ nmap <Leader>o :FufFile<CR>
 vmap <C-y> "+y
 nmap <C-y><C-y> "+yy
 nmap <C-p> "+p
+vmap <C-p> "+p
+nmap <C-P> "+P
+vmap <C-P> "+P
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
