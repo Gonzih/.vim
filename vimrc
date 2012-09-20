@@ -33,6 +33,7 @@ Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'vim-scripts/VimClojure'
 "Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'Raimondi/delimitMate'
+Bundle 'derekwyatt/vim-scala'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -185,6 +186,8 @@ au BufRead,BufNewFile *.vala setlocal filetype=vala
 
 au BufRead,BufNewFile *.clj  setlocal filetype=clojure
 au BufRead,BufNewFile *.cljs setlocal filetype=clojure
+
+au BufRead,BufNewFile *.scala setlocal filetype=scala
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
