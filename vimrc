@@ -34,6 +34,7 @@ Bundle 'vim-scripts/VimClojure'
 "Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'wlangstroth/vim-haskell'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
