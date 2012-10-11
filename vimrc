@@ -35,6 +35,7 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'wlangstroth/vim-haskell'
+Bundle 'Lokaltog/vim-powerline'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -256,3 +257,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 let vimclojure#WantNailgun = 1
+
+" Powerline symbols are fancy now
+let g:Powerline_symbols = 'fancy'
