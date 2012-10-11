@@ -96,7 +96,8 @@ colorscheme neverland-darker
 
 let g:rsenseUseOmniFunc = 1
 
-set listchars=tab:->,trail:·,extends:>,precedes:<
+"List special symbols
+set listchars=tab:▸\ ,eol:¬,trail:·,extends:❯,precedes:❮
 set list
 
 nmap <silent> <C-N> :silent noh<CR>
