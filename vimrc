@@ -43,6 +43,7 @@ Bundle 'trapd00r/neverland-vim-theme'
 Bundle 'wgibbs/vim-irblack'
 Bundle 'ciaranm/inkpot'
 Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
+Bundle 'sjl/badwolf'
 
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -93,7 +94,7 @@ set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
-colorscheme neverland-darker
+colorscheme badwolf
 
 let g:rsenseUseOmniFunc = 1
 
