@@ -269,3 +269,6 @@ if bufwinnr(1)
   map <Left> <c-w><
   map <Right> <c-w>>
 endif
+
+" Show hidden files in NERDTree
+let NERDTreeShowHidden=1
