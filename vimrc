@@ -264,8 +264,8 @@ let g:Powerline_symbols = 'fancy'
 
 " Buffer resizing
 if bufwinnr(1)
-  map <Up> <C-W>+
-  map <Down> <C-W>-
+  map <Up> <C-W>-
+  map <Down> <C-W>+
   map <Left> <c-w><
   map <Right> <c-w>>
 endif
