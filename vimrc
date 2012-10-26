@@ -180,6 +180,8 @@ command W w !sudo tee % > /dev/null
 au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
 au BufRead,BufNewFile *.coffee setlocal filetype=coffee
 
+au BufRead,BufNewFile *.feature setlocal filetype=cucumber
+
 au BufRead,BufNewFile Guardfile setlocal filetype=ruby
 
 au BufNewFile,BufRead *.j,Jakefile setf objj
