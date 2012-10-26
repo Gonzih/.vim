@@ -147,6 +147,7 @@ imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
 nmap <Leader>a :TagbarToggle<CR>
 nmap <Leader>o :FufFile<CR>
+nmap <Leader>e :FufBuffer<CR>
 
 "Copy/Paste made easy
 vmap <C-y> "+y
