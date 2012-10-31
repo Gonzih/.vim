@@ -151,10 +151,8 @@ nnoremap <silent> <Leader>o :FufFile<CR>
 nnoremap <silent> <Leader>e :FufBuffer<CR>
 
 let g:fuf_keyNextMode    = '<C-y>'
-let g:fuf_keyOpen        = '<CR>'
-let g:fuf_keyOpenSplit   = '<C-i>'
-let g:fuf_keyOpenVsplit  = '<C-d>'
 let g:fuf_keyOpenTabpage = '<C-t>'
+
 
 "Copy/Paste made easy
 vmap <C-y> "+y
