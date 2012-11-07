@@ -27,7 +27,6 @@ Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/Arduino-syntax-file'
 Bundle 'rainux/vim-vala'
 Bundle 'majutsushi/tagbar'
-Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/L9'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
@@ -148,11 +147,6 @@ map <C-t><C-d> :tabprev<CR>
 imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
 nmap <Leader>a :TagbarToggle<CR>
-nnoremap <silent> <Leader>o :FufFile<CR>
-nnoremap <silent> <Leader>e :FufBuffer<CR>
-
-let g:fuf_keyNextMode    = '<C-y>'
-let g:fuf_keyOpenTabpage = '<C-t>'
 
 "Copy made easy
 vmap <C-y> "+y
