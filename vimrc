@@ -37,6 +37,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'wlangstroth/vim-haskell'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/ctrlp.vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -153,14 +154,9 @@ nnoremap <silent> <Leader>e :FufBuffer<CR>
 let g:fuf_keyNextMode    = '<C-y>'
 let g:fuf_keyOpenTabpage = '<C-t>'
 
-
-"Copy/Paste made easy
+"Copy made easy
 vmap <C-y> "+y
 nmap <C-y><C-y> "+yy
-nmap <C-p> "+p
-vmap <C-p> "+p
-nmap <C-P> "+P
-vmap <C-P> "+P
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
