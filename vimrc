@@ -148,11 +148,14 @@ imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
 nmap <Leader>a :TagbarToggle<CR>
 
-"Copy made easy
-vmap <C-y> "+y
-nmap <C-y><C-y> "+yy
-map <S-Insert> <MiddleMouse>
-map! <S-Insert> <MiddleMouse>
+" copy text to "+ (clipboard)
+nmap <Leader>yy "+yy
+vmap <Leader>y "+y
+
+" paste text from "+ (clipboard)
+map <Leader>p "+P
+vmap <Leader>p "+P
+imap <Leader>p <Space><Esc>"+P<Right>xi
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
