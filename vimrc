@@ -103,7 +103,7 @@ let g:rsenseUseOmniFunc = 1
 set listchars=tab:▸\ ,eol:¬,trail:•,extends:❯,precedes:❮
 set list
 
-nmap <silent> <C-N> :silent noh<CR>
+nmap <silent> <C-l> :silent noh<CR>
 
 set guioptions=ai
 
