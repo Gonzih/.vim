@@ -126,9 +126,7 @@ no L N
 
 "Command Window
 nnoremap ; q:i
-nnoremap : q:i
 vnoremap ; q:i
-vnoremap : q:i
 
 "Added benefits
 no - $
