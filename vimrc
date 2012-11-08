@@ -151,6 +151,8 @@ nmap <Leader>a :TagbarToggle<CR>
 "Copy made easy
 vmap <C-y> "+y
 nmap <C-y><C-y> "+yy
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
