@@ -46,6 +46,13 @@ Bundle 'ciaranm/inkpot'
 Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
 Bundle 'sjl/badwolf'
 
+" Functions
+function TrimEndLines()
+  let save_cursor = getpos(".")
+  :silent! %s#\($\n\s*\)\+\%$##
+  call setpos('.', save_cursor)
+endfunction
+
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
 
@@ -193,6 +200,10 @@ au BufRead,BufNewFile *.clj  setlocal filetype=clojure
 au BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 au BufRead,BufNewFile *.scala setlocal filetype=scala
+
+
+"Trim empty lines at the EOF
+au BufWritePre * call TrimEndLines()
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
