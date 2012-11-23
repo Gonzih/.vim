@@ -131,9 +131,9 @@ no j d
 no l n
 no L N
 
-"Command Window
-nnoremap ; q:i
-vnoremap ; q:i
+" ; == :
+nnoremap ; :
+vnoremap ; :
 
 "Added benefits
 no - $
