@@ -30,13 +30,13 @@ Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/L9'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'vim-scripts/rubycomplete.vim'
-Bundle 'vim-scripts/VimClojure'
-"Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'wlangstroth/vim-haskell'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -246,18 +246,18 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 " RainbowParentheses
-"au VimEnter * RainbowParenthesesToggle
-"au Syntax * RainbowParenthesesLoadRound
-"au Syntax * RainbowParenthesesLoadSquare
-"au Syntax * RainbowParenthesesLoadBraces
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
-"au FileType clojure let b:delimitMate_quotes = "\""
+au FileType clojure let b:delimitMate_quotes = "\""
 
-" VimClojure
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
-let vimclojure#WantNailgun = 0
-let vimclojure#SetupKeyMap = 0
+" Clojure
+let g:clojure_maxlines = 100
+let g:clojure_align_multiline_strings = 1
+let g:clojure_fuzzy_indent = 1
+let g:clojure_fuzzy_indent_patterns = "with.*,def.*,let.*"
 
 " Powerline symbols are fancy now
 let g:Powerline_symbols = 'fancy'
