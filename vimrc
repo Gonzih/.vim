@@ -151,7 +151,7 @@ map <C-d> :tabprev<CR>
 
 imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
-nmap <C-y> :NERDTreeToggle<CR>
+nmap <Tab> :NERDTreeToggle<CR>
 nmap <Leader>a :TagbarToggle<CR>
 
 " copy text to "+ (clipboard)
