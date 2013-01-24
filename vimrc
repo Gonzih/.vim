@@ -254,20 +254,20 @@ au Syntax * RainbowParenthesesLoadBraces
 
 let g:rbpt_colorpairs = [
     \ [ '197', 'SeaGreen3'   ],
-    \ [ '10',  'DarkOrchid3'   ],
+    \ [ '10',  'DarkOrchid3' ],
     \ [ '136', 'firebrick3'  ],
     \ [ '43',  'RoyalBlue3'  ],
     \ [ '129', 'SeaGreen3'   ],
-    \ [ '86',  'RoyalBlue3' ],
+    \ [ '86',  'RoyalBlue3'  ],
     \ [ '33',  'DarkOrchid3' ],
     \ [ '202', 'firebrick3'  ],
     \ [ '47',  'RoyalBlue3'  ],
-    \ [ '9',   'DarkOrchid3'  ],
+    \ [ '9',   'DarkOrchid3' ],
     \ [ '13',  'RoyalBlue3'  ],
     \ [ '14',  'SeaGreen3'   ],
     \ [ '12',  'firebrick3'  ],
     \ [ '11',  'DarkOrchid3' ],
-    \ [ '40',  'SeaGreen3' ],
+    \ [ '40',  'SeaGreen3'   ],
     \ [ '196', 'firebrick3'  ],
     \ ]
 
