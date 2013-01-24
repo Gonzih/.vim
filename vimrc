@@ -37,6 +37,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'guns/xterm-color-table.vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -252,22 +253,22 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['blue',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
+    \ [ '197', 'SeaGreen3'   ],
+    \ [ '10',  'DarkOrchid3'   ],
+    \ [ '136', 'firebrick3'  ],
+    \ [ '43',  'RoyalBlue3'  ],
+    \ [ '129', 'SeaGreen3'   ],
+    \ [ '86',  'RoyalBlue3' ],
+    \ [ '27',  'DarkOrchid3' ],
+    \ [ '202', 'firebrick3'  ],
+    \ [ '47',  'RoyalBlue3'  ],
+    \ [ '9',   'DarkOrchid3'  ],
+    \ [ '13',  'RoyalBlue3'  ],
+    \ [ '14',  'SeaGreen3'   ],
+    \ [ '12',  'firebrick3'  ],
+    \ [ '11',  'DarkOrchid3' ],
+    \ [ '40',  'SeaGreen3' ],
+    \ [ '196', 'firebrick3'  ],
     \ ]
 
 au FileType clojure let b:delimitMate_quotes = "\""
