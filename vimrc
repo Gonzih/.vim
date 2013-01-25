@@ -205,15 +205,17 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype coffee setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype sass setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype eruby setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype arduino setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype cucumber setlocal ts=2 sts=2 sw=2 expandtab
+
+autocmd Filetype ruby       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype scss       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype sass       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype html       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype eruby      setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype arduino    setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
 
 " TagBar configuration
