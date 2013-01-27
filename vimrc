@@ -121,6 +121,8 @@ let g:SuperTabDefaultCompletionType = "context"
 
 set ofu=syntaxcomplete#Complete
 
+let mapleader=" "
+
 "Dvorak it!
 no d h
 no h j
