@@ -38,6 +38,7 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'goldfeld/vim-seek'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
