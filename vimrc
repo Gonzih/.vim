@@ -141,7 +141,7 @@ no - $
 no _ ^
 
 " hh to exit insetr mode
-:imap hh <Esc>
+imap hh <Esc>
 
 "Tabs
 no N <C-w>l
