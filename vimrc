@@ -38,6 +38,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/xterm-color-table.vim'
+Bundle 'Valloric/YouCompleteMe'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -167,8 +168,11 @@ map <Leader>p "+P
 vmap <Leader>p "+P
 imap <Leader>p <Space><Esc>"+P<Right>xi
 
+
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
+
+let g:ycm_key_detailed_diagnostics = '<leader>z'
 
 "Gui font
 set guifont=Inconsolata\ 14
