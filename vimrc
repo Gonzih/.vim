@@ -157,7 +157,12 @@ map <C-d> :tabprev<CR>
 map <C-h> :bn<CR>
 map <C-t> :bp<CR>
 
-map ,, <plug>NERDCommenterToggle
+
+" ' and z repeat forward and back for f, F, k, K
+noremap z ;
+noremap ' ,
+
+nmap ,, <plug>NERDCommenterToggle
 nmap <Tab> :NERDTreeToggle<CR>
 nmap <Leader>a :TagbarToggle<CR>
 
