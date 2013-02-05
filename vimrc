@@ -60,8 +60,6 @@ function TrimTrailingWhitespaces()
   :%s/\s\+$//g
   call setpos('.', save_cursor)
 endfunction
-" other git repos
-"Bundle 'git://git.wincent.com/command-t.git'
 
 " Enable filetype
 set autoindent
