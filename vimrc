@@ -152,6 +152,10 @@ no H <C-w>j
 map <C-n> :tabnext<CR>
 map <C-d> :tabprev<CR>
 
+"Buffers navigation
+map <C-h> :bn<CR>
+map <C-t> :bp<CR>
+
 map ,, <plug>NERDCommenterToggle
 nmap <Tab> :NERDTreeToggle<CR>
 nmap <Leader>a :TagbarToggle<CR>
