@@ -164,10 +164,9 @@ nmap <Leader>yy "+yy
 vmap <Leader>y "+y
 
 " paste text from "+ (clipboard)
-map <Leader>p "+P
-vmap <Leader>p "+P
+map <Leader>p "+p
+vmap <Leader>p "+p
 imap <Leader>p <Space><Esc>"+P<Right>xi
-
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
