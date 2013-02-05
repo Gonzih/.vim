@@ -14,7 +14,6 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-haml'
 Bundle 'msanders/snipmate.vim'
 Bundle 'Gonzih/vim-snipmate-ruby-snippets'
-Bundle 'ervandew/supertab'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-cucumber'
 Bundle 'edsono/vim-matchit'
@@ -118,10 +117,6 @@ set list
 nmap <silent> <C-l> :silent noh<CR>
 
 set guioptions=ai
-
-
-let g:SuperTabDefaultCompletionType = "\<C-X>\<C-O>"
-let g:SuperTabDefaultCompletionType = "context"
 
 set ofu=syntaxcomplete#Complete
 
