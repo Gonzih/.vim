@@ -55,6 +55,11 @@ function TrimEndLines()
   call setpos('.', save_cursor)
 endfunction
 
+function TrimTrailingWhitespaces()
+  let save_cursor = getpos(".")
+  :%s/\s\+$//g
+  call setpos('.', save_cursor)
+endfunction
 " other git repos
 "Bundle 'git://git.wincent.com/command-t.git'
 
@@ -205,6 +210,7 @@ au BufRead,BufNewFile *.scala setlocal filetype=scala
 
 "Trim empty lines at the EOF
 au BufWritePre * call TrimEndLines()
+au BufWritePre * call TrimTrailingWhitespaces()
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
