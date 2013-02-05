@@ -57,7 +57,7 @@ endfunction
 
 function TrimTrailingWhitespaces()
   let save_cursor = getpos(".")
-  :%s/\s\+$//g
+  :silent! %s#\s\+$##g
   call setpos('.', save_cursor)
 endfunction
 
