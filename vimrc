@@ -213,11 +213,6 @@ au BufWritePre * call TrimEndLines()
 au BufWritePre * call TrimTrailingWhitespaces()
 
 "ruby
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-
 autocmd Filetype ruby       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype scss       setlocal ts=2 sts=2 sw=2 expandtab
@@ -253,12 +248,6 @@ autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
 let g:indent_guides_color_change_percent = 10
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
-
-" ruby autocomplete
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 " RainbowParentheses
 au VimEnter * RainbowParenthesesToggle
