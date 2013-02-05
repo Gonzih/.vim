@@ -168,7 +168,6 @@ imap <Leader>p <Space><Esc>"+P<Right>xi
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
 
-
 "Gui font
 set guifont=Inconsolata\ 14
 
