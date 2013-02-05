@@ -119,7 +119,7 @@ nmap <silent> <C-l> :silent noh<CR>
 
 set guioptions=ai
 
-set ofu=syntaxcomplete#Complete
+"set ofu=syntaxcomplete#Complete
 
 "Dvorak it!
 no d h
