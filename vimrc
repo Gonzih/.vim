@@ -157,7 +157,6 @@ no H <C-w>j
 map <C-n> :tabnext<CR>
 map <C-d> :tabprev<CR>
 
-imap <C-Space> <C-x><C-o>
 map ,, <plug>NERDCommenterToggle
 nmap <Tab> :NERDTreeToggle<CR>
 nmap <Leader>a :TagbarToggle<CR>
@@ -174,7 +173,6 @@ imap <Leader>p <Space><Esc>"+P<Right>xi
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
 
-let g:ycm_key_detailed_diagnostics = '<leader>z'
 
 "Gui font
 set guifont=Inconsolata\ 14
