@@ -301,3 +301,6 @@ let NERDTreeShowHidden=1
 set viminfo+=!
 
 let g:ForeplayKKey = '<Leader>k'
+
+" command for capturing external command output
+command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
