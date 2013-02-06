@@ -196,6 +196,9 @@ autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
 "W command that write files as root
 command W w !sudo tee % > /dev/null
 
+" command for capturing external command output
+command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+
 "File types
 au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
 au BufRead,BufNewFile *.coffee setlocal filetype=coffee
@@ -301,6 +304,3 @@ let NERDTreeShowHidden=1
 set viminfo+=!
 
 let g:ForeplayKKey = '<Leader>k'
-
-" command for capturing external command output
-command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
