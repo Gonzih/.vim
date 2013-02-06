@@ -39,6 +39,8 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/xterm-color-table.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'goldfeld/vim-seek'
+Bundle 'tpope/vim-classpath'
+Bundle 'Gonzih/vim-foreplay'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -295,3 +297,7 @@ endif
 
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
+
+set viminfo+=!
+
+let g:ForeplayKKey = '<Leader>k'
