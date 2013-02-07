@@ -41,6 +41,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'goldfeld/vim-seek'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-foreplay'
+Bundle 'scrooloose/syntastic'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
