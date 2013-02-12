@@ -166,6 +166,7 @@ noremap z ;
 noremap ' ,
 
 nmap ,, <plug>NERDCommenterToggle
+vmap ,, <plug>NERDCommenterToggle
 nmap <Tab> :NERDTreeToggle<CR>
 nmap <Leader>a :TagbarToggle<CR>
 
