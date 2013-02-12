@@ -305,5 +305,3 @@ endif
 let NERDTreeShowHidden=1
 
 set viminfo+=!
-
-let g:ctrlp_cmd = 'CtrlPMixed'
