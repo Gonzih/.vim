@@ -42,6 +42,7 @@ Bundle 'goldfeld/vim-seek'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-foreplay'
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-surround'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
