@@ -144,9 +144,6 @@ vnoremap ; :
 no - $
 no _ ^
 
-" hh to exit insetr mode
-imap hh <Esc>
-
 "Tabs
 no N <C-w>l
 no T <C-w>k
