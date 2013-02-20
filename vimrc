@@ -44,6 +44,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-rails'
+Bundle 'vim-scripts/AutoTag'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
