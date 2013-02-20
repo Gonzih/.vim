@@ -71,6 +71,7 @@ endfunction
 set autoindent
 syntax on
 filetype plugin indent on
+set ofu=syntaxcomplete#Complete
 set hlsearch
 set nowrap
 set number
