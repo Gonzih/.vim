@@ -37,12 +37,13 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/xterm-color-table.vim'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'goldfeld/vim-seek'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-foreplay'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-rails'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -174,8 +175,12 @@ vmap <Leader>y "+y
 
 " paste text from "+ (clipboard)
 map <Leader>p "+p
+map <Leader>P "+P
 vmap <Leader>p "+p
 imap <Leader>p <Space><Esc>"+P<Right>xi
+
+imap <C-Space> <C-x><C-o>
+imap <C-@> <C-Space>
 
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
@@ -229,6 +234,14 @@ autocmd Filetype arduino    setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
+
+" ruby autocomplete
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1"
+"improve autocomplete menu color
+"highlight Pmenu ctermbg=238 gui=bold
 
 " TagBar configuration
  let g:tagbar_type_coffee = {
