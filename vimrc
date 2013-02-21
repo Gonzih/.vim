@@ -143,6 +143,9 @@ no L N
 nnoremap ; :
 vnoremap ; :
 
+nnoremap q; q:
+vnoremap q; q:
+
 "Added benefits
 no - $
 no _ ^
