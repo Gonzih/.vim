@@ -182,7 +182,7 @@ vmap <Leader>y "+y
 map <Leader>p "+p
 map <Leader>P "+P
 vmap <Leader>p "+p
-imap <Leader>p <Space><Esc>"+P<Right>xi
+imap <Leader>p <Space><Esc>"+P<Right>xa
 
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
