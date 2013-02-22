@@ -253,21 +253,6 @@ autocmd FileType ruby,eruby imap <C-Space> <C-x><C-]>
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
 
-" TagBar configuration
- let g:tagbar_type_coffee = {
-  \ 'kinds' : [
-  \   'f:functions',
-  \   'o:object'
-  \ ],
-  \ 'kind2scope' : {
-  \  'f' : 'object',
-  \   'o' : 'object'
-  \},
-  \ 'sro' : ".",
-  \ 'ctagsbin' : 'coffeetags',
-  \ 'ctagsargs' : ' ',
-  \}
-
 " Set folding
 "set foldmethod=syntax
 
