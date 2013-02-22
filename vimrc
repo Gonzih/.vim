@@ -187,6 +187,9 @@ imap <Leader>p <Space><Esc>"+P<Right>xa
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
 
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
 
