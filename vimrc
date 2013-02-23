@@ -309,4 +309,7 @@ endif
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
 
+" Ctags
+:let g:easytags_file = '/tmp/.vim-tags'
+
 set viminfo+=!
