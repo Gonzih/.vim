@@ -44,7 +44,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-rails'
-Bundle 'xolox/vim-easytags'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -310,6 +309,26 @@ endif
 let NERDTreeShowHidden=1
 
 " Ctags
-:let g:easytags_file = '/tmp/.vim-tags'
+function! DelTagOfFile(file)
+  let fullpath = a:file
+  let cwd = getcwd()
+  let tagfilename = cwd . "/tags"
+  let f = substitute(fullpath, cwd . "/", "", "")
+  let f = escape(f, './')
+  let cmd = 'sed -i "/' . f . '/d" "' . tagfilename . '"'
+  let resp = system(cmd)
+endfunction
+
+function! UpdateTags()
+  let f = expand("%:p")
+  let cwd = getcwd()
+  let tagfilename = cwd . "/tags"
+  let cmd = 'ctags -a -f ' . tagfilename . ' "' . f . '"'
+  call DelTagOfFile(f)
+  let resp = system(cmd)
+endfunction
+
+command UpdateTags call UpdateTags()
+autocmd BufWritePost *.rb,*.js,*.coffee call UpdateTags()
 
 set viminfo+=!
