@@ -186,6 +186,8 @@ imap <Leader>p <Space><Esc>"+P<Right>xa
 nmap <Leader>. :cnext<CR>
 nmap <Leader>, :cprevious<CR>
 
+noremap , @:
+
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
 
