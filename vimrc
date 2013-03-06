@@ -44,6 +44,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-rails'
+Bundle 'airblade/vim-gitgutter'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -334,3 +335,5 @@ command UpdateTags call UpdateTags()
 autocmd BufWritePost *.rb,*.js,*.coffee call UpdateTags()
 
 set viminfo+=!
+
+highlight clear SignColumn
