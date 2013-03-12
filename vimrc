@@ -45,6 +45,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-rails'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'rking/ag.vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
