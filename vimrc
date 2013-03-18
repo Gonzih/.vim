@@ -320,7 +320,7 @@ function! DelTagOfFile(file)
   let tagfilename = cwd . "/tags"
   let f = substitute(fullpath, cwd . "/", "", "")
   let f = escape(f, './')
-  let cmd = 'sed -i "/' . f . '/d" "' . tagfilename . '"'
+  let cmd = 'sed --follow-symlinks -i "/' . f . '/d" "' . tagfilename . '"'
   let resp = system(cmd)
 endfunction
 
