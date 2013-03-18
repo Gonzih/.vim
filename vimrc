@@ -183,7 +183,7 @@ vmap <Leader>y "+y
 map <Leader>p "+p
 map <Leader>P "+P
 vmap <Leader>p "+p
-imap <Leader>p <Space><Esc>"+P<Right>xa
+imap <Leader>p <C-r>*
 
 noremap , @:
 
