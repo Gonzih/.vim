@@ -314,6 +314,20 @@ endif
 let NERDTreeShowHidden=1
 
 " Ctags
+function! InitCtagsWithSymlink(f)
+  let filepath = a:f
+  let issymlink = system("find '" . filepath . "' -type l | wc -l")
+  if issymlink == 0
+    let uuid = system('uuidgen')
+    let cmd  = 'ln -s "/tmp/ctags-for-vim-' . uuid . '" "' . filepath . '"'
+    let cmd  = substitute(cmd, '\n', '', 'g')
+    let resp = system(cmd)
+    let cwd  = getcwd()
+    let cmd  = 'ctags -R ' . cwd
+    let resp = system(cmd)
+  endif
+endfunction
+
 function! DelTagOfFile(file)
   let fullpath = a:file
   let cwd = getcwd()
@@ -328,6 +342,7 @@ function! UpdateTags()
   let f = expand("%:p")
   let cwd = getcwd()
   let tagfilename = cwd . "/tags"
+  call InitCtagsWithSymlink(tagfilename)
   let cmd = 'ctags -a -f ' . tagfilename . ' "' . f . '"'
   call DelTagOfFile(f)
   let resp = system(cmd)
