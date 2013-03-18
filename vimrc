@@ -354,3 +354,6 @@ autocmd BufWritePost *.rb,*.js,*.coffee,*.clj call UpdateTags()
 set viminfo+=!
 
 highlight clear SignColumn
+
+" vim: ts=2:sts=2:sw=2:expandtab
+"
