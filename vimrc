@@ -46,6 +46,7 @@ Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-rails'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'rking/ag.vim'
+Bundle 'wlangstroth/vim-racket'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -216,18 +217,19 @@ command W w !sudo tee % > /dev/null
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
 
 "File types
-au BufRead,BufNewFile *.ejs setlocal filetype=html.javascript
-au BufRead,BufNewFile *.coffee setlocal filetype=coffee
-au BufRead,BufNewFile *.feature setlocal filetype=cucumber
-au BufRead,BufNewFile Guardfile setlocal filetype=ruby
-au BufNewFile,BufRead *.j,Jakefile setf objj
-au BufRead,BufNewFile *.pde setlocal filetype=arduino
-au BufRead,BufNewFile *.ino setlocal filetype=arduino
-au BufRead,BufNewFile *.vala setlocal filetype=vala
-au BufRead,BufNewFile *.clj  setlocal filetype=clojure
-au BufRead,BufNewFile *.cljs setlocal filetype=clojure
-au BufRead,BufNewFile *.cljx setlocal filetype=clojure
-au BufRead,BufNewFile *.scala setlocal filetype=scala
+au BufRead,BufNewFile *.ejs        setlocal filetype=html.javascript
+au BufRead,BufNewFile *.coffee     setlocal filetype=coffee
+au BufRead,BufNewFile *.feature    setlocal filetype=cucumber
+au BufRead,BufNewFile Guardfile    setlocal filetype=ruby
+au BufNewFile,BufRead *.j,Jakefile setlocal filetype=objj
+au BufRead,BufNewFile *.pde        setlocal filetype=arduino
+au BufRead,BufNewFile *.ino        setlocal filetype=arduino
+au BufRead,BufNewFile *.vala       setlocal filetype=vala
+au BufRead,BufNewFile *.clj        setlocal filetype=clojure
+au BufRead,BufNewFile *.cljs       setlocal filetype=clojure
+au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
+au BufRead,BufNewFile *.scala      setlocal filetype=scala
+au BufRead,BufNewFile *.rkt        setlocal filetype=racket
 
 
 "Trim empty lines at the EOF
@@ -245,6 +247,7 @@ autocmd Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype arduino    setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype racket     setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
 
 " ruby autocomplete
@@ -292,6 +295,7 @@ let g:rbpt_colorpairs = [
     \ ]
 
 au FileType clojure let b:delimitMate_quotes = "\""
+au FileType racket  let b:delimitMate_quotes = "\""
 
 " Clojure
 let g:clojure_maxlines = 100
