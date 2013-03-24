@@ -47,6 +47,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'rking/ag.vim'
 Bundle 'wlangstroth/vim-racket'
+Bundle 'Lokaltog/vim-easymotion'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -190,6 +191,9 @@ noremap , @:
 
 imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
+
+" EasyMotion
+let g:EasyMotion_leader_key = '<Leader>'
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
