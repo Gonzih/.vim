@@ -48,7 +48,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'rking/ag.vim'
 Bundle 'wlangstroth/vim-racket'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-tbone'
+Bundle 'tpope/vim-dispatch'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
