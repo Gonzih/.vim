@@ -386,5 +386,14 @@ set viminfo+=!
 
 highlight clear SignColumn
 
+" Tmux workaround with C-Arrows and S-Arrows
+" Tmux will send xterm-style keys when its xterm-keys option is on
+if &term =~ '^screen'
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
+
 " vim: ts=2:sts=2:sw=2:expandtab
 "
