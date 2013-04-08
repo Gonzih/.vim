@@ -7,47 +7,51 @@ call vundle#rc()
 filetype on
 
 " Bundles
-" original repos on github
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/The-NERD-Commenter'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-haml'
-Bundle 'msanders/snipmate.vim'
-Bundle 'Gonzih/vim-snipmate-ruby-snippets'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-cucumber'
 Bundle 'edsono/vim-matchit'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'gmarik/vundle'
-Bundle 'Bogdanp/rbrepl.vim'
 Bundle 'godlygeek/tabular'
-Bundle 'vim-scripts/Arduino-syntax-file'
-Bundle 'rainux/vim-vala'
-Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/L9'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'vim-scripts/rubycomplete.vim'
-Bundle 'Raimondi/delimitMate'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'wlangstroth/vim-haskell'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'guns/xterm-color-table.vim'
-Bundle 'goldfeld/vim-seek'
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
-Bundle 'tpope/vim-rails'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'rking/ag.vim'
-Bundle 'wlangstroth/vim-racket'
+Bundle 'goldfeld/vim-seek'
 Bundle 'Lokaltog/vim-easymotion'
+
+"Remote commands runners
+Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-dispatch'
 
+"Vim dev plugins
+Bundle 'guns/xterm-color-table.vim'
+
+" FileTypes
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-cucumber'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-haml'
+Bundle 'vim-scripts/Arduino-syntax-file'
+Bundle 'rainux/vim-vala'
+Bundle 'wlangstroth/vim-racket'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'wlangstroth/vim-haskell'
+
+" ProjectTypes
+Bundle 'vim-scripts/rubycomplete.vim'
+Bundle 'tpope/vim-rails'
+
+" Duplicates some of paredit functionality
+Bundle 'Raimondi/delimitMate'
+Bundle 'tpope/vim-surround'
+
 " Clojure
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
