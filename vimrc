@@ -52,6 +52,7 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 Bundle 'dgrnbrg/vim-redl'
+Bundle 'vim-scripts/paredit.vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
@@ -394,6 +395,8 @@ if &term =~ '^screen'
     execute "set <xRight>=\e[1;*C"
     execute "set <xLeft>=\e[1;*D"
 endif
+
+let g:paredit_leader='\|'
 
 " vim: ts=2:sts=2:sw=2:expandtab
 "
