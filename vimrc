@@ -43,6 +43,7 @@ Bundle 'rainux/vim-vala'
 Bundle 'wlangstroth/vim-racket'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'wlangstroth/vim-haskell'
+Bundle 'aliva/vim-fish'
 
 " ProjectTypes
 Bundle 'vim-scripts/rubycomplete.vim'
@@ -245,6 +246,7 @@ au BufRead,BufNewFile *.cljs       setlocal filetype=clojure
 au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
 au BufRead,BufNewFile *.scala      setlocal filetype=scala
 au BufRead,BufNewFile *.rkt        setlocal filetype=racket
+au BufRead,BufNewFile *.fish       setlocal filetype=fish
 
 
 "Trim empty lines at the EOF
@@ -264,6 +266,7 @@ autocmd Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype racket     setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
+autocmd Filetype fish       setlocal ts=4 sts=4 sw=4 expandtab
 
 " ruby autocomplete
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
