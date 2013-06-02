@@ -27,6 +27,7 @@ Bundle 'goldfeld/vim-seek'
 Bundle 'Lokaltog/vim-easymotion'
 
 "Remote commands runners
+Bundle 'mileszs/ack.vim'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-dispatch'
 
