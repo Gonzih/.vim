@@ -34,7 +34,7 @@ Bundle 'Shougo/unite-outline'
 Bundle 'tpope/vim-dispatch'
 
 "Vim dev plugins
-Bundle 'guns/xterm-color-table.vim'
+"Bundle 'guns/xterm-color-table.vim'
 
 " FileTypes
 Bundle 'kchmck/vim-coffee-script'
@@ -49,7 +49,7 @@ Bundle 'wlangstroth/vim-haskell'
 Bundle 'aliva/vim-fish'
 
 " ProjectTypes
-Bundle 'vim-scripts/rubycomplete.vim'
+"Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'tpope/vim-rails'
 
 " Duplicates some of paredit functionality
