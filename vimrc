@@ -233,7 +233,6 @@ vmap <Leader>y "+y
 map <Leader>p "+p
 map <Leader>P "+P
 vmap <Leader>p "+p
-imap <Leader>p <C-r>*
 
 noremap , @:
 
