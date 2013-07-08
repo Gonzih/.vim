@@ -19,16 +19,18 @@ Bundle 'vim-scripts/L9'
 " Required by powerline
 Bundle 'majutsushi/tagbar'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'goldfeld/vim-seek'
 Bundle 'Lokaltog/vim-easymotion'
 
+"Unite
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/unite-outline'
+
 "Remote commands runners
-Bundle 'mileszs/ack.vim'
-Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-dispatch'
 
 "Vim dev plugins
@@ -69,6 +71,39 @@ Bundle 'wgibbs/vim-irblack'
 Bundle 'ciaranm/inkpot'
 Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
 Bundle 'sjl/badwolf'
+
+" Unite
+let g:unite_source_history_yank_enable = 1
+call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
+call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_rank')
+
+call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
+      \'tmp\|vendor\|\.bundle\|target\|\.git')
+
+nnoremap <C-p> :Unite -no-split -buffer-name=files -start-insert file_rec/async:!<cr>
+
+nnoremap <space>f :Unite -no-split -buffer-name=files   -start-insert file<cr>
+nnoremap <space>h :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+nnoremap <space>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
+nnoremap <space>/ :Unite -no-split -buffer-name=files   grep:.<cr>
+nnoremap <space>y :Unite -no-split -buffer-name=yank    history/yank<cr>
+nnoremap <space>b :Unite -no-split -buffer-name=buffer  buffer<cr>
+
+" Custom mappings for the unite buffer
+autocmd FileType unite call s:unite_settings()
+function! s:unite_settings()
+  " Play nice with supertab
+  let b:SuperTabDisabled=1
+  " Enable navigation with control-j and control-k in insert mode
+  imap <buffer> <C-h>   <Plug>(unite_select_next_line)
+  imap <buffer> <C-t>   <Plug>(unite_select_previous_line)
+
+  nmap <buffer> h         <Plug>(unite_loop_cursor_down)
+  nmap <buffer> t         <Plug>(unite_loop_cursor_up)
+
+  nnoremap <silent><buffer><expr> k
+        \ unite#smart_map('k', unite#do_action('tabopen'))
+endfunction
 
 " Functions
 function TrimEndLines()
