@@ -445,9 +445,9 @@ let g:paredit_leader='\|'
 set shell=/bin/bash
 
 " Syntastic options
-let g:syntastic_mode_map = { 'mode': 'active',
+let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['ruby'],
-                           \ 'passive_filetypes': ['clojure', 'vim'] }
+                           \ 'passive_filetypes': [] }
 
 " vim: ts=2:sts=2:sw=2:expandtab
 "
