@@ -85,7 +85,7 @@ nnoremap <C-p> :Unite -no-split -buffer-name=files -start-insert file_rec/async:
 nnoremap <space>f :Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <space>h :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
 nnoremap <space>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
-nnoremap <space>/ :Unite -no-split -buffer-name=files   grep:.<cr>
+nnoremap <space>/ :Unite -no-split -buffer-name=files   -start-insert grep:.<cr>
 nnoremap <space>y :Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <space>b :Unite -no-split -buffer-name=buffer  buffer<cr>
 
