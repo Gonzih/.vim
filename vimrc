@@ -248,9 +248,6 @@ let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 "Remaping for Dvorak
 let NERDTreeMapOpenInTab='c'
 
-"Gui font
-set guifont=Inconsolata\ 14
-
 "Auto cleaning fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
