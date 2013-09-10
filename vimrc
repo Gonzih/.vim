@@ -16,9 +16,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/L9'
-" Required by powerline
-Bundle 'majutsushi/tagbar'
-Bundle 'Lokaltog/vim-powerline'
+
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
 Bundle 'airblade/vim-gitgutter'
