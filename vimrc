@@ -446,5 +446,9 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': ['ruby'],
                            \ 'passive_filetypes': [] }
 
+" Enable spellcheck for markdown files
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
+
 " vim: ts=2:sts=2:sw=2:expandtab
 "
