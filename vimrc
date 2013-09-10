@@ -450,5 +450,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 
+let g:airline_powerline_fonts = 1
+
 " vim: ts=2:sts=2:sw=2:expandtab
 "
