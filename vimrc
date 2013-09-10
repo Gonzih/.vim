@@ -345,6 +345,7 @@ let g:rbpt_colorpairs = [
 
 au FileType clojure let b:delimitMate_quotes = "\""
 au FileType racket  let b:delimitMate_quotes = "\""
+au FileType lisp    let b:delimitMate_quotes = "\""
 
 " Clojure
 let g:clojure_maxlines = 100
