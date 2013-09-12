@@ -71,6 +71,8 @@ Bundle 'ciaranm/inkpot'
 Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
 Bundle 'sjl/badwolf'
 
+Bundle 'sjl/gundo.vim'
+
 " Unite
 let g:unite_source_history_yank_enable = 1
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
@@ -450,7 +452,13 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 
+"Airline
 let g:airline_powerline_fonts = 1
+
+"Gundo
+nnoremap U :GundoToggle<CR>
+let g:gundo_map_move_older = 'h'
+let g:gundo_map_move_newer = 't'
 
 " vim: ts=2:sts=2:sw=2:expandtab
 "
