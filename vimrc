@@ -24,6 +24,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'goldfeld/vim-seek'
 Bundle 'Lokaltog/vim-easymotion'
 
+Bundle 'bling/vim-bufferline'
+
 "Unite
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
@@ -459,6 +461,14 @@ let g:airline_powerline_fonts = 1
 nnoremap U :GundoToggle<CR>
 let g:gundo_map_move_older = 'h'
 let g:gundo_map_move_newer = 't'
+
+"Bufferline"
+let g:bufferline_active_buffer_left = '['
+let g:bufferline_active_buffer_right = ']'
+let g:bufferline_modified = '+'
+let g:bufferline_rotate = 1
+let g:bufferline_fixed_index =  1
+let g:bufferline_echo = 0
 
 " vim: ts=2:sts=2:sw=2:expandtab
 "
