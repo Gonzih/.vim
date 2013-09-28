@@ -65,6 +65,8 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'dgrnbrg/vim-redl'
 Bundle 'vim-scripts/paredit.vim'
 
+Bundle 'vim-scripts/slimv.vim'
+
 " Themes
 Bundle 'mrtazz/molokai.vim'
 Bundle 'trapd00r/neverland-vim-theme'
@@ -454,15 +456,15 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
 
-"Airline
+" Airline
 let g:airline_powerline_fonts = 1
 
-"Gundo
+" Gundo
 nnoremap U :GundoToggle<CR>
 let g:gundo_map_move_older = 'h'
 let g:gundo_map_move_newer = 't'
 
-"Bufferline"
+" Bufferline
 let g:bufferline_active_buffer_left = '['
 let g:bufferline_active_buffer_right = ']'
 let g:bufferline_modified = '+'
@@ -470,5 +472,7 @@ let g:bufferline_rotate = 1
 let g:bufferline_fixed_index =  1
 let g:bufferline_echo = 0
 
+" Slimv
+let g:paredit_electric_return = 0
+
 " vim: ts=2:sts=2:sw=2:expandtab
-"
