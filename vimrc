@@ -474,5 +474,6 @@ let g:bufferline_echo = 0
 
 " Slimv
 let g:paredit_electric_return = 0
+let g:slimv_swank_clojure = '! xterm -e lein swank &'
 
 " vim: ts=2:sts=2:sw=2:expandtab
