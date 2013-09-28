@@ -1,2 +1,2 @@
 colorscheme badwolf
-set guifont=Anonymous\ Pro\ Bold\ 18
+set guifont=Anonymous\ Pro\ 18
