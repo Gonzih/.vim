@@ -302,6 +302,7 @@ autocmd Filetype arduino    setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype racket     setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype clojure    setlocal ts=2 sts=2 sw=2 noexpandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype fish       setlocal ts=4 sts=4 sw=4 noexpandtab
 
