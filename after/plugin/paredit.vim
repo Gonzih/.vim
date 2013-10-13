@@ -11,6 +11,7 @@ function! AdjustParedit()
 endfunction
 
 au BufReadPost *.lisp call AdjustParedit()
+au BufReadPost *.lsp  call AdjustParedit()
 au BufReadPost *.cl   call AdjustParedit()
 au BufReadPost *.clj  call AdjustParedit()
 au BufReadPost *.cljs call AdjustParedit()
