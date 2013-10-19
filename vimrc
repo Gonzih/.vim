@@ -284,6 +284,7 @@ au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
 au BufRead,BufNewFile *.scala      setlocal filetype=scala
 au BufRead,BufNewFile *.rkt        setlocal filetype=racket
 au BufRead,BufNewFile *.fish       setlocal filetype=fish
+au BufRead,BufNewFile *.asd        setlocal filetype=lisp
 
 
 "Trim empty lines at the EOF
