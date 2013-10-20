@@ -475,7 +475,23 @@ let g:bufferline_fixed_index =  1
 let g:bufferline_echo = 0
 
 " Slimv
+function SlimvSwankClojureCommand()
+  let cmd = 'lein ritz 4005 localhost'
+
+  if $STY != ''
+      return '! screen -X eval "title swank" "screen ' . cmd . '" "select swank"'
+  elseif $TMUX != ''
+      return "! tmux new-window -d -n swank '" . cmd . "'"
+  elseif $DISPLAY == ''
+      " No X, no terminal multiplexer. Cannot run swank server.
+      call SlimvErrorWait( 'No X server. Run Vim from screen/tmux or start SWANK server manually.' )
+      return ''
+  else
+      return '! xterm -iconic -e ' . cmd . ' &'
+  endif
+endfunction
+
 let g:paredit_electric_return = 0
-let g:slimv_swank_clojure = '! xterm -e lein ritz 4005 localhost &'
+let g:slimv_swank_clojure = SlimvSwankClojureCommand()
 
 " vim: ts=2:sts=2:sw=2:expandtab
