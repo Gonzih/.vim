@@ -494,4 +494,12 @@ endfunction
 let g:paredit_electric_return = 0
 let g:slimv_swank_clojure = SlimvSwankClojureCommand()
 
+
+au VimEnter *.clj  syntax keyword Statement fn conceal cchar=λ
+au VimEnter *.cljs syntax keyword Statement fn conceal cchar=λ
+au VimEnter *.cljx syntax keyword Statement fn conceal cchar=λ
+au VimEnter * syntax keyword Statement lambda conceal cchar=λ
+au VimEnter * hi! link Conceal Statement
+au VimEnter * set conceallevel=2
+
 " vim: ts=2:sts=2:sw=2:expandtab
