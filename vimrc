@@ -62,10 +62,10 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
-Bundle 'dgrnbrg/vim-redl'
+"Bundle 'dgrnbrg/vim-redl'
 Bundle 'vim-scripts/paredit.vim'
 
-Bundle 'vim-scripts/slimv.vim'
+"Bundle 'vim-scripts/slimv.vim'
 
 " Themes
 Bundle 'mrtazz/molokai.vim'
