@@ -48,6 +48,7 @@ Bundle 'wlangstroth/vim-racket'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'wlangstroth/vim-haskell'
 Bundle 'aliva/vim-fish'
+Bundle 'Blackrush/vim-gocode'
 
 " ProjectTypes
 "Bundle 'vim-scripts/rubycomplete.vim'
@@ -285,6 +286,7 @@ au BufRead,BufNewFile *.scala      setlocal filetype=scala
 au BufRead,BufNewFile *.rkt        setlocal filetype=racket
 au BufRead,BufNewFile *.fish       setlocal filetype=fish
 au BufRead,BufNewFile *.asd        setlocal filetype=lisp
+au BufRead,BufNewFile *.go         setlocal filetype=go
 
 
 "Trim empty lines at the EOF
