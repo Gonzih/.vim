@@ -275,7 +275,7 @@ au BufRead,BufNewFile *.ejs        setlocal filetype=html.javascript
 au BufRead,BufNewFile *.coffee     setlocal filetype=coffee
 au BufRead,BufNewFile *.feature    setlocal filetype=cucumber
 au BufRead,BufNewFile Guardfile    setlocal filetype=ruby
-au BufNewFile,BufRead *.j,Jakefile setlocal filetype=objj
+au BufRead,BufNewFile *.j,Jakefile setlocal filetype=objj
 au BufRead,BufNewFile *.pde        setlocal filetype=arduino
 au BufRead,BufNewFile *.ino        setlocal filetype=arduino
 au BufRead,BufNewFile *.vala       setlocal filetype=vala
@@ -293,28 +293,31 @@ au BufRead,BufNewFile *.go         setlocal filetype=go
 au BufWritePre * call TrimEndLines()
 au BufWritePre * call TrimTrailingWhitespaces()
 
-"ruby
-autocmd Filetype ruby       setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype scss       setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype sass       setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype html       setlocal ts=4 sts=4 sw=4 expandtab
-autocmd Filetype eruby      setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype arduino    setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype racket     setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype clojure    setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
-autocmd Filetype fish       setlocal ts=4 sts=4 sw=4 noexpandtab
+
+au FileType arc call PareditInitBuffer()
+au FileType ruby call PareditInitBuffer()
+
+au Filetype ruby       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype scss       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype sass       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype html       setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype eruby      setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype arduino    setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype racket     setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype clojure    setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype fish       setlocal ts=4 sts=4 sw=4 noexpandtab
 
 " ruby autocomplete
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1"
-autocmd FileType ruby,eruby imap <C-Space> <C-x><C-]>
+au FileType ruby,eruby set omnifunc=rubycomplete#Complete
+au FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+au FileType ruby,eruby let g:rubycomplete_rails = 1
+au FileType ruby,eruby let g:rubycomplete_classes_in_global = 1"
+au FileType ruby,eruby imap <C-Space> <C-x><C-]>
 
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold

@@ -18,5 +18,6 @@ au BufReadPost *.clj  call AdjustParedit()
 au BufReadPost *.cljs call AdjustParedit()
 au BufReadPost *.scm  call AdjustParedit()
 au BufReadPost *.rkt  call AdjustParedit()
+au BufReadPost *.rb   call AdjustParedit()
 
 " vim: ts=2:sts=2:sw=2:expandtab
