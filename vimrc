@@ -462,6 +462,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
 " Enable spellcheck for markdown files
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
+autocmd FileType mail setlocal spell
 
 " Airline
 let g:airline_powerline_fonts = 1
