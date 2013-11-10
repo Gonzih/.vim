@@ -51,7 +51,7 @@ Bundle 'aliva/vim-fish'
 Bundle 'Blackrush/vim-gocode'
 
 " ProjectTypes
-"Bundle 'vim-scripts/rubycomplete.vim'
+Bundle 'vim-scripts/rubycomplete.vim'
 Bundle 'tpope/vim-rails'
 
 " Duplicates some of paredit functionality
