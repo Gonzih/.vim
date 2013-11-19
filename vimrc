@@ -222,9 +222,9 @@ map <C-h> :bn<CR>
 map <C-t> :bp<CR>
 
 
-" ' and z repeat forward and back for f, F, k, K
-noremap z ;
-noremap ' ,
+" <> repeat forward and back for f, F, k, K
+"noremap gZ ;
+"noremap gz ,
 
 nmap <leader>, <plug>NERDCommenterToggle
 vmap <leader>, <plug>NERDCommenterToggle
