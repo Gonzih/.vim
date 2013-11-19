@@ -271,10 +271,11 @@ command W w !sudo tee % > /dev/null
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
 
 "File types
+au BufRead,BufNewFile Guardfile,Procfile,Rakefile,Gemfile setlocal filetype=ruby
+
 au BufRead,BufNewFile *.ejs        setlocal filetype=html.javascript
 au BufRead,BufNewFile *.coffee     setlocal filetype=coffee
 au BufRead,BufNewFile *.feature    setlocal filetype=cucumber
-au BufRead,BufNewFile Guardfile    setlocal filetype=ruby
 au BufRead,BufNewFile *.j,Jakefile setlocal filetype=objj
 au BufRead,BufNewFile *.pde        setlocal filetype=arduino
 au BufRead,BufNewFile *.ino        setlocal filetype=arduino
