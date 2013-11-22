@@ -9,8 +9,8 @@ filetype on
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-scripts/The-NERD-tree'
-Bundle 'vim-scripts/The-NERD-Commenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'edsono/vim-matchit'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
@@ -505,5 +505,10 @@ au VimEnter * syntax keyword lambdaConceal lambda conceal cchar=λ
 au VimEnter * hi  link lambdaConceal Define
 au VimEnter * hi! link Conceal Statement
 au VimEnter * set conceallevel=2
+
+let g:NERDCustomDelimiters = {
+  \ 'racket': { 'left': ';', 'leftAlt': '#| ', 'rightAlt': ' |#' },
+  \ 'haskell': { 'left': '--' },
+\ }
 
 " vim: ts=2:sts=2:sw=2:expandtab
