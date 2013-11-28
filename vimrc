@@ -246,7 +246,7 @@ imap <C-Space> <C-x><C-o>
 imap <C-@> <C-Space>
 
 " EasyMotion
-let g:EasyMotion_leader_key = '<Leader>'
+let g:EasyMotion_leader_key = ','
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
