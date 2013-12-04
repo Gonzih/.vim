@@ -78,6 +78,8 @@ Bundle 'sjl/badwolf'
 
 Bundle 'sjl/gundo.vim'
 
+Bundle 'terryma/vim-multiple-cursors'
+
 " Unite
 let g:unite_source_history_yank_enable = 1
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
@@ -510,5 +512,11 @@ let g:NERDCustomDelimiters = {
   \ 'racket': { 'left': ';', 'leftAlt': '#| ', 'rightAlt': ' |#' },
   \ 'haskell': { 'left': '--' },
 \ }
+
+" Multiple Cursors
+let g:multi_cursor_next_key='<C-b>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<C-c>'
 
 " vim: ts=2:sts=2:sw=2:expandtab
