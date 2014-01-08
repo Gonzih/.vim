@@ -49,6 +49,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'wlangstroth/vim-haskell'
 Bundle 'aliva/vim-fish'
 Bundle 'Blackrush/vim-gocode'
+Bundle 'elixir-lang/vim-elixir'
 
 " ProjectTypes
 Bundle 'vim-scripts/rubycomplete.vim'
@@ -290,6 +291,7 @@ au BufRead,BufNewFile *.rkt        setlocal filetype=racket
 au BufRead,BufNewFile *.fish       setlocal filetype=fish
 au BufRead,BufNewFile *.asd        setlocal filetype=lisp
 au BufRead,BufNewFile *.go         setlocal filetype=go
+au BufRead,BufNewFile *.ex,*.exs   setlocal filetype=elixir
 
 
 "Trim empty lines at the EOF
@@ -301,6 +303,7 @@ au FileType arc call PareditInitBuffer()
 "au FileType ruby call PareditInitBuffer()
 
 au Filetype ruby       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype elixir     setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype scss       setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype sass       setlocal ts=2 sts=2 sw=2 expandtab
