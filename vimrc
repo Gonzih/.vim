@@ -298,7 +298,7 @@ au BufWritePre * call TrimTrailingWhitespaces()
 
 
 au FileType arc call PareditInitBuffer()
-au FileType ruby call PareditInitBuffer()
+"au FileType ruby call PareditInitBuffer()
 
 au Filetype ruby       setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
