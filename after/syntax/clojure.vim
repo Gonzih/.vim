@@ -9,5 +9,5 @@ hi link clojureConcealLambda Define
 hi! link Conceal Define
 
 setlocal conceallevel=2
-
-setlocal lispwords+=fact
+autocmd FileType clojure
+    \ setlocal lispwords+=fact,provided
