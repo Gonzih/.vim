@@ -89,7 +89,7 @@ call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorter
 call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
       \'tmp\|vendor\|\.bundle\|target\|\.git')
 
-nnoremap <C-p> :Unite -no-split -buffer-name=files -start-insert file_rec:!<cr>
+nnoremap <C-p> :Unite -no-split -buffer-name=files -start-insert file_rec/async:!<cr>
 
 nnoremap <space>f :Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <space>h :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
