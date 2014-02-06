@@ -329,7 +329,7 @@ au FileType ruby,eruby imap <C-Space> <C-x><C-]>
 highlight Pmenu ctermbg=238 gui=bold
 
 " Set folding
-"set foldmethod=syntax
+set foldmethod=marker
 
 " Enable indent guides
 "let g:indent_guides_enable_on_vim_startup = 1
