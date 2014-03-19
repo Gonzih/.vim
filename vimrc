@@ -50,6 +50,7 @@ Bundle 'wlangstroth/vim-haskell'
 Bundle 'aliva/vim-fish'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'gabrielelana/vim-markdown'
 
 " ProjectTypes
 Bundle 'vim-scripts/rubycomplete.vim'
