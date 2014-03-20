@@ -51,6 +51,7 @@ Bundle 'aliva/vim-fish'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'gabrielelana/vim-markdown'
+Bundle 'stephpy/vim-yaml'
 
 " ProjectTypes
 Bundle 'vim-scripts/rubycomplete.vim'
