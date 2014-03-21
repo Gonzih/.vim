@@ -520,8 +520,8 @@ let g:NERDCustomDelimiters = {
 
 " Multiple Cursors
 let g:multi_cursor_next_key='<C-b>'
-let g:multi_cursor_prev_key='<C-p>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<C-c>'
+let g:multi_cursor_prev_key='<C-x>'
+let g:multi_cursor_skip_key='<C-k>'
+let g:multi_cursor_quit_key='<Esc>'
 
 " vim: ts=2:sts=2:sw=2:expandtab
