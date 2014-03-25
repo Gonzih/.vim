@@ -531,7 +531,7 @@ let g:multi_cursor_quit_key='<Esc>'
 
 " This thing requires MozRepl in firefox installed (look up in addons)
 " to start REPL go to Tools -> MozRepl -> Start
-autocmd BufWriteCmd *.html,*.css,*.scss,*.sass,*.haml,*.erb :call Refresh_firefox()
+autocmd BufWriteCmd *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb :call Refresh_firefox()
 function! Refresh_firefox()
   if &modified
     write
