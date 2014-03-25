@@ -26,6 +26,11 @@ Bundle 'Lokaltog/vim-easymotion'
 
 Bundle 'bling/vim-bufferline'
 
+Bundle 'tomtom/tlib_vim'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
+
 "Unite
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
