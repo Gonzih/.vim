@@ -549,4 +549,7 @@ autocmd BufWritePost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call Refr
 " Autosave on lost focus
 autocmd FocusLost * :wa
 
+" Fix some annoying bug in SuperTab
+let g:SuperTabCrMapping = 0
+
 " vim: ts=2:sts=2:sw=2:expandtab
