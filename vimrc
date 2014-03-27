@@ -444,7 +444,7 @@ function! UpdateTags()
   call PopulateTagsFile(tagfilename)
   call DelTagOfFile(f)
   let cmd  = 'ctags -a -f ' . tagfilename . ' "' . f . '"'
-  let resp = system(cmd)
+  let resp = vimproc#system_bg(cmd)
 endfunction
 
 command UpdateTags call UpdateTags()
