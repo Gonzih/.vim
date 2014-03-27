@@ -546,4 +546,7 @@ command RefreshFirefox call RefreshFirefox()
 autocmd BufWritePost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call RefreshFirefox()
 "autocmd FocusLost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call RefreshFirefox()
 
+" Autosave on lost focus
+autocmd FocusLost * :wa
+
 " vim: ts=2:sts=2:sw=2:expandtab
