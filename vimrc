@@ -531,17 +531,19 @@ let g:multi_cursor_quit_key='<Esc>'
 
 " This thing requires MozRepl in firefox installed (look up in addons)
 " to start REPL go to Tools -> MozRepl -> Start
-autocmd BufWriteCmd *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb :call Refresh_firefox()
-function! Refresh_firefox()
-  if &modified
-    write
-    silent !echo  'var vimYo = content.window.pageYOffset;
-          \ var vimXo = content.window.pageXOffset;
-          \ BrowserReload();
-          \ content.window.scrollTo(vimXo,vimYo);
-          \ repl.quit();'  |
-          \ nc -w 1 localhost 4242 2>&1 > /dev/null
-  endif
+function! RefreshFirefox()
+  let command="echo  'var vimYo = content.window.pageYOffset;
+        \ var vimXo = content.window.pageXOffset;
+        \ BrowserReload();
+        \ content.window.scrollTo(vimXo,vimYo);
+        \ repl.quit();'  |
+        \ nc -w 1 localhost 4242 2>&1 > /dev/null"
+
+  let result=vimproc#system_bg(command)
 endfunction
+
+command RefreshFirefox call RefreshFirefox()
+autocmd BufWritePost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call RefreshFirefox()
+"autocmd FocusLost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call RefreshFirefox()
 
 " vim: ts=2:sts=2:sw=2:expandtab
