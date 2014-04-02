@@ -88,6 +88,9 @@ Bundle 'sjl/gundo.vim'
 
 Bundle 'terryma/vim-multiple-cursors'
 
+Bundle 'xolox/vim-notes'
+Bundle 'xolox/vim-misc'
+
 " Unite
 let g:unite_source_history_yank_enable = 1
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
@@ -551,5 +554,8 @@ autocmd FocusLost * :wa
 
 " Fix some annoying bug in SuperTab
 let g:SuperTabCrMapping = 0
+
+" Notes
+let g:notes_directories = ['~/Dropbox/Vim Notes']
 
 " vim: ts=2:sts=2:sw=2:expandtab
