@@ -24,8 +24,6 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'goldfeld/vim-seek'
 Bundle 'Lokaltog/vim-easymotion'
 
-Bundle 'bling/vim-bufferline'
-
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'garbas/vim-snipmate'
@@ -488,13 +486,6 @@ nnoremap U :GundoToggle<CR>
 let g:gundo_map_move_older = 'h'
 let g:gundo_map_move_newer = 't'
 
-" Bufferline
-let g:bufferline_active_buffer_left = '['
-let g:bufferline_active_buffer_right = ']'
-let g:bufferline_modified = '+'
-let g:bufferline_rotate = 1
-let g:bufferline_fixed_index =  1
-let g:bufferline_echo = 0
 
 " Slimv
 function SlimvSwankClojureCommand()
