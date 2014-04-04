@@ -67,10 +67,10 @@ Bundle 'tpope/vim-surround'
 " Clojure
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 "Bundle 'dgrnbrg/vim-redl'
 Bundle 'vim-scripts/paredit.vim'
+Bundle 'tpope/timl'
 
 "Bundle 'vim-scripts/slimv.vim'
 
