@@ -449,7 +449,7 @@ function! UpdateTags()
 endfunction
 
 command UpdateTags call UpdateTags()
-autocmd BufWritePost *.rb,*.js,*.coffee,*.clj call UpdateTags()
+autocmd BufWritePost *.rb,*.js,*.coffee,*.clj,*.scala call UpdateTags()
 
 set viminfo+=!
 
