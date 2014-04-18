@@ -253,9 +253,6 @@ vmap <Leader>p "+p
 
 noremap , @:
 
-imap <C-Space> <C-x><C-o>
-imap <C-@> <C-Space>
-
 " EasyMotion
 let g:EasyMotion_leader_key = ','
 
@@ -331,7 +328,6 @@ au FileType ruby,eruby set omnifunc=rubycomplete#Complete
 au FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 au FileType ruby,eruby let g:rubycomplete_rails = 1
 au FileType ruby,eruby let g:rubycomplete_classes_in_global = 1"
-au FileType ruby,eruby imap <C-Space> <C-x><C-]>
 
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
