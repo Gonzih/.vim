@@ -292,6 +292,7 @@ au BufRead,BufNewFile *.clj        setlocal filetype=clojure
 au BufRead,BufNewFile *.cljs       setlocal filetype=clojure
 au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
 au BufRead,BufNewFile *.scala      setlocal filetype=scala
+au BufRead,BufNewFile *.scala.sc   setlocal filetype=scala
 au BufRead,BufNewFile *.rkt        setlocal filetype=racket
 au BufRead,BufNewFile *.fish       setlocal filetype=fish
 au BufRead,BufNewFile *.asd        setlocal filetype=lisp
@@ -322,6 +323,7 @@ au Filetype racket     setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype clojure    setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype fish       setlocal ts=4 sts=4 sw=4 noexpandtab
+au Filetype scala      setlocal ts=2 sts=2 sw=2 expandtab
 
 " ruby autocomplete
 au FileType ruby,eruby set omnifunc=rubycomplete#Complete
