@@ -89,6 +89,8 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-misc'
 
+Bundle 'sjl/tslime2.vim'
+
 " Unite
 let g:unite_source_history_yank_enable = 1
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
