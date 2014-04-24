@@ -417,7 +417,7 @@ function! PopulateTagsFile(f)
   let linescnt = substitute(lines, '\D', '', 'g')
   if linescnt == 0
     let cwd  = getcwd()
-    let cmd  = 'ctags -Rf "'. filepath . '" "' . cwd . '"'
+    let cmd  = 'ctags --exclude=.rsync_cache -Rf "'. filepath . '" "' . cwd . '"'
     let resp = system(cmd)
   endif
 endfunction
