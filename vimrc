@@ -97,7 +97,7 @@ call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matche
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_rank')
 
 call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
-      \'tmp\|vendor\|\.bundle\|target\|\.git\|\.rspec_cache')
+      \'tmp\|vendor\|\.bundle\|target\|\.git\|\.rsync_cache')
 
 nnoremap <C-p> :Unite -no-split -buffer-name=files -start-insert file_rec/async:!<cr>
 
