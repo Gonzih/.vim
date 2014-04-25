@@ -549,4 +549,10 @@ let g:SuperTabCrMapping = 0
 " Notes
 let g:notes_directories = ['~/Dropbox/Vim Notes']
 
+" Drop cache for unite.vim
+function! UniteClearCache()
+  let result = vimproc#system_bg("rm ~/.cache/unite -rf")
+endfunction
+command UniteClearCache call UniteClearCache()
+
 " vim: ts=2:sts=2:sw=2:expandtab
