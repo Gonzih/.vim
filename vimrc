@@ -34,9 +34,6 @@ Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/unite-outline'
 
-"Remote commands runners
-Bundle 'tpope/vim-dispatch'
-
 "Vim dev plugins
 "Bundle 'guns/xterm-color-table.vim'
 
@@ -68,6 +65,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-leiningein'
+Bundle 'tpope/vim-dispatch'
 "Bundle 'dgrnbrg/vim-redl'
 Bundle 'vim-scripts/paredit.vim'
 Bundle 'tpope/timl'
