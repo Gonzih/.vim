@@ -6,89 +6,89 @@ call vundle#rc()
 
 filetype on
 
-" Bundles
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'edsono/vim-matchit'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-fugitive'
-Bundle 'godlygeek/tabular'
-Bundle 'vim-scripts/L9'
+" Plugins
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'edsono/vim-matchit'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'godlygeek/tabular'
+Plugin 'vim-scripts/L9'
 
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'goldfeld/vim-seek'
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
+Plugin 'ervandew/supertab'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'goldfeld/vim-seek'
+Plugin 'Lokaltog/vim-easymotion'
 
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'tomtom/tlib_vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 "Unite
-Bundle 'Shougo/vimproc.vim'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/unite-outline'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/unite-outline'
 
 "Vim dev plugins
-"Bundle 'guns/xterm-color-table.vim'
+"Plugin 'guns/xterm-color-table.vim'
 
 " FileTypes
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-cucumber'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-haml'
-Bundle 'vim-scripts/Arduino-syntax-file'
-Bundle 'rainux/vim-vala'
-Bundle 'wlangstroth/vim-racket'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'wlangstroth/vim-haskell'
-Bundle 'aliva/vim-fish'
-Bundle 'Blackrush/vim-gocode'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'gabrielelana/vim-markdown'
-Bundle 'stephpy/vim-yaml'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-cucumber'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-haml'
+Plugin 'vim-scripts/Arduino-syntax-file'
+Plugin 'rainux/vim-vala'
+Plugin 'wlangstroth/vim-racket'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'wlangstroth/vim-haskell'
+Plugin 'aliva/vim-fish'
+Plugin 'Blackrush/vim-gocode'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'gabrielelana/vim-markdown'
+Plugin 'stephpy/vim-yaml'
 
 " ProjectTypes
-Bundle 'vim-scripts/rubycomplete.vim'
-Bundle 'tpope/vim-rails'
+"Plugin 'vim-scripts/rubycomplete.vim'
+Plugin 'tpope/vim-rails'
 
 " Duplicates some of paredit functionality
-Bundle 'Raimondi/delimitMate'
-Bundle 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
 
 " Clojure
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-leiningein'
-Bundle 'tpope/vim-dispatch'
-"Bundle 'dgrnbrg/vim-redl'
-Bundle 'vim-scripts/paredit.vim'
-Bundle 'tpope/timl'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-leiningein'
+Plugin 'tpope/vim-dispatch'
+"Plugin 'dgrnbrg/vim-redl'
+Plugin 'vim-scripts/paredit.vim'
+Plugin 'tpope/timl'
 
-"Bundle 'vim-scripts/slimv.vim'
+"Plugin 'vim-scripts/slimv.vim'
 
 " Themes
-Bundle 'mrtazz/molokai.vim'
-Bundle 'trapd00r/neverland-vim-theme'
-Bundle 'wgibbs/vim-irblack'
-Bundle 'ciaranm/inkpot'
-Bundle 'vim-scripts/Railscasts-Theme-GUIand256color'
-Bundle 'sjl/badwolf'
+Plugin 'mrtazz/molokai.vim'
+Plugin 'trapd00r/neverland-vim-theme'
+Plugin 'wgibbs/vim-irblack'
+Plugin 'ciaranm/inkpot'
+Plugin 'vim-scripts/Railscasts-Theme-GUIand256color'
+Plugin 'sjl/badwolf'
 
-Bundle 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'
 
-Bundle 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 
-Bundle 'xolox/vim-notes'
-Bundle 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
 
-Bundle 'sjl/tslime2.vim'
+Plugin 'sjl/tslime2.vim'
 
 " Unite
 let g:unite_source_history_yank_enable = 1
