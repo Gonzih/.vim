@@ -1,2 +1,2 @@
 colorscheme badwolf
-set guifont=Anonymous\ Pro\ 18
+set guifont=Inconsolata\ for\ Powerline\ 14
