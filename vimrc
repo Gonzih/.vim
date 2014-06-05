@@ -52,6 +52,7 @@ Plugin 'Blackrush/vim-gocode'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'stephpy/vim-yaml'
+Plugin 'jsx/jsx.vim'
 
 " ProjectTypes
 "Plugin 'vim-scripts/rubycomplete.vim'
