@@ -95,6 +95,7 @@ Plugin 'sjl/tslime2.vim'
 let g:unite_source_history_yank_enable = 1
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_rank')
+call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'converters', 'converter_relative_word')
 
 call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
       \'tmp\|vendor\|\.bundle\|target\|\.git\|\.rsync_cache')
