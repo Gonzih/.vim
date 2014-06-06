@@ -33,6 +33,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/unite-outline'
+Plugin 'sgur/unite-git_grep'
 
 "Vim dev plugins
 "Plugin 'guns/xterm-color-table.vim'
@@ -93,6 +94,7 @@ Plugin 'sjl/tslime2.vim'
 
 " Unite
 let g:unite_source_history_yank_enable = 1
+
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_rank')
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'converters', 'converter_relative_word')
@@ -105,7 +107,7 @@ nnoremap <C-p> :Unite -no-split -buffer-name=files -start-insert file_rec:!<cr>
 nnoremap <space>f :Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <space>h :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
 nnoremap <space>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
-nnoremap <space>/ :Unite -no-split -buffer-name=files   -start-insert grep:.<cr>
+nnoremap <space>/ :Unite -no-split -buffer-name=files   -start-insert vcs_grep<cr>
 nnoremap <space>y :Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <space>b :Unite -no-split -buffer-name=buffer  buffer<cr>
 
