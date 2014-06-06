@@ -446,7 +446,7 @@ function! UpdateTags()
   call PopulateTagsFile(tagfilename)
   call DelTagOfFile(f)
   let cmd  = 'ctags -a -f ' . tagfilename . ' "' . f . '"'
-  let resp = vimproc#system_bg(cmd)
+  let resp = system(cmd)
 endfunction
 
 command UpdateTags call UpdateTags()
@@ -534,7 +534,7 @@ function! RefreshFirefox()
         \ repl.quit();'  |
         \ nc -w 1 localhost 4242 2>&1 > /dev/null"
 
-  let result=vimproc#system_bg(command)
+  let result=system(command)
 endfunction
 
 command RefreshFirefox call RefreshFirefox()
@@ -552,7 +552,7 @@ let g:notes_directories = ['~/Dropbox/Vim Notes']
 
 " Drop cache for unite.vim
 function! UniteClearCache()
-  let result = vimproc#system_bg("rm ~/.cache/unite -rf")
+  let result = system("rm ~/.cache/unite -rf")
 endfunction
 command UniteClearCache call UniteClearCache()
 
