@@ -1,4 +1,3 @@
-noremap <buffer> k t
 noremap <buffer> d h
 noremap <buffer> h gj
 noremap <buffer> t gk
