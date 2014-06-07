@@ -244,7 +244,7 @@ map <C-t> :bp<CR>
 
 nmap <leader>, <plug>NERDCommenterToggle
 vmap <leader>, <plug>NERDCommenterToggle
-nmap <Tab> <Plug>VinegarSplitUp
+nmap <Tab> <Plug>VinegarUp
 nmap <Leader>a :TagbarToggle<CR>
 
 " copy text to "+ (clipboard)
