@@ -9,7 +9,6 @@ filetype on
 " Plugins
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'edsono/vim-matchit'
 Plugin 'tpope/vim-endwise'
@@ -245,7 +244,7 @@ map <C-t> :bp<CR>
 
 nmap <leader>, <plug>NERDCommenterToggle
 vmap <leader>, <plug>NERDCommenterToggle
-nmap <Tab> :NERDTreeToggle<CR>
+nmap <Tab> <Plug>VinegarSplitUp
 nmap <Leader>a :TagbarToggle<CR>
 
 " copy text to "+ (clipboard)
@@ -264,9 +263,6 @@ let g:EasyMotion_leader_key = ','
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
-
-"Remaping for Dvorak
-let NERDTreeMapOpenInTab='c'
 
 "Auto cleaning fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
@@ -394,9 +390,6 @@ if bufwinnr(1)
   map <Left> <c-w><
   map <Right> <c-w>>
 endif
-
-" Show hidden files in NERDTree
-let NERDTreeShowHidden=1
 
 " Ctags
 " If tags file does not exist initializes it with symlink to tmp with UUID in
