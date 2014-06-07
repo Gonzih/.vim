@@ -552,4 +552,6 @@ function! UniteClearCache()
 endfunction
 command UniteClearCache call UniteClearCache()
 
+let g:netrw_home = "~/.vim/tmp"
+
 " vim: ts=2:sts=2:sw=2:expandtab
