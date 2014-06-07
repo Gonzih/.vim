@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'edsono/vim-matchit'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-vinegar'
 Plugin 'godlygeek/tabular'
 Plugin 'vim-scripts/L9'
 
