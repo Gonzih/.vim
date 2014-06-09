@@ -483,26 +483,7 @@ nnoremap U :GundoToggle<CR>
 let g:gundo_map_move_older = 'h'
 let g:gundo_map_move_newer = 't'
 
-
-" Slimv
-function SlimvSwankClojureCommand()
-  let cmd = 'lein ritz 4005 localhost'
-
-  if $STY != ''
-      return '! screen -X eval "title swank" "screen ' . cmd . '" "select swank"'
-  elseif $TMUX != ''
-      return "! tmux new-window -d -n swank '" . cmd . "'"
-  elseif $DISPLAY == ''
-      " No X, no terminal multiplexer. Cannot run swank server.
-      call SlimvErrorWait( 'No X server. Run Vim from screen/tmux or start SWANK server manually.' )
-      return ''
-  else
-      return '! xterm -iconic -e ' . cmd . ' &'
-  endif
-endfunction
-
 let g:paredit_electric_return = 0
-let g:slimv_swank_clojure = SlimvSwankClojureCommand()
 
 au VimEnter * syntax keyword lambdaConceal lambda conceal cchar=λ
 au VimEnter * hi  link lambdaConceal Define
