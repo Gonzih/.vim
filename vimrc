@@ -223,11 +223,13 @@ vnoremap q; q:
 no - $
 no _ ^
 
-"Tabs
+"Buffers
 no N <C-w>l
 no T <C-w>k
 no D <C-w>h
 no H <C-w>j
+no <C-w>\ <C-w>v
+no <C-w>- <C-w>s
 
 "Tab navigation
 map <C-n> :tabnext<CR>
