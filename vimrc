@@ -109,7 +109,7 @@ nnoremap <space>h :Unite -no-split -buffer-name=mru     -start-insert file_mru<c
 nnoremap <space>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
 nnoremap <space>/ :Unite -no-split -buffer-name=files   -start-insert vcs_grep<cr>
 nnoremap <space>y :Unite -no-split -buffer-name=yank    history/yank<cr>
-nnoremap <space>b :Unite -no-split -buffer-name=buffer  buffer<cr>
+nnoremap <space>b :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
 
 " Custom mappings for the unite buffer
 autocmd FileType unite call s:unite_settings()
