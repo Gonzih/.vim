@@ -111,22 +111,6 @@ nnoremap <space>/ :Unite -no-split -buffer-name=files   -start-insert vcs_grep<c
 nnoremap <space>y :Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <space>b :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
 
-" Custom mappings for the unite buffer
-autocmd FileType unite call s:unite_settings()
-function! s:unite_settings()
-  " Play nice with supertab
-  let b:SuperTabDisabled=1
-  " Enable navigation with control-j and control-k in insert mode
-  "imap <buffer> <C-h>   <Plug>(unite_select_next_line)
-  "imap <buffer> <C-t>   <Plug>(unite_select_previous_line)
-
-  nmap <buffer> h         <Plug>(unite_loop_cursor_down)
-  nmap <buffer> t         <Plug>(unite_loop_cursor_up)
-
-  nnoremap <silent><buffer><expr> k
-        \ unite#smart_map('k', unite#do_action('tabopen'))
-endfunction
-
 " Functions
 function TrimEndLines()
   let save_cursor = getpos(".")
