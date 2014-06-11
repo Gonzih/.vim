@@ -111,6 +111,13 @@ nnoremap <space>/ :Unite -no-split -buffer-name=files   -start-insert vcs_grep<c
 nnoremap <space>y :Unite -no-split -buffer-name=yank    history/yank<cr>
 nnoremap <space>b :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
 
+let g:unite_quick_match_table =
+      \ get(g:, 'unite_quick_match_table', {
+      \     'a' : 0, 'o' : 1, 'e' : 2, 'u' : 3, 'i' : 4, 'd' : 5, 'h' : 6, 't' : 7, 'n' : 8, 's' : 9,
+      \     ';' : 10, ',' : 11, '.' : 12, 'p' : 13, 'y' : 14, 'f' : 15, 'g' : 16, 'c' : 17, 'r' : 18, 'l' : 19,
+      \     'q' : 20, 'j' : 21, 'k' : 22, 'x' : 23, 'b' : 24, 'm' : 25, 'w' : 26, 'v' : 27, 'z' : 28, '-' : 29,
+      \ })
+
 " Functions
 function TrimEndLines()
   let save_cursor = getpos(".")
