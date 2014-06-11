@@ -216,9 +216,6 @@ no L N
 nnoremap ; :
 vnoremap ; :
 
-nmap : ;<Up><CR>
-vmap : ;<Up><CR>
-
 nnoremap q; q:
 vnoremap q; q:
 
