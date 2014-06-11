@@ -521,4 +521,6 @@ command UniteClearCache call UniteClearCache()
 
 let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
 
+command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
+
 " vim: ts=2:sts=2:sw=2:expandtab
