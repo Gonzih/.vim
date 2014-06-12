@@ -535,7 +535,7 @@ command! -nargs=* Tab Tabularize<args>
 "Emmet
 let g:user_emmet_mode='a'
 let g:user_emmet_install_global = 0
-let g:user_emmet_leader_key='\|'
+let g:user_emmet_leader_key='<C-y>'
 autocmd FileType html,css,eruby EmmetInstall
 
 " vim: ts=2:sts=2:sw=2:expandtab
