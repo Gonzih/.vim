@@ -211,6 +211,8 @@ vnoremap ; :
 nnoremap q; q:
 vnoremap q; q:
 
+nnoremap ,, :<Up><CR>
+
 "Added benefits
 no - $
 no _ ^
