@@ -85,8 +85,6 @@ Plugin 'sjl/badwolf'
 
 Plugin 'sjl/gundo.vim'
 
-Plugin 'terryma/vim-multiple-cursors'
-
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
 
