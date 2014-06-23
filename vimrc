@@ -207,6 +207,7 @@ no L N
 " ; == :
 nnoremap ; :
 vnoremap ; :
+nnoremap ,, :<Up><Cr>
 
 nnoremap q; q:
 vnoremap q; q:
