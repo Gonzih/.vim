@@ -9,7 +9,7 @@ filetype on
 " Plugins
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-commentary'
 Plugin 'edsono/vim-matchit'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-fugitive'
@@ -237,8 +237,6 @@ map <C-t> :bp<CR>
 "noremap gZ ;
 "noremap gz ,
 
-nmap <leader>, <plug>NERDCommenterToggle
-vmap <leader>, <plug>NERDCommenterToggle
 nmap <Tab> <Plug>VinegarUp
 nmap <Leader>a :TagbarToggle<CR>
 
