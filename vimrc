@@ -54,6 +54,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'stephpy/vim-yaml'
 Plugin 'jsx/jsx.vim'
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
 
 " ProjectTypes
 "Plugin 'vim-scripts/rubycomplete.vim'
@@ -293,6 +294,7 @@ au BufRead,BufNewFile *.fish       setlocal filetype=fish
 au BufRead,BufNewFile *.asd        setlocal filetype=lisp
 au BufRead,BufNewFile *.go         setlocal filetype=go
 au BufRead,BufNewFile *.ex,*.exs   setlocal filetype=elixir
+au BufRead,BufNewFile *.service    setlocal filetype=systemd
 
 
 "Trim empty lines at the EOF
