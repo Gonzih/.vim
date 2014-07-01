@@ -532,6 +532,7 @@ let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
 
 command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
 command! -nargs=* Tab Tabularize<args>
+command! -nargs=* -range=% Tab <line1>,<line2>Tabularize<args>
 
 "Emmet
 let g:user_emmet_mode='a'
