@@ -486,11 +486,6 @@ au VimEnter * hi  link lambdaConceal Define
 au VimEnter * hi! link Conceal Statement
 au VimEnter * set conceallevel=2
 
-let g:NERDCustomDelimiters = {
-  \ 'racket': { 'left': ';', 'leftAlt': '#| ', 'rightAlt': ' |#' },
-  \ 'haskell': { 'left': '--' },
-\ }
-
 " Multiple Cursors
 let g:multi_cursor_next_key='<C-b>'
 let g:multi_cursor_prev_key='<C-x>'
