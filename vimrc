@@ -47,8 +47,6 @@ Plugin 'vim-scripts/Arduino-syntax-file'
 Plugin 'rainux/vim-vala'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'wlangstroth/vim-haskell'
-Plugin 'eagletmt/ghcmod-vim'
 Plugin 'aliva/vim-fish'
 Plugin 'Blackrush/vim-gocode'
 Plugin 'elixir-lang/vim-elixir'
@@ -56,6 +54,11 @@ Plugin 'gabrielelana/vim-markdown'
 Plugin 'stephpy/vim-yaml'
 Plugin 'jsx/jsx.vim'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
+
+" Haskell
+Plugin 'wlangstroth/vim-haskell'
+Plugin 'bitc/vim-hdevtools'
+Plugin 'eagletmt/ghcmod-vim'
 
 " ProjectTypes
 "Plugin 'vim-scripts/rubycomplete.vim'
@@ -464,7 +467,7 @@ set shell=/bin/bash
 
 " Syntastic options
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['ruby'],
+                           \ 'active_filetypes': ['ruby', 'haskell'],
                            \ 'passive_filetypes': [] }
 
 " Enable spellcheck for markdown files
