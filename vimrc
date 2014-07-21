@@ -510,7 +510,7 @@ function! RefreshFirefox()
 endfunction
 
 command RefreshFirefox call RefreshFirefox()
-autocmd BufWritePost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call RefreshFirefox()
+autocmd BufWritePost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb,*.jsx call RefreshFirefox()
 "autocmd FocusLost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call RefreshFirefox()
 
 " Autosave on lost focus
