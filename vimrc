@@ -54,6 +54,7 @@ Plugin 'gabrielelana/vim-markdown'
 Plugin 'stephpy/vim-yaml'
 Plugin 'jsx/jsx.vim'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
+Plugin 'lambdatoast/elm.vim'
 
 " Haskell
 Plugin 'wlangstroth/vim-haskell'
