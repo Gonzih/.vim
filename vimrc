@@ -515,7 +515,7 @@ autocmd BufWritePost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb,*.jsx cal
 "autocmd FocusLost *.html,*.css,*.scss,*.sass,*.haml,*.erb,*.js,*.rb call RefreshFirefox()
 
 " Autosave on lost focus
-autocmd FocusLost * :wa
+" autocmd FocusLost * :wa
 
 " Fix some annoying bug in SuperTab
 let g:SuperTabCrMapping = 0
