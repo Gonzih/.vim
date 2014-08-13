@@ -99,6 +99,7 @@ Plugin 'mattn/emmet-vim'
 
 " Unite
 let g:unite_source_history_yank_enable = 1
+let g:unite_source_rec_unit = 100
 
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_rank')
