@@ -469,7 +469,7 @@ set shell=/bin/bash
 
 " Syntastic options
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['ruby', 'haskell', 'javascript'],
+                           \ 'active_filetypes': ['ruby', 'haskell'],
                            \ 'passive_filetypes': [] }
 
 " Enable spellcheck for markdown files
