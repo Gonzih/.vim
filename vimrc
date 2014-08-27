@@ -356,6 +356,7 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let g:rbpt_colorpairs = [
+    \ [ '196', 'firebrick3'  ],
     \ [ '197', 'SeaGreen3'   ],
     \ [ '10',  'DarkOrchid3' ],
     \ [ '136', 'firebrick3'  ],
@@ -371,7 +372,6 @@ let g:rbpt_colorpairs = [
     \ [ '12',  'firebrick3'  ],
     \ [ '118', 'DarkOrchid3' ],
     \ [ '40',  'SeaGreen3'   ],
-    \ [ '196', 'firebrick3'  ],
     \ ]
 
 au FileType clojure let b:delimitMate_quotes = "\""
