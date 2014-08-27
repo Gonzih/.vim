@@ -55,6 +55,7 @@ Plugin 'stephpy/vim-yaml'
 Plugin 'jsx/jsx.vim'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " Haskell
 Plugin 'wlangstroth/vim-haskell'
@@ -303,6 +304,7 @@ au BufRead,BufNewFile *.asd        setlocal filetype=lisp
 au BufRead,BufNewFile *.go         setlocal filetype=go
 au BufRead,BufNewFile *.ex,*.exs   setlocal filetype=elixir
 au BufRead,BufNewFile *.service    setlocal filetype=systemd
+au BufRead,BufNewFile Dockerfile   setlocal filetype=Dockerfile
 
 
 "Trim empty lines at the EOF
