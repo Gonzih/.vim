@@ -99,6 +99,11 @@ Plugin 'xolox/vim-misc'
 Plugin 'sjl/tslime2.vim'
 Plugin 'mattn/emmet-vim'
 
+" Gruvbox
+if !has("gui_running")
+  let g:gruvbox_italic=0
+endif
+
 " Unite
 let g:unite_source_history_yank_enable = 1
 let g:unite_source_rec_unit = 100
