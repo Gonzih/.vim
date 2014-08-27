@@ -88,6 +88,7 @@ Plugin 'wgibbs/vim-irblack'
 Plugin 'ciaranm/inkpot'
 Plugin 'vim-scripts/Railscasts-Theme-GUIand256color'
 Plugin 'sjl/badwolf'
+Plugin 'morhetz/gruvbox'
 
 Plugin 'sjl/gundo.vim'
 
@@ -186,7 +187,8 @@ set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
-colorscheme badwolf
+set background=dark
+colorscheme gruvbox
 
 let g:rsenseUseOmniFunc = 1
 
