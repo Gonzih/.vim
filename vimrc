@@ -310,6 +310,7 @@ au BufRead,BufNewFile *.go         setlocal filetype=go
 au BufRead,BufNewFile *.ex,*.exs   setlocal filetype=elixir
 au BufRead,BufNewFile *.service    setlocal filetype=systemd
 au BufRead,BufNewFile Dockerfile   setlocal filetype=Dockerfile
+au BufRead,BufNewFile *.purs       setlocal filetype=haskell
 
 
 "Trim empty lines at the EOF
