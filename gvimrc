@@ -1,3 +1,3 @@
 set background=dark
 colorscheme gruvbox
-set guifont=Source\ Code\ Pro\ for\ Powerline\ 12
+set guifont=Inconsolata\ for\ Powerline\ 14
