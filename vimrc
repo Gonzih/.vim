@@ -80,6 +80,7 @@ Plugin 'typedclojure/vim-typedclojure'
 "Plugin 'dgrnbrg/vim-redl'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'tpope/timl'
+Plugin 'gberenfield/cljfold.vim'
 
 "Plugin 'vim-scripts/slimv.vim'
 
@@ -393,6 +394,7 @@ let g:clojure_maxlines = 100
 let g:clojure_align_multiline_strings = 1
 let g:clojure_fuzzy_indent = 1
 let g:clojure_fuzzy_indent_patterns = "with.*,def.*,let.*"
+let g:clojure_foldwords = "defn,defonce,def,ns"
 
 " Powerline symbols are fancy now
 let g:Powerline_symbols = 'fancy'
