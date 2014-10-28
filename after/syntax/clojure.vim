@@ -10,4 +10,4 @@ hi! link Conceal Define
 
 setlocal conceallevel=2
 autocmd FileType clojure
-    \ setlocal lispwords+=fact,provided
+    \ setlocal lispwords+=fact,provided,go,go-loop,match
