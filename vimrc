@@ -394,7 +394,7 @@ let g:clojure_maxlines = 100
 let g:clojure_align_multiline_strings = 1
 let g:clojure_fuzzy_indent = 1
 let g:clojure_fuzzy_indent_patterns = "with.*,def.*,let.*"
-let g:clojure_foldwords = "defn,defonce,def,ns"
+let g:clojure_foldwords = "defn,defonce,def,ns,go,go-loop"
 
 " Powerline symbols are fancy now
 let g:Powerline_symbols = 'fancy'
