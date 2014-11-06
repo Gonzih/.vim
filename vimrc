@@ -479,7 +479,7 @@ endif
 
 let g:paredit_leader='\|'
 
-set shell=/bin/bash
+set shell=bash
 
 " Syntastic options
 let g:syntastic_mode_map = { 'mode': 'passive',
