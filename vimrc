@@ -56,6 +56,7 @@ Plugin 'jsx/jsx.vim'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'wting/rust.vim'
 
 " Haskell
 Plugin 'wlangstroth/vim-haskell'
@@ -315,6 +316,7 @@ au BufRead,BufNewFile *.service    setlocal filetype=systemd
 au BufRead,BufNewFile Dockerfile   setlocal filetype=Dockerfile
 au BufRead,BufNewFile *.purs       setlocal filetype=haskell
 au BufRead,BufNewFile *.ms         setlocal filetype=scheme
+au BufRead,BufNewFile *.rs         setlocal filetype=rust
 
 
 "Trim empty lines at the EOF
@@ -342,6 +344,7 @@ au Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype fish       setlocal ts=4 sts=4 sw=4 noexpandtab
 au Filetype scala      setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype haskell    setlocal ts=8 sts=4 sw=4 expandtab smarttab shiftround nojoinspaces
+au Filetype rust       setlocal ts=4 sts=4 sw=4 expandtab
 
 " ruby autocomplete
 au FileType ruby,eruby set omnifunc=rubycomplete#Complete
