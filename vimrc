@@ -57,6 +57,7 @@ Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'wting/rust.vim'
+Plugin 'zah/nimrod.vim'
 
 " Haskell
 Plugin 'wlangstroth/vim-haskell'
@@ -317,6 +318,7 @@ au BufRead,BufNewFile Dockerfile   setlocal filetype=Dockerfile
 au BufRead,BufNewFile *.purs       setlocal filetype=haskell
 au BufRead,BufNewFile *.ms         setlocal filetype=scheme
 au BufRead,BufNewFile *.rs         setlocal filetype=rust
+au BufRead,BufNewFile *.nim        setlocal filetype=nim
 
 
 "Trim empty lines at the EOF
