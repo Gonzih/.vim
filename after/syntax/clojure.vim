@@ -11,3 +11,9 @@ hi! link Conceal Define
 setlocal conceallevel=2
 autocmd FileType clojure
     \ setlocal lispwords+=fact,provided,go,go-loop,match
+
+let g:tslime_ensure_trailing_newlines = 1
+
+nmap ,b maggVG:SendSelectionToTmux<CR>`a
+nmap ,e maV:SendSelectionToTmux<CR>`a
+vmap ,e :SendSelectionToTmux<CR>
