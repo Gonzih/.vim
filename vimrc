@@ -103,6 +103,9 @@ Plugin 'xolox/vim-misc'
 Plugin 'sjl/tslime2.vim'
 Plugin 'mattn/emmet-vim'
 
+" Something
+Plugin 'ryanss/vim-hackernews'
+
 " Gruvbox
 if !has("gui_running")
   let g:gruvbox_italic=0
