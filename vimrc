@@ -239,16 +239,13 @@ no - $
 no _ ^
 
 "Buffers
-no N <C-w>l
-no T <C-w>k
-no D <C-w>h
-no H <C-w>j
+no <C-w>n <C-w>l
+no <C-w>t <C-w>k
+no <C-w>h <C-w>h
+no <C-w>d <C-w>j
+
 no <C-w>\ <C-w>v
 no <C-w>- <C-w>s
-
-"Tab navigation
-map <C-n> :tabnext<CR>
-map <C-d> :tabprev<CR>
 
 "Buffers navigation
 map <C-h> :bn<CR>
