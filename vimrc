@@ -8,26 +8,32 @@ filetype on
 
 " Plugins
 Plugin 'gmarik/vundle'
-Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-commentary'
+" extend % in html
 Plugin 'edsono/vim-matchit'
+" ruby end stuff
 Plugin 'tpope/vim-endwise'
+" git stuff
 Plugin 'tpope/vim-fugitive'
+" better netrw
 Plugin 'tpope/vim-vinegar'
+" Tab/=
 Plugin 'godlygeek/tabular'
+" Some dependency
 Plugin 'vim-scripts/L9'
 
+" Bottom line
 Plugin 'bling/vim-airline'
+" Syntax checks
 Plugin 'scrooloose/syntastic'
-Plugin 'ervandew/supertab'
+" Git status
 Plugin 'airblade/vim-gitgutter'
-Plugin 'goldfeld/vim-seek'
+" ,f stuff
 Plugin 'Lokaltog/vim-easymotion'
 
+" Some deps i guess
 Plugin 'tomtom/tlib_vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
 
 "Unite
 Plugin 'Shougo/vimproc.vim'
@@ -35,20 +41,13 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/unite-outline'
 Plugin 'sgur/unite-git_grep'
 
-"Vim dev plugins
-"Plugin 'guns/xterm-color-table.vim'
-
 " FileTypes
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-cucumber'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-haml'
 Plugin 'vim-scripts/Arduino-syntax-file'
-Plugin 'rainux/vim-vala'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'aliva/vim-fish'
-Plugin 'Blackrush/vim-gocode'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'stephpy/vim-yaml'
@@ -66,11 +65,9 @@ Plugin 'eagletmt/ghcmod-vim'
 
 " ProjectTypes
 "Plugin 'vim-scripts/rubycomplete.vim'
-Plugin 'tpope/vim-rails'
 
-" Duplicates some of paredit functionality
+" Autocomplete mode for delimiteres in insert mode
 Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-surround'
 
 " Clojure
 Plugin 'kien/rainbow_parentheses.vim'
@@ -84,15 +81,7 @@ Plugin 'vim-scripts/paredit.vim'
 Plugin 'tpope/timl'
 Plugin 'gberenfield/cljfold.vim'
 
-"Plugin 'vim-scripts/slimv.vim'
-
 " Themes
-Plugin 'mrtazz/molokai.vim'
-Plugin 'trapd00r/neverland-vim-theme'
-Plugin 'wgibbs/vim-irblack'
-Plugin 'ciaranm/inkpot'
-Plugin 'vim-scripts/Railscasts-Theme-GUIand256color'
-Plugin 'sjl/badwolf'
 Plugin 'morhetz/gruvbox'
 
 Plugin 'sjl/gundo.vim'
@@ -121,8 +110,7 @@ call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'conver
 call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
       \'tmp\|vendor\|\.bundle\|target\|\.git\|\.rsync_cache')
 
-nnoremap <C-p> :Unite -no-split -buffer-name=files -start-insert file_rec:!<cr>
-
+nnoremap <space>p :Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
 nnoremap <space>f :Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <space>h :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
 nnoremap <space>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
@@ -256,7 +244,6 @@ map <C-t> :bp<CR>
 "noremap gz ,
 
 nmap <Tab> <Plug>VinegarUp
-nmap <Leader>a :TagbarToggle<CR>
 
 " copy text to "+ (clipboard)
 nmap <Leader>yy "+yy
