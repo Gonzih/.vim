@@ -483,7 +483,7 @@ if &term =~ '^screen'
     execute "set <xLeft>=\e[1;*D"
 endif
 
-let g:paredit_leader='\|'
+let g:paredit_leader=','
 
 set shell=bash
 
