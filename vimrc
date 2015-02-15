@@ -72,6 +72,7 @@ Plugin 'Raimondi/delimitMate'
 " Clojure
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
 Plugin 'tpope/vim-fireplace'
 " This thing will go in to internet for some maven reasons
 " Plugin 'tpope/vim-leiningen'
