@@ -101,7 +101,6 @@ Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
 
 Plugin 'sjl/tslime2.vim'
-Plugin 'mattn/emmet-vim'
 
 " Something
 Plugin 'ryanss/vim-hackernews'
@@ -555,11 +554,5 @@ let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
 command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
 command! -nargs=* Tab Tabularize<args>
 command! -nargs=* -range=% Tab <line1>,<line2>Tabularize<args>
-
-"Emmet
-let g:user_emmet_mode='a'
-let g:user_emmet_install_global = 0
-let g:user_emmet_leader_key='<C-y>'
-autocmd FileType html,css,eruby EmmetInstall
 
 " vim: ts=2:sts=2:sw=2:expandtab
