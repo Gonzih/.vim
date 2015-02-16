@@ -70,7 +70,7 @@ Plugin 'eagletmt/ghcmod-vim'
 Plugin 'Raimondi/delimitMate'
 
 " Clojure
-Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'amdt/vim-niji'
 Plugin 'guns/vim-clojure-static'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'tpope/vim-fireplace'
@@ -353,31 +353,6 @@ set foldmethod=marker
 let g:indent_guides_color_change_percent = 10
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
-
-" RainbowParentheses
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
-" let g:rbpt_colorpairs = [
-"     \ [ '118', 'DarkOrchid3' ],
-"     \ [ '40',  'SeaGreen3'   ],
-"     \ [ '196', 'firebrick3'  ],
-"     \ [ '197', 'SeaGreen3'   ],
-"     \ [ '10',  'DarkOrchid3' ],
-"     \ [ '136', 'firebrick3'  ],
-"     \ [ '43',  'RoyalBlue3'  ],
-"     \ [ '129', 'SeaGreen3'   ],
-"     \ [ '86',  'RoyalBlue3'  ],
-"     \ [ '33',  'DarkOrchid3' ],
-"     \ [ '202', 'firebrick3'  ],
-"     \ [ '47',  'RoyalBlue3'  ],
-"     \ [ '9',   'DarkOrchid3' ],
-"     \ [ '13',  'RoyalBlue3'  ],
-"     \ [ '14',  'SeaGreen3'   ],
-"     \ [ '12',  'firebrick3'  ],
-"     \ ]
 
 au FileType clojure let b:delimitMate_quotes = "\""
 au FileType racket  let b:delimitMate_quotes = "\""
