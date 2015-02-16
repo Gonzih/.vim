@@ -284,29 +284,30 @@ command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=h
 au BufRead,BufNewFile Guardfile,Rakefile,Gemfile setlocal filetype=ruby
 au BufRead,BufNewFile Procfile setlocal filetype=yaml
 
-au BufRead,BufNewFile *.ejs        setlocal filetype=html.javascript
-au BufRead,BufNewFile *.coffee     setlocal filetype=coffee
-au BufRead,BufNewFile *.feature    setlocal filetype=cucumber
-au BufRead,BufNewFile *.j,Jakefile setlocal filetype=objj
-au BufRead,BufNewFile *.pde        setlocal filetype=arduino
-au BufRead,BufNewFile *.ino        setlocal filetype=arduino
-au BufRead,BufNewFile *.vala       setlocal filetype=vala
-au BufRead,BufNewFile *.clj        setlocal filetype=clojure
-au BufRead,BufNewFile *.cljs       setlocal filetype=clojure
-au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
-au BufRead,BufNewFile *.scala      setlocal filetype=scala
-au BufRead,BufNewFile *.scala.sc   setlocal filetype=scala
-au BufRead,BufNewFile *.rkt        setlocal filetype=racket
-au BufRead,BufNewFile *.fish       setlocal filetype=fish
-au BufRead,BufNewFile *.asd        setlocal filetype=lisp
-au BufRead,BufNewFile *.go         setlocal filetype=go
-au BufRead,BufNewFile *.ex,*.exs   setlocal filetype=elixir
-au BufRead,BufNewFile *.service    setlocal filetype=systemd
-au BufRead,BufNewFile Dockerfile   setlocal filetype=Dockerfile
-au BufRead,BufNewFile *.purs       setlocal filetype=haskell
-au BufRead,BufNewFile *.ms         setlocal filetype=scheme
-au BufRead,BufNewFile *.rs         setlocal filetype=rust
-au BufRead,BufNewFile *.nim        setlocal filetype=nim
+au BufRead,BufNewFile *.ejs           setlocal filetype=html.javascript
+au BufRead,BufNewFile *.coffee        setlocal filetype=coffee
+au BufRead,BufNewFile *.feature       setlocal filetype=cucumber
+au BufRead,BufNewFile *.j,Jakefile    setlocal filetype=objj
+au BufRead,BufNewFile *.pde           setlocal filetype=arduino
+au BufRead,BufNewFile *.ino           setlocal filetype=arduino
+au BufRead,BufNewFile *.vala          setlocal filetype=vala
+au BufRead,BufNewFile *.clj           setlocal filetype=clojure
+au BufRead,BufNewFile *.cljs          setlocal filetype=clojure
+au BufRead,BufNewFile *.cljx          setlocal filetype=clojure
+au BufRead,BufNewFile *.scala         setlocal filetype=scala
+au BufRead,BufNewFile *.scala.sc      setlocal filetype=scala
+au BufRead,BufNewFile *.rkt           setlocal filetype=racket
+au BufRead,BufNewFile *.fish          setlocal filetype=fish
+au BufRead,BufNewFile *.asd           setlocal filetype=lisp
+au BufRead,BufNewFile *.go            setlocal filetype=go
+au BufRead,BufNewFile *.ex,*.exs      setlocal filetype=elixir
+au BufRead,BufNewFile *.service       setlocal filetype=systemd
+au BufRead,BufNewFile Dockerfile      setlocal filetype=Dockerfile
+au BufRead,BufNewFile *.purs          setlocal filetype=haskell
+au BufRead,BufNewFile *.ms            setlocal filetype=scheme
+au BufRead,BufNewFile *.rs            setlocal filetype=rust
+au BufRead,BufNewFile *.nim           setlocal filetype=nim
+au BufRead,BufNewFile *.md,*.markdown setlocal filetype=markdown
 
 
 "Trim empty lines at the EOF
