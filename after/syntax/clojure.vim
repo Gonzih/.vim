@@ -15,12 +15,12 @@ autocmd FileType clojure
 let g:tslime_ensure_trailing_newlines = 1
 
 " Fireplace stuff
-nmap ,k <Plug>FireplaceK
-nmap ,s <Plug>FireplaceK
-nmap ,e :Eval<CR>
-nmap ,b :%Eval<CR>
+nmap <buffer> ,k <Plug>FireplaceK
+nmap <buffer> ,s <Plug>FireplaceK
+nmap <buffer> ,e :Eval<CR>
+nmap <buffer> ,b :%Eval<CR>
 
 " Tmux stuff
-" nmap ,b maggVG:SendSelectionToTmux<CR>`a
-" nmap ,e maV:SendSelectionToTmux<CR>`a
-" vmap ,e :SendSelectionToTmux<CR>
+" nmap <buffer> ,b maggVG:SendSelectionToTmux<CR>`a
+" nmap <buffer> ,e maV:SendSelectionToTmux<CR>`a
+" vmap <buffer> ,e :SendSelectionToTmux<CR>

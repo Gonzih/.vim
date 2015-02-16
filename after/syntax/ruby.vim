@@ -1,3 +1,3 @@
-nmap ,b maggVG:SendSelectionToTmux<CR>`a
-nmap ,e maV:SendSelectionToTmux<CR>`a
-vmap ,e :SendSelectionToTmux<CR>
+nmap <buffer> ,b maggVG:SendSelectionToTmux<CR>`a
+nmap <buffer> ,e maV:SendSelectionToTmux<CR>`a
+vmap <buffer> ,e :SendSelectionToTmux<CR>
