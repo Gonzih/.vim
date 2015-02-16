@@ -14,6 +14,13 @@ autocmd FileType clojure
 
 let g:tslime_ensure_trailing_newlines = 1
 
-nmap ,b maggVG:SendSelectionToTmux<CR>`a
-nmap ,e maV:SendSelectionToTmux<CR>`a
-vmap ,e :SendSelectionToTmux<CR>
+" Fireplace stuff
+nmap ,k <Plug>FireplaceK
+nmap ,s <Plug>FireplaceK
+nmap ,e :Eval<CR>
+nmap ,b :%Eval<CR>
+
+" Tmux stuff
+" nmap ,b maggVG:SendSelectionToTmux<CR>`a
+" nmap ,e maV:SendSelectionToTmux<CR>`a
+" vmap ,e :SendSelectionToTmux<CR>
