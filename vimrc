@@ -230,8 +230,8 @@ no _ ^
 "Buffers
 no <C-w>n <C-w>l
 no <C-w>t <C-w>k
-no <C-w>h <C-w>h
-no <C-w>d <C-w>j
+no <C-w>h <C-w>j
+no <C-w>d <C-w>h
 
 no <C-w>\ <C-w>v
 no <C-w>- <C-w>s
