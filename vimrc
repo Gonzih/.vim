@@ -105,6 +105,11 @@ endif
 let g:unite_source_history_yank_enable = 1
 let g:unite_source_rec_unit = 100
 
+
+if executable('ag')
+  let g:unite_source_rec_async_command= 'ag --nocolor --nogroup --hidden -g ""'
+endif
+
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_selecta')
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'converters', 'converter_relative_word')
