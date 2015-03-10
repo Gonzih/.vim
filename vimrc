@@ -81,7 +81,6 @@ Plugin 'typedclojure/vim-typedclojure'
 "Plugin 'dgrnbrg/vim-redl'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'tpope/timl'
-Plugin 'gberenfield/cljfold.vim'
 
 " Themes
 Plugin 'morhetz/gruvbox'
