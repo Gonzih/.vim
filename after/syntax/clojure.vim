@@ -1,14 +1,3 @@
-if !has('conceal') || &enc != 'utf-8'
-  finish
-endif
-
-syntax keyword clojureConcealLambda fn conceal cchar=λ
-syntax match clojureConcealLambda /\v#\(/me=e-1 conceal cchar=ƒ
-
-hi link clojureConcealLambda Define
-hi! link Conceal Define
-
-setlocal conceallevel=2
 autocmd FileType clojure
     \ setlocal lispwords+=fact,provided,go,go-loop,match
 
@@ -24,3 +13,15 @@ nmap <buffer> ,b :%Eval<CR>
 " nmap <buffer> ,b maggVG:SendSelectionToTmux<CR>`a
 " nmap <buffer> ,e maV:SendSelectionToTmux<CR>`a
 " vmap <buffer> ,e :SendSelectionToTmux<CR>
+
+if !has('conceal') || &enc != 'utf-8'
+  finish
+endif
+
+syntax keyword clojureConcealLambda fn conceal cchar=λ
+syntax match clojureConcealLambda /\v#\(/me=e-1 conceal cchar=ƒ
+
+hi link clojureConcealLambda Define
+hi! link Conceal Define
+
+setlocal conceallevel=2
