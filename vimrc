@@ -89,6 +89,7 @@ Plugin 'sjl/gundo.vim'
 
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
+Plugin 'jceb/vim-orgmode'
 
 Plugin 'sjl/tslime2.vim'
 
@@ -312,6 +313,7 @@ au BufRead,BufNewFile *.ms            setlocal filetype=scheme
 au BufRead,BufNewFile *.rs            setlocal filetype=rust
 au BufRead,BufNewFile *.nim           setlocal filetype=nim
 au BufRead,BufNewFile *.md,*.markdown setlocal filetype=markdown
+au BufRead,BufNewFile *.org           setlocal filetype=org
 
 
 "Trim empty lines at the EOF
