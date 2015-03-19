@@ -81,6 +81,7 @@ Plugin 'typedclojure/vim-typedclojure'
 "Plugin 'dgrnbrg/vim-redl'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'tpope/timl'
+Pulign 'venantius/vim-cljfmt'
 
 " Themes
 Plugin 'morhetz/gruvbox'
@@ -525,5 +526,7 @@ let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
 command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
 command! -nargs=* Tab Tabularize<args>
 command! -nargs=* -range=% Tab <line1>,<line2>Tabularize<args>
+
+let g:clj_fmt_autosave = 0
 
 " vim: ts=2:sts=2:sw=2:expandtab
