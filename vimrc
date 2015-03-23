@@ -81,7 +81,8 @@ Plugin 'typedclojure/vim-typedclojure'
 "Plugin 'dgrnbrg/vim-redl'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'tpope/timl'
-Pulign 'venantius/vim-cljfmt'
+Plugin 'venantius/vim-cljfmt'
+Plugin 'venantius/vim-eastwood'
 
 " Themes
 Plugin 'morhetz/gruvbox'
@@ -460,7 +461,7 @@ set shell=bash
 
 " Syntastic options
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['ruby', 'haskell'],
+                           \ 'active_filetypes': ['ruby', 'haskell', 'clojure'],
                            \ 'passive_filetypes': [] }
 
 " Enable spellcheck for markdown files
@@ -527,6 +528,7 @@ command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
 command! -nargs=* Tab Tabularize<args>
 command! -nargs=* -range=% Tab <line1>,<line2>Tabularize<args>
 
-let g:clj_fmt_autosave = 0
+let g:clj_fmt_autosave = 1
+autocmd BufWritePre *.clj,*.cljs,*.cljx call cljfmt#Format()
 
 " vim: ts=2:sts=2:sw=2:expandtab
