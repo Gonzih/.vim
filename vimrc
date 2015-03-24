@@ -81,17 +81,11 @@ Plugin 'typedclojure/vim-typedclojure'
 "Plugin 'dgrnbrg/vim-redl'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'tpope/timl'
-Plugin 'venantius/vim-cljfmt'
-Plugin 'venantius/vim-eastwood'
 
 " Themes
 Plugin 'morhetz/gruvbox'
 
 Plugin 'sjl/gundo.vim'
-
-Plugin 'xolox/vim-notes'
-Plugin 'xolox/vim-misc'
-Plugin 'jceb/vim-orgmode'
 
 Plugin 'sjl/tslime2.vim'
 
@@ -527,8 +521,5 @@ let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
 command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
 command! -nargs=* Tab Tabularize<args>
 command! -nargs=* -range=% Tab <line1>,<line2>Tabularize<args>
-
-let g:clj_fmt_autosave = 1
-autocmd BufWritePre *.clj,*.cljs,*.cljx call cljfmt#Format()
 
 " vim: ts=2:sts=2:sw=2:expandtab
