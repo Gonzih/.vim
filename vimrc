@@ -89,6 +89,9 @@ Plugin 'sjl/gundo.vim'
 
 Plugin 'sjl/tslime2.vim'
 
+"Writing
+Plugin 'junegunn/goyo.vim'
+
 " Something
 Plugin 'ryanss/vim-hackernews'
 
