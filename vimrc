@@ -525,4 +525,12 @@ command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
 command! -nargs=* Tab Tabularize<args>
 command! -nargs=* -range=% Tab <line1>,<line2>Tabularize<args>
 
+" Persistend undo
+if exists("&undodir")
+    set undofile          "Persistent undo! Pure money.
+    let &undodir=&directory
+    set undolevels=500
+    set undoreload=500
+endif
+
 " vim: ts=2:sts=2:sw=2:expandtab
