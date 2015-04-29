@@ -71,7 +71,7 @@ Plugin 'eagletmt/ghcmod-vim'
 Plugin 'Raimondi/delimitMate'
 
 " Clojure
-Plugin 'amdt/vim-niji'
+Plugin 'Gonzih/vim-niji'
 Plugin 'guns/vim-clojure-static'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'tpope/vim-fireplace'
