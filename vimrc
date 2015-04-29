@@ -311,6 +311,7 @@ au BufRead,BufNewFile *.rs            setlocal filetype=rust
 au BufRead,BufNewFile *.nim           setlocal filetype=nim
 au BufRead,BufNewFile *.md,*.markdown setlocal filetype=markdown
 au BufRead,BufNewFile *.org           setlocal filetype=org
+au BufRead,BufNewFile *.hy            setlocal filetype=clojure
 
 
 "Trim empty lines at the EOF
