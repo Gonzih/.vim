@@ -55,8 +55,9 @@ Plugin 'jsx/jsx.vim'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'wting/rust.vim'
 Plugin 'zah/nimrod.vim'
+Plugin 'wstrinz/shen.vim'
+Plugin 'rust-lang/rust.vim'
 
 " Haskell
 Plugin 'wlangstroth/vim-haskell'
@@ -455,7 +456,7 @@ set shell=bash
 
 " Syntastic options
 let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['ruby', 'haskell', 'clojure'],
+                           \ 'active_filetypes': ['ruby', 'haskell', 'clojure', 'rust'],
                            \ 'passive_filetypes': [] }
 
 " Enable spellcheck for markdown files
