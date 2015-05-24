@@ -11,8 +11,8 @@ nmap <buffer> ,b :%Eval<CR>
 
 " Tmux stuff
 " nmap <buffer> ,b maggVG:SendSelectionToTmux<CR>`a
-" nmap <buffer> ,e maV:SendSelectionToTmux<CR>`a
 " vmap <buffer> ,e :SendSelectionToTmux<CR>
+" nmap <buffer> ,e ma^v%,e`a
 
 if !has('conceal') || &enc != 'utf-8'
   finish
