@@ -313,7 +313,7 @@ au BufRead,BufNewFile *.md,*.markdown setlocal filetype=markdown
 au BufRead,BufNewFile *.org           setlocal filetype=org
 au BufRead,BufNewFile *.hy            setlocal filetype=clojure
 au BufRead,BufNewFile build.boot      setlocal filetype=clojure
-au BufRead,BufNewFile .edn            setlocal filetype=clojure
+au BufRead,BufNewFile *.edn           setlocal filetype=clojure
 
 
 "Trim empty lines at the EOF
