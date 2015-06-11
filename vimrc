@@ -312,6 +312,8 @@ au BufRead,BufNewFile *.nim           setlocal filetype=nim
 au BufRead,BufNewFile *.md,*.markdown setlocal filetype=markdown
 au BufRead,BufNewFile *.org           setlocal filetype=org
 au BufRead,BufNewFile *.hy            setlocal filetype=clojure
+au BufRead,BufNewFile build.boot      setlocal filetype=clojure
+au BufRead,BufNewFile .edn            setlocal filetype=clojure
 
 
 "Trim empty lines at the EOF
@@ -341,6 +343,7 @@ au Filetype scala      setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype haskell    setlocal ts=8 sts=4 sw=4 expandtab smarttab shiftround nojoinspaces
 au Filetype rust       setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype nim        setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype c          setlocal ts=2 sts=2 sw=2 expandtab
 
 " ruby autocomplete
 au FileType ruby,eruby set omnifunc=rubycomplete#Complete
