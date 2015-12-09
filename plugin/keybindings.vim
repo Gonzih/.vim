@@ -80,3 +80,9 @@ let g:EasyMotion_leader_key = '<spc>'
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+
+" Git!
+map <Leader>gp :Gpush<CR>
+map <Leader>gf :Gpull<CR>
+map <Leader>gs :Gstatus<CR>
+map <Leader>gc :Gcommit<CR>
