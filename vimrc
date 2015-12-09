@@ -1,98 +1,121 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+  " Required:
+  set runtimepath+=/home/gnzh/.vim/bundle/neobundle.vim/
+endif
 
-filetype on
+" Required:
+call neobundle#begin(expand('/home/gnzh/.vim/bundle'))
 
-" Plugins
-Plugin 'gmarik/vundle'
-Plugin 'tpope/vim-commentary'
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" NeoBundles
+NeoBundle 'gmarik/vundle'
+NeoBundle 'tpope/vim-commentary'
 " extend % in html
-Plugin 'edsono/vim-matchit'
+NeoBundle 'edsono/vim-matchit'
 " ruby end stuff
-Plugin 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-endwise'
 " git stuff
-Plugin 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-fugitive'
 " better netrw
-Plugin 'tpope/vim-vinegar'
+NeoBundle 'tpope/vim-vinegar'
 " Tab/=
-Plugin 'godlygeek/tabular'
+NeoBundle 'godlygeek/tabular'
 " Some dependency
-Plugin 'vim-scripts/L9'
+NeoBundle 'vim-scripts/L9'
 
 " Bottom line
-Plugin 'bling/vim-airline'
+NeoBundle 'bling/vim-airline'
 " Syntax checks
-Plugin 'scrooloose/syntastic'
+NeoBundle 'scrooloose/syntastic'
 " Git status
-Plugin 'airblade/vim-gitgutter'
+NeoBundle 'airblade/vim-gitgutter'
 " ,f stuff
-Plugin 'Lokaltog/vim-easymotion'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 " Some deps i guess
-Plugin 'tomtom/tlib_vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'MarcWeber/vim-addon-mw-utils'
 
 "Unite
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/unite-outline'
-Plugin 'sgur/unite-git_grep'
+NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
+NeoBundle 'sgur/unite-git_grep'
 
 " FileTypes
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-haml'
-Plugin 'vim-scripts/Arduino-syntax-file'
-Plugin 'wlangstroth/vim-racket'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'aliva/vim-fish'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'gabrielelana/vim-markdown'
-Plugin 'stephpy/vim-yaml'
-Plugin 'jsx/jsx.vim'
-Plugin 'Matt-Deacalion/vim-systemd-syntax'
-Plugin 'lambdatoast/elm.vim'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'zah/nimrod.vim'
-Plugin 'wstrinz/shen.vim'
-Plugin 'rust-lang/rust.vim'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'vim-scripts/Arduino-syntax-file'
+NeoBundle 'wlangstroth/vim-racket'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'aliva/vim-fish'
+NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'gabrielelana/vim-markdown'
+NeoBundle 'stephpy/vim-yaml'
+NeoBundle 'jsx/jsx.vim'
+NeoBundle 'Matt-Deacalion/vim-systemd-syntax'
+NeoBundle 'lambdatoast/elm.vim'
+NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'zah/nimrod.vim'
+NeoBundle 'wstrinz/shen.vim'
+NeoBundle 'rust-lang/rust.vim'
 
 " Haskell
-Plugin 'wlangstroth/vim-haskell'
-Plugin 'bitc/vim-hdevtools'
-Plugin 'eagletmt/ghcmod-vim'
+NeoBundle 'wlangstroth/vim-haskell'
+NeoBundle 'bitc/vim-hdevtools'
+NeoBundle 'eagletmt/ghcmod-vim'
 
 " ProjectTypes
-"Plugin 'vim-scripts/rubycomplete.vim'
+"NeoBundle 'vim-scripts/rubycomplete.vim'
 
 " Autocomplete mode for delimiteres in insert mode
-Plugin 'Raimondi/delimitMate'
+NeoBundle 'Raimondi/delimitMate'
 
 " Clojure
-Plugin 'Gonzih/vim-niji'
-Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-clojure-highlight'
-Plugin 'tpope/vim-fireplace'
+NeoBundle 'Gonzih/vim-niji'
+NeoBundle 'guns/vim-clojure-static'
+NeoBundle 'guns/vim-clojure-highlight'
+NeoBundle 'tpope/vim-fireplace'
 " This thing will go in to internet for some maven reasons
-" Plugin 'tpope/vim-leiningen'
-Plugin 'tpope/vim-dispatch'
-Plugin 'typedclojure/vim-typedclojure'
-"Plugin 'dgrnbrg/vim-redl'
-Plugin 'vim-scripts/paredit.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/timl'
+" NeoBundle 'tpope/vim-leiningen'
+NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'typedclojure/vim-typedclojure'
+"NeoBundle 'dgrnbrg/vim-redl'
+NeoBundle 'vim-scripts/paredit.vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/timl'
 
 " Themes
-Plugin 'morhetz/gruvbox'
+NeoBundle 'morhetz/gruvbox'
 
-Plugin 'sjl/gundo.vim'
+NeoBundle 'sjl/gundo.vim'
 
-Plugin 'sjl/tslime2.vim'
+NeoBundle 'sjl/tslime2.vim'
 
 " Something
-Plugin 'ryanss/vim-hackernews'
+NeoBundle 'ryanss/vim-hackernews'
+
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
 
 " Gruvbox
 if !has("gui_running")
@@ -102,7 +125,6 @@ endif
 " Enable filetype
 set autoindent
 syntax on
-filetype plugin indent on
 set ofu=syntaxcomplete#Complete
 set hlsearch
 set nowrap
