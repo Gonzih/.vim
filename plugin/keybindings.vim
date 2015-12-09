@@ -89,13 +89,14 @@ map <Leader>gc :Gcommit<CR>
 
 if !has("nvim")
   " Fireplace stuff
-  nmap <buffer> ,k <Plug>FireplaceK
-  nmap <buffer> ,s <Plug>FireplaceK
-  nmap <buffer> ,e :Eval<CR>
-  nmap <buffer> ,b :%Eval<CR>
+  nmap <buffer> <Leader>msk <Plug>FireplaceK
+  nmap <buffer> <Leader>mse :Eval<CR>
+  nmap <buffer> <Leader>msb :%Eval<CR>
 endif
 
 " Tmux stuff
-" nmap <buffer> ,b maggVG:SendSelectionToTmux<CR>`a
-" vmap <buffer> ,e :SendSelectionToTmux<CR>
-" nmap <buffer> ,e ma^v%,e`a
+" nmap <buffer> <Leader>msb maggVG:SendSelectionToTmux<CR>`a
+" vmap <buffer> <Leader>mse :SendSelectionToTmux<CR>
+" nmap <buffer> <Leader>mse ma^v%,e`a
+"
+nmap js <Plug>Dsurround
