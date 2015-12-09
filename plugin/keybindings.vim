@@ -85,15 +85,15 @@ map <Leader>gd :Gdiff<CR>
 
 if !has("nvim")
   " Fireplace stuff
-  nmap <buffer> <Leader>msk <Plug>FireplaceK
-  nmap <buffer> <Leader>mse :Eval<CR>
-  nmap <buffer> <Leader>msb :%Eval<CR>
+  nmap <buffer> <Leader>mek <Plug>FireplaceK
+  nmap <buffer> <Leader>mee :Eval<CR>
+  nmap <buffer> <Leader>meb :%Eval<CR>
 endif
 
 " Tmux stuff
-" nmap <buffer> <Leader>msb maggVG:SendSelectionToTmux<CR>`a
-" vmap <buffer> <Leader>mse :SendSelectionToTmux<CR>
-" nmap <buffer> <Leader>mse ma^v%,e`a
+" nmap <buffer> <Leader>meb maggVG:SendSelectionToTmux<CR>`a
+" vmap <buffer> <Leader>mee :SendSelectionToTmux<CR>
+" nmap <buffer> <Leader>mee ma^v%,e`a
 "
 nmap js <Plug>Dsurround
 
