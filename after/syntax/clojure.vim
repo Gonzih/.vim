@@ -43,7 +43,7 @@ setlocal conceallevel=2
 let g:clojure_maxlines = 100
 let g:clojure_align_multiline_strings = 1
 let g:clojure_fuzzy_indent = 1
-let g:clojure_fuzzy_indent_patterns = "with.*,def.*,let.*"
-let g:clojure_foldwords = "defn,defonce,def,ns,ann,go,go-loop"
+let g:clojure_fuzzy_indent_patterns = ['with.*', 'def.*', 'let.']
+let g:clojure_foldwords = ['defn', 'defonce', 'def', 'ns', 'ann', 'go', 'go-loop']
 
 " vim: ts=2:sts=2:sw=2:expandtab
