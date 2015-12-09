@@ -1,1 +1,1 @@
-# Yay, Vim!
+## Yay, Vim!
