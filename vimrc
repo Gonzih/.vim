@@ -100,9 +100,6 @@ NeoBundle 'sjl/gundo.vim'
 
 NeoBundle 'sjl/tslime2.vim'
 
-" Something
-NeoBundle 'ryanss/vim-hackernews'
-
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
