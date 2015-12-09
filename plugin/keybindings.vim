@@ -34,11 +34,6 @@ no <C-w>d <C-w>h
 no <C-w>\ <C-w>v
 no <C-w>- <C-w>s
 
-"Buffers navigation
-map <C-h> :bn<CR>
-map <C-t> :bp<CR>
-
-
 " <> repeat forward and back for f, F, k, K
 "noremap gZ ;
 "noremap gz ,
@@ -65,10 +60,10 @@ if bufwinnr(1)
 endif
 
 " Multiple Cursors
-let g:multi_cursor_next_key='<C-b>'
-let g:multi_cursor_prev_key='<C-x>'
-let g:multi_cursor_skip_key='<C-k>'
-let g:multi_cursor_quit_key='<Esc>'
+" let g:multi_cursor_next_key='<C-b>'
+" let g:multi_cursor_prev_key='<C-x>'
+" let g:multi_cursor_skip_key='<C-k>'
+" let g:multi_cursor_quit_key='<Esc>'
 
 " Gundo
 nnoremap U :GundoToggle<CR>
@@ -100,3 +95,7 @@ endif
 " nmap <buffer> <Leader>mse ma^v%,e`a
 "
 nmap js <Plug>Dsurround
+
+" Commenting
+map <Leader>cl gcc
+vmap <Leader>cl gc
