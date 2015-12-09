@@ -81,6 +81,7 @@ map <Leader>gp :Gpush<CR>
 map <Leader>gf :Gpull<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
+map <Leader>gd :Gdiff<CR>
 
 if !has("nvim")
   " Fireplace stuff
