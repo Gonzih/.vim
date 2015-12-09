@@ -272,8 +272,4 @@ if exists("&undodir")
     set undoreload=500
 endif
 
-if has("nvim")
-  tnoremap <Esc> <C-\><C-n>
-endif
-
 " vim: ts=2:sts=2:sw=2:expandtab

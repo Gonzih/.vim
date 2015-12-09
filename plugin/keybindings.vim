@@ -100,3 +100,7 @@ nmap js <Plug>Dsurround
 " Commenting
 map <Leader>cl gcc
 vmap <Leader>cl gc
+
+if has("nvim")
+  tnoremap <Esc> <C-\><C-n>
+endif
