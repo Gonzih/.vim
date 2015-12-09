@@ -3,19 +3,6 @@ autocmd FileType clojure
 
 let g:tslime_ensure_trailing_newlines = 1
 
-if !has("nvim")
-  " Fireplace stuff
-  nmap <buffer> ,k <Plug>FireplaceK
-  nmap <buffer> ,s <Plug>FireplaceK
-  nmap <buffer> ,e :Eval<CR>
-  nmap <buffer> ,b :%Eval<CR>
-endif
-
-" Tmux stuff
-" nmap <buffer> ,b maggVG:SendSelectionToTmux<CR>`a
-" vmap <buffer> ,e :SendSelectionToTmux<CR>
-" nmap <buffer> ,e ma^v%,e`a
-
 if !has('conceal') || &enc != 'utf-8'
   finish
 endif
