@@ -47,7 +47,6 @@ NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
-" NeoBundle 'sgur/unite-git_grep'
 
 " FileTypes
 NeoBundle 'vim-ruby/vim-ruby'

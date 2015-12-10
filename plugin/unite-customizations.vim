@@ -35,11 +35,11 @@ call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
 
 nnoremap <space>pf :Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
 nnoremap <space>ff :Unite -no-split -buffer-name=files   -start-insert file<cr>
-nnoremap <space>bb :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+nnoremap <space>bb  :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
 nnoremap <space>o  :Unite -no-split -buffer-name=outline -start-insert outline<cr>
-nnoremap <space>/  :Unite -no-split -buffer-name=files   -start-insert grep<cr>
-nnoremap <space>y  :Unite -no-split -buffer-name=yank    history/yank<cr>
-nnoremap <space>b  :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
+nnoremap <space>/ :Unite -no-split -buffer-name=files   -start-insert grep<cr>
+" nnoremap <space>y  :Unite -no-split -buffer-name=yank    history/yank<cr>
+" nnoremap <space>bb :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
 
 let g:unite_quick_match_table =
       \ get(g:, 'unite_quick_match_table', {
