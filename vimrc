@@ -16,7 +16,6 @@ call neobundle#begin(expand('/home/gnzh/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " NeoBundles
-NeoBundle 'gmarik/vundle'
 NeoBundle 'tpope/vim-commentary'
 " extend % in html
 NeoBundle 'edsono/vim-matchit'
