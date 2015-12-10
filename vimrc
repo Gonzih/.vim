@@ -39,10 +39,6 @@ NeoBundle 'airblade/vim-gitgutter'
 " ,f stuff
 NeoBundle 'Lokaltog/vim-easymotion'
 
-" Some deps i guess
-NeoBundle 'tomtom/tlib_vim'
-NeoBundle 'MarcWeber/vim-addon-mw-utils'
-
 "Unite
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
