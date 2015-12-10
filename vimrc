@@ -49,27 +49,28 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 
 " FileTypes
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-haml'
-NeoBundle 'vim-scripts/Arduino-syntax-file'
-NeoBundle 'wlangstroth/vim-racket'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'aliva/vim-fish'
-NeoBundle 'elixir-lang/vim-elixir'
-NeoBundle 'gabrielelana/vim-markdown'
-NeoBundle 'stephpy/vim-yaml'
-NeoBundle 'jsx/jsx.vim'
-NeoBundle 'Matt-Deacalion/vim-systemd-syntax'
-NeoBundle 'lambdatoast/elm.vim'
-NeoBundle 'ekalinin/Dockerfile.vim'
-NeoBundle 'zah/nimrod.vim'
-NeoBundle 'wstrinz/shen.vim'
-NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'vim-ruby/vim-ruby',                 {'autoload' : {'filetypes' : ['ruby', 'erb']}}
+NeoBundle 'tpope/vim-haml',                    {'autoload' : {'filetypes' : ['haml']}}
+NeoBundle 'vim-scripts/Arduino-syntax-file',   {'autoload' : {'filetypes' : ['arduino']}}
+NeoBundle 'wlangstroth/vim-racket',            {'autoload' : {'filetypes' : ['racket']}}
+NeoBundle 'derekwyatt/vim-scala',              {'autoload' : {'filetypes' : ['scala']}}
+NeoBundle 'aliva/vim-fish',                    {'autoload' : {'filetypes' : ['fish']}}
+NeoBundle 'elixir-lang/vim-elixir',            {'autoload' : {'filetypes' : ['elixir']}}
+NeoBundle 'gabrielelana/vim-markdown',         {'autoload' : {'filetypes' : ['markdown']}}
+NeoBundle 'stephpy/vim-yaml',                  {'autoload' : {'filetypes' : ['yaml']}}
+NeoBundle 'jsx/jsx.vim',                       {'autoload' : {'filetypes' : ['javascript', 'jsx']}}
+NeoBundle 'Matt-Deacalion/vim-systemd-syntax', {'autoload' : {'filetypes' : ['systemd']}}
+NeoBundle 'lambdatoast/elm.vim',               {'autoload' : {'filetypes' : ['elm']}}
+NeoBundle 'ekalinin/Dockerfile.vim',           {'autoload' : {'filetypes' : ['Dockerfile']}}
+NeoBundle 'zah/nimrod.vim',                    {'autoload' : {'filetypes' : ['nim']}}
+NeoBundle 'wstrinz/shen.vim',                  {'autoload' : {'filetypes' : ['shen']}}
+NeoBundle 'rust-lang/rust.vim',                {'autoload' : {'filetypes' : ['rust']}}
+NeoBundle 'rodjek/vim-puppet',                 {'autoload' : {'filetypes' : ['puppet']}}
 
 " Haskell
-NeoBundle 'wlangstroth/vim-haskell'
-NeoBundle 'bitc/vim-hdevtools'
-NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'wlangstroth/vim-haskell', {'autoload' : {'filetypes' : ['haskell']}}
+NeoBundle 'bitc/vim-hdevtools',      {'autoload' : {'filetypes' : ['haskell']}}
+NeoBundle 'eagletmt/ghcmod-vim',     {'autoload' : {'filetypes' : ['haskell']}}
 
 " ProjectTypes
 "NeoBundle 'vim-scripts/rubycomplete.vim'
@@ -77,26 +78,30 @@ NeoBundle 'eagletmt/ghcmod-vim'
 " Autocomplete mode for delimiteres in insert mode
 NeoBundle 'Raimondi/delimitMate'
 
-" Clojure
+" Rainbow ()
 NeoBundle 'Gonzih/vim-niji'
-NeoBundle 'guns/vim-clojure-static'
-NeoBundle 'guns/vim-clojure-highlight'
-NeoBundle 'tpope/vim-fireplace'
+
+" Clojure
+NeoBundle 'guns/vim-clojure-static',                        {'autoload' : {'filetypes' : ['clojure']}}
+NeoBundle 'guns/vim-clojure-highlight',                     {'autoload' : {'filetypes' : ['clojure']}}
+NeoBundle 'tpope/vim-fireplace',                            {'autoload' : {'filetypes' : ['clojure']}}
+NeoBundle 'tpope/vim-dispatch',                             {'autoload' : {'filetypes' : ['clojure']}}
+NeoBundle 'typedclojure/vim-typedclojure',                  {'autoload' : {'filetypes' : ['clojure']}}
+NeoBundle 'vim-scripts/paredit.vim',                        {'autoload' : {'filetypes' : ['clojure']}}
 " This thing will go in to internet for some maven reasons
-" NeoBundle 'tpope/vim-leiningen'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'typedclojure/vim-typedclojure'
+" NeoBundle 'tpope/vim-leiningen',                          {'autoload' : {'filetypes' : ['clojure']}}
+
 "NeoBundle 'dgrnbrg/vim-redl'
-NeoBundle 'vim-scripts/paredit.vim'
-NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/timl'
+NeoBundle 'sjl/tslime2.vim'
+
+"Surround is the best!
+NeoBundle 'tpope/vim-surround'
 
 " Themes
 NeoBundle 'morhetz/gruvbox'
 
 NeoBundle 'sjl/gundo.vim'
-
-NeoBundle 'sjl/tslime2.vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
