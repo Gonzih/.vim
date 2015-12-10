@@ -75,7 +75,7 @@ NeoBundle 'eagletmt/ghcmod-vim',     {'autoload' : {'filetypes' : ['haskell']}}
 NeoBundle 'Raimondi/delimitMate'
 
 " Rainbow ()
-NeoBundle 'oblitum/rainbow'
+NeoBundle 'kien/rainbow_parentheses.vim'
 
 " Clojure
 NeoBundle 'guns/vim-clojure-static',                        {'autoload' : {'filetypes' : ['clojure']}}
