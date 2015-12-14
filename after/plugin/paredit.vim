@@ -1,5 +1,5 @@
 function! AdjustParedit()
-  if g:paredit_mode
+  " if g:paredit_mode
     nnoremap <buffer> <silent> j            :<C-U>call PareditSetDelete(v:count)<CR>g@
     vnoremap <buffer> <silent> j            :<C-U>call PareditDelete(visualmode(),1)<CR>
     nnoremap <buffer> <silent> jj           :<C-U>call PareditDeleteLines()<CR>
@@ -7,7 +7,7 @@ function! AdjustParedit()
     silent! unmap <buffer> d
     silent! unmap <buffer> dd
     silent! unmap <buffer> D
-  endif
+  " endif
 endfunction
 
 au BufReadPost *.lisp call AdjustParedit()
