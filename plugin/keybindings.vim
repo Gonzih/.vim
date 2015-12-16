@@ -83,18 +83,6 @@ map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit --verbose<CR>
 map <Leader>gd :Gdiff<CR>
 
-if !has("nvim")
-  " Fireplace stuff
-  nmap <buffer> <Leader>mek <Plug>FireplaceK
-  nmap <buffer> <Leader>mee :Eval<CR>
-  nmap <buffer> <Leader>meb :%Eval<CR>
-endif
-
-" Tmux stuff
-" nmap <buffer> <Leader>meb maggVG:SendSelectionToTmux<CR>`a
-" vmap <buffer> <Leader>mee :SendSelectionToTmux<CR>
-" nmap <buffer> <Leader>mee ma^v%,e`a
-"
 nmap js <Plug>Dsurround
 
 " Commenting
