@@ -74,6 +74,8 @@ NeoBundle 'eagletmt/ghcmod-vim',     {'autoload' : {'filetypes' : ['haskell']}}
 " Autocomplete mode for delimiteres in insert mode
 NeoBundle 'Raimondi/delimitMate'
 
+NeoBundle 'Shougo/neocomplete.vim'
+
 " Rainbow ()
 NeoBundle 'kien/rainbow_parentheses.vim'
 
