@@ -54,7 +54,8 @@ NeoBundle 'aliva/vim-fish',                    {'autoload' : {'filetypes' : ['fi
 NeoBundle 'elixir-lang/vim-elixir',            {'autoload' : {'filetypes' : ['elixir']}}
 NeoBundle 'gabrielelana/vim-markdown',         {'autoload' : {'filetypes' : ['markdown']}}
 NeoBundle 'stephpy/vim-yaml',                  {'autoload' : {'filetypes' : ['yaml']}}
-NeoBundle 'jsx/jsx.vim',                       {'autoload' : {'filetypes' : ['javascript', 'jsx']}}
+NeoBundle 'pangloss/vim-javascript',           {'autoload' : {'filetypes' : ['javascript', 'jsx']}}
+NeoBundle 'mxw/vim-jsx',                       {'autoload' : {'filetypes' : ['javascript', 'jsx']}}
 NeoBundle 'Matt-Deacalion/vim-systemd-syntax', {'autoload' : {'filetypes' : ['systemd']}}
 NeoBundle 'lambdatoast/elm.vim',               {'autoload' : {'filetypes' : ['elm']}}
 NeoBundle 'ekalinin/Dockerfile.vim',           {'autoload' : {'filetypes' : ['Dockerfile']}}
