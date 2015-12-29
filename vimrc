@@ -63,6 +63,7 @@ NeoBundle 'zah/nimrod.vim',                    {'autoload' : {'filetypes' : ['ni
 NeoBundle 'wstrinz/shen.vim',                  {'autoload' : {'filetypes' : ['shen']}}
 NeoBundle 'rust-lang/rust.vim',                {'autoload' : {'filetypes' : ['rust']}}
 NeoBundle 'rodjek/vim-puppet',                 {'autoload' : {'filetypes' : ['puppet']}}
+NeoBundle 'fatih/vim-go',                      {'autoload' : {'filetypes' : ['go']}}
 
 " Haskell
 NeoBundle 'wlangstroth/vim-haskell', {'autoload' : {'filetypes' : ['haskell']}}
