@@ -70,9 +70,6 @@ nnoremap U :GundoToggle<CR>
 let g:gundo_map_move_older = 'h'
 let g:gundo_map_move_newer = 't'
 
-" EasyMotion
-let g:EasyMotion_leader_key = '<spc>'
-
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
