@@ -33,7 +33,8 @@ call unite#custom#profile('navigate,source/grep', 'context', {
 call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
       \'tmp\|vendor\|\.bundle\|target\|\.git\|\.rsync_cache')
 
-nnoremap <space>pf :Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
+nnoremap <space>pf :Unite -no-split -buffer-name=files   -start-insert file_rec/git<cr>
+nnoremap <space>pF :Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
 nnoremap <space>ff :Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <space>bb :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
 nnoremap <space>o  :Unite -no-split -buffer-name=outline -start-insert outline<cr>
