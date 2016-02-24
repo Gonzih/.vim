@@ -38,7 +38,7 @@ nnoremap <space>pF :Unite -no-split -buffer-name=files   -start-insert file_rec:
 nnoremap <space>ff :Unite -no-split -buffer-name=files   -start-insert file<cr>
 nnoremap <space>bb :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
 nnoremap <space>o  :Unite -no-split -buffer-name=outline -start-insert outline<cr>
-nnoremap <space>/  :Unite -no-split -buffer-name=files   -start-insert grep:.<cr>
+nnoremap <space>/  :Unite -no-split -buffer-name=files   -start-insert grep/git:.<cr>
 " nnoremap <space>y  :Unite -no-split -buffer-name=yank    history/yank<cr>
 " nnoremap <space>bb :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
 
