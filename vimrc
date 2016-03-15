@@ -42,6 +42,9 @@ NeoBundle 'airblade/vim-gitgutter'
 " ,f stuff
 NeoBundle 'Lokaltog/vim-easymotion'
 
+"Start screen
+NeoBundle 'mhinz/vim-startify'
+
 "Unite
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
