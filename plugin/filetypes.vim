@@ -29,6 +29,7 @@ au BufRead,BufNewFile *.org           setlocal filetype=org
 au BufRead,BufNewFile *.hy            setlocal filetype=clojure
 au BufRead,BufNewFile build.boot      setlocal filetype=clojure
 au BufRead,BufNewFile *.edn           setlocal filetype=clojure
+au BufRead,BufNewFile *.dockerfile    setlocal filetype=dockerfile
 
 
 au FileType arc call PareditInitBuffer()
