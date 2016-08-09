@@ -30,6 +30,7 @@ au BufRead,BufNewFile *.hy            setlocal filetype=clojure
 au BufRead,BufNewFile build.boot      setlocal filetype=clojure
 au BufRead,BufNewFile *.edn           setlocal filetype=clojure
 au BufRead,BufNewFile *.dockerfile    setlocal filetype=dockerfile
+au BufRead,BufNewFile *.j2            setlocal filetype=jinja
 
 
 au FileType arc call PareditInitBuffer()
@@ -55,6 +56,7 @@ au Filetype haskell    setlocal ts=8 sts=4 sw=4 expandtab smarttab shiftround no
 au Filetype rust       setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype nim        setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype c          setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype jinja      setlocal ts=2 sts=2 sw=2 expandtab
 
 " ruby autocomplete
 au FileType ruby,eruby set omnifunc=rubycomplete#Complete
