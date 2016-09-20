@@ -16,7 +16,7 @@ call neobundle#begin(expand('/home/gnzh/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 "Monkey patched netrw
-NeoBundle 'eiginn/netrw'
+" NeoBundle 'eiginn/netrw'
 
 " NeoBundles
 NeoBundle 'tpope/vim-commentary'
