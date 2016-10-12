@@ -222,20 +222,6 @@ let g:indent_guides_guide_size=1
 " Powerline symbols are fancy now
 let g:Powerline_symbols = 'fancy'
 
-" Ctags
-" If tags file does not exist initializes it with symlink to tmp with UUID in
-" filename
-function! InitTagsFileWithSymlink(f)
-  let filepath = a:f
-  let issymlink = system("find '" . filepath . "' -type l | wc -l")
-  if issymlink == 0
-    let uuid = system('uuidgen')
-    let cmd  = 'ln -s "/tmp/ctags-for-vim-' . uuid . '" "' . filepath . '"'
-    let cmd  = substitute(cmd, '\n', '', 'g')
-    let resp = system(cmd)
-  endif
-endfunction
-
 set viminfo+=!
 
 highlight clear SignColumn
