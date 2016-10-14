@@ -33,4 +33,13 @@ let g:clojure_fuzzy_indent = 1
 let g:clojure_fuzzy_indent_patterns = ['with.*', 'def.*', 'let.']
 let g:clojure_foldwords = ['defn', 'defonce', 'def', 'ns', 'ann', 'go', 'go-loop']
 
+function! JoinClojureParenLines()
+  :silent global/^\s*[)\]}]$/normal gkJ
+  :silent! %s/,//g
+endfunction
+
+autocmd! BufWritePre *.clj  call JoinClojureParenLines()
+autocmd! BufWritePre *.cljs call JoinClojureParenLines()
+autocmd! BufWritePre *.cljx call JoinClojureParenLines()
+
 " vim: ts=2:sts=2:sw=2:expandtab
