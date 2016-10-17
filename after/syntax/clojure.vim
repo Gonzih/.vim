@@ -35,7 +35,6 @@ let g:clojure_foldwords = ['defn', 'defonce', 'def', 'ns', 'ann', 'go', 'go-loop
 
 function! JoinClojureParenLines()
   :silent global/^\s*[)\]}]$/normal gkJ
-  :silent! %s/,//g
 endfunction
 
 autocmd! BufWritePre *.clj  call JoinClojureParenLines()
