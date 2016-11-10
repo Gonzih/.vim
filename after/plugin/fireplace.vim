@@ -5,7 +5,7 @@ function AdjustFireplace()
   if !has("nvim")
     " Fireplace stuff
     nmap <buffer> <Leader>mek <Plug>FireplaceK
-    nmap <buffer> <Leader>mee :Eval<CR>
+    nmap <buffer> <Leader>mef :Eval<CR>
     nmap <buffer> <Leader>meb :%Eval<CR>
   endif
 
