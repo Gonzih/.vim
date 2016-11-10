@@ -48,7 +48,6 @@ NeoBundle 'mhinz/vim-startify'
 "Unite
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/unite-outline'
 
 " FileTypes
 NeoBundle 'vim-ruby/vim-ruby',                 {'autoload' : {'filetypes' : ['ruby', 'erb']}}
