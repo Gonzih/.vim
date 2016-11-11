@@ -81,6 +81,7 @@ map <Leader>gf :Gpull<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit --verbose<CR>
 map <Leader>gd :Gdiff<CR>
+map <Leader>gb :Gblame<CR>
 
 nmap js <Plug>Dsurround
 
