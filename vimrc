@@ -1,120 +1,102 @@
-"NeoBundle Scripts-----------------------------
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
+" ====================== BUNDLE BEGIN ======================
 
-  " Required:
-  set runtimepath+=/home/gnzh/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible
 endif
 
-" Required:
-call neobundle#begin(expand('/home/gnzh/.vim/bundle'))
+set runtimepath+=/home/gnzh/.vim/bundle/dein.vim/repos/github.com/Shougo/dein.vim
 
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+call dein#begin('/home/gnzh/.vim/bundle/dein.vim/')
 
-"Monkey patched netrw
-" NeoBundle 'eiginn/netrw'
+call dein#add('Shougo/dein.vim')
 
-" NeoBundles
-NeoBundle 'tpope/vim-commentary'
+call dein#add('tpope/vim-commentary')
 " extend % in html
-NeoBundle 'edsono/vim-matchit'
+call dein#add('edsono/vim-matchit')
 " ruby end stuff
-NeoBundle 'tpope/vim-endwise'
+call dein#add('tpope/vim-endwise')
 " git stuff
-NeoBundle 'tpope/vim-fugitive'
+call dein#add('tpope/vim-fugitive')
 " better netrw
-NeoBundle 'tpope/vim-vinegar'
+call dein#add('tpope/vim-vinegar')
 " Tab/=
-NeoBundle 'godlygeek/tabular'
+call dein#add('godlygeek/tabular')
 
 " Bottom line
-NeoBundle 'bling/vim-airline'
+call dein#add('bling/vim-airline')
 " Syntax checks
-NeoBundle 'scrooloose/syntastic'
+call dein#add('scrooloose/syntastic')
 " Git status
-NeoBundle 'airblade/vim-gitgutter'
+call dein#add('airblade/vim-gitgutter')
 " ,f stuff
-NeoBundle 'Lokaltog/vim-easymotion'
+call dein#add('Lokaltog/vim-easymotion')
 
 "Unite
-NeoBundle 'Shougo/vimproc.vim'
-NeoBundle 'Shougo/unite.vim'
+call dein#add('Shougo/vimproc.vim')
+call dein#add('Shougo/unite.vim')
 
 " FileTypes
-NeoBundle 'vim-ruby/vim-ruby',                 {'autoload' : {'filetypes' : ['ruby', 'erb']}}
-NeoBundle 'vim-scripts/Arduino-syntax-file',   {'autoload' : {'filetypes' : ['arduino']}}
-NeoBundle 'wlangstroth/vim-racket',            {'autoload' : {'filetypes' : ['racket']}}
-NeoBundle 'derekwyatt/vim-scala',              {'autoload' : {'filetypes' : ['scala']}}
-NeoBundle 'aliva/vim-fish',                    {'autoload' : {'filetypes' : ['fish']}}
-NeoBundle 'elixir-lang/vim-elixir',            {'autoload' : {'filetypes' : ['elixir']}}
-NeoBundle 'gabrielelana/vim-markdown',         {'autoload' : {'filetypes' : ['markdown']}}
-NeoBundle 'stephpy/vim-yaml',                  {'autoload' : {'filetypes' : ['yaml']}}
-NeoBundle 'pearofducks/ansible-vim',           {'autoload' : {'filetypes' : ['ansible']}}
-NeoBundle 'pangloss/vim-javascript',           {'autoload' : {'filetypes' : ['javascript', 'jsx']}}
-NeoBundle 'mxw/vim-jsx',                       {'autoload' : {'filetypes' : ['javascript', 'jsx']}}
-NeoBundle 'Matt-Deacalion/vim-systemd-syntax', {'autoload' : {'filetypes' : ['systemd']}}
-NeoBundle 'lambdatoast/elm.vim',               {'autoload' : {'filetypes' : ['elm']}}
-NeoBundle 'ekalinin/Dockerfile.vim',           {'autoload' : {'filetypes' : ['Dockerfile']}}
-NeoBundle 'zah/nimrod.vim',                    {'autoload' : {'filetypes' : ['nim']}}
-NeoBundle 'wstrinz/shen.vim',                  {'autoload' : {'filetypes' : ['shen']}}
-NeoBundle 'rust-lang/rust.vim',                {'autoload' : {'filetypes' : ['rust']}}
-NeoBundle 'rodjek/vim-puppet',                 {'autoload' : {'filetypes' : ['puppet']}}
-NeoBundle 'fatih/vim-go',                      {'autoload' : {'filetypes' : ['go']}}
-NeoBundle 'lepture/vim-jinja',                 {'autoload' : {'filetypes' : ['jinja']}}
+call dein#add('vim-ruby/vim-ruby',                 {'autoload' : {'filetypes' : ['ruby', 'erb']}})
+call dein#add('vim-scripts/Arduino-syntax-file',   {'autoload' : {'filetypes' : ['arduino']}})
+call dein#add('wlangstroth/vim-racket',            {'autoload' : {'filetypes' : ['racket']}})
+call dein#add('derekwyatt/vim-scala',              {'autoload' : {'filetypes' : ['scala']}})
+call dein#add('aliva/vim-fish',                    {'autoload' : {'filetypes' : ['fish']}})
+call dein#add('elixir-lang/vim-elixir',            {'autoload' : {'filetypes' : ['elixir']}})
+call dein#add('gabrielelana/vim-markdown',         {'autoload' : {'filetypes' : ['markdown']}})
+call dein#add('stephpy/vim-yaml',                  {'autoload' : {'filetypes' : ['yaml']}})
+call dein#add('pearofducks/ansible-vim',           {'autoload' : {'filetypes' : ['ansible']}})
+call dein#add('pangloss/vim-javascript',           {'autoload' : {'filetypes' : ['javascript', 'jsx']}})
+call dein#add('mxw/vim-jsx',                       {'autoload' : {'filetypes' : ['javascript', 'jsx']}})
+call dein#add('Matt-Deacalion/vim-systemd-syntax', {'autoload' : {'filetypes' : ['systemd']}})
+call dein#add('lambdatoast/elm.vim',               {'autoload' : {'filetypes' : ['elm']}})
+call dein#add('ekalinin/Dockerfile.vim',           {'autoload' : {'filetypes' : ['Dockerfile']}})
+call dein#add('zah/nimrod.vim',                    {'autoload' : {'filetypes' : ['nim']}})
+call dein#add('wstrinz/shen.vim',                  {'autoload' : {'filetypes' : ['shen']}})
+call dein#add('rust-lang/rust.vim',                {'autoload' : {'filetypes' : ['rust']}})
+call dein#add('rodjek/vim-puppet',                 {'autoload' : {'filetypes' : ['puppet']}})
+call dein#add('fatih/vim-go',                      {'autoload' : {'filetypes' : ['go']}})
+call dein#add('lepture/vim-jinja',                 {'autoload' : {'filetypes' : ['jinja']}})
 
 " Haskell
-NeoBundle 'wlangstroth/vim-haskell', {'autoload' : {'filetypes' : ['haskell']}}
-NeoBundle 'bitc/vim-hdevtools',      {'autoload' : {'filetypes' : ['haskell']}}
-NeoBundle 'eagletmt/ghcmod-vim',     {'autoload' : {'filetypes' : ['haskell']}}
-
-" ProjectTypes
-"NeoBundle 'vim-scripts/rubycomplete.vim'
+call dein#add('wlangstroth/vim-haskell', {'autoload' : {'filetypes' : ['haskell']}})
+call dein#add('bitc/vim-hdevtools',      {'autoload' : {'filetypes' : ['haskell']}})
+call dein#add('eagletmt/ghcmod-vim',     {'autoload' : {'filetypes' : ['haskell']}})
 
 " Autocomplete mode for delimiteres in insert mode
-NeoBundle 'Raimondi/delimitMate'
+call dein#add('Raimondi/delimitMate')
 
-NeoBundle 'Shougo/neocomplete.vim'
+call dein#add('Shougo/neocomplete.vim')
 
 " Rainbow ()
-NeoBundle 'kien/rainbow_parentheses.vim'
+call dein#add('kien/rainbow_parentheses.vim')
 
 " Clojure
-NeoBundle 'guns/vim-clojure-static',                        {'autoload' : {'filetypes' : ['clojure']}}
-NeoBundle 'guns/vim-clojure-highlight',                     {'autoload' : {'filetypes' : ['clojure']}}
-NeoBundle 'tpope/vim-fireplace',                            {'autoload' : {'filetypes' : ['clojure']}}
-NeoBundle 'tpope/vim-dispatch',                             {'autoload' : {'filetypes' : ['clojure']}}
-NeoBundle 'vim-scripts/paredit.vim',                        {'autoload' : {'filetypes' : ['clojure']}}
-" This thing will go in to internet for some maven reasons
-" NeoBundle 'tpope/vim-leiningen',                          {'autoload' : {'filetypes' : ['clojure']}}
+call dein#add('guns/vim-clojure-static',                        {'autoload' : {'filetypes' : ['clojure']}})
+call dein#add('guns/vim-clojure-highlight',                     {'autoload' : {'filetypes' : ['clojure']}})
+call dein#add('tpope/vim-fireplace',                            {'autoload' : {'filetypes' : ['clojure']}})
+call dein#add('tpope/vim-dispatch',                             {'autoload' : {'filetypes' : ['clojure']}})
+call dein#add('vim-scripts/paredit.vim',                        {'autoload' : {'filetypes' : ['clojure']}})
 
-NeoBundle 'tpope/timl'
-NeoBundle 'sjl/tslime2.vim'
+call dein#add('tpope/timl')
+call dein#add('sjl/tslime2.vim')
 
 "Surround is the best!
-NeoBundle 'tpope/vim-surround'
+call dein#add('tpope/vim-surround')
 
 " Themes
-NeoBundle 'morhetz/gruvbox'
+call dein#add('morhetz/gruvbox')
 
-NeoBundle 'sjl/gundo.vim'
+call dein#add('sjl/gundo.vim')
 
 " You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell'
+call dein#add('Shougo/vimshell')
 
-" Required:
-call neobundle#end()
+call dein#end()
 
-" Required:
 filetype plugin indent on
+syntax enable
 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-"End NeoBundle Scripts-------------------------
+" ====================== BUNDLE END ======================
 
 " Gruvbox
 if !has("gui_running")
