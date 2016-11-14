@@ -30,8 +30,6 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-vinegar'
 " Tab/=
 NeoBundle 'godlygeek/tabular'
-" Some dependency
-NeoBundle 'vim-scripts/L9'
 
 " Bottom line
 NeoBundle 'bling/vim-airline'
@@ -42,16 +40,12 @@ NeoBundle 'airblade/vim-gitgutter'
 " ,f stuff
 NeoBundle 'Lokaltog/vim-easymotion'
 
-"Start screen
-NeoBundle 'mhinz/vim-startify'
-
 "Unite
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/unite.vim'
 
 " FileTypes
 NeoBundle 'vim-ruby/vim-ruby',                 {'autoload' : {'filetypes' : ['ruby', 'erb']}}
-NeoBundle 'tpope/vim-haml',                    {'autoload' : {'filetypes' : ['haml']}}
 NeoBundle 'vim-scripts/Arduino-syntax-file',   {'autoload' : {'filetypes' : ['arduino']}}
 NeoBundle 'wlangstroth/vim-racket',            {'autoload' : {'filetypes' : ['racket']}}
 NeoBundle 'derekwyatt/vim-scala',              {'autoload' : {'filetypes' : ['scala']}}
@@ -93,12 +87,10 @@ NeoBundle 'guns/vim-clojure-static',                        {'autoload' : {'file
 NeoBundle 'guns/vim-clojure-highlight',                     {'autoload' : {'filetypes' : ['clojure']}}
 NeoBundle 'tpope/vim-fireplace',                            {'autoload' : {'filetypes' : ['clojure']}}
 NeoBundle 'tpope/vim-dispatch',                             {'autoload' : {'filetypes' : ['clojure']}}
-NeoBundle 'typedclojure/vim-typedclojure',                  {'autoload' : {'filetypes' : ['clojure']}}
 NeoBundle 'vim-scripts/paredit.vim',                        {'autoload' : {'filetypes' : ['clojure']}}
 " This thing will go in to internet for some maven reasons
 " NeoBundle 'tpope/vim-leiningen',                          {'autoload' : {'filetypes' : ['clojure']}}
 
-"NeoBundle 'dgrnbrg/vim-redl'
 NeoBundle 'tpope/timl'
 NeoBundle 'sjl/tslime2.vim'
 
@@ -111,7 +103,7 @@ NeoBundle 'morhetz/gruvbox'
 NeoBundle 'sjl/gundo.vim'
 
 " You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+NeoBundle 'Shougo/vimshell'
 
 " Required:
 call neobundle#end()
