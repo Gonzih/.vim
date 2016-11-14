@@ -1,10 +1,11 @@
 let g:unite_source_history_yank_enable = 1
-let g:unite_source_rec_unit = 100
+let g:unite_source_rec_unit = 1000
 
 " The silver searcher settings
 let s:ag_opts = [
         \ '--vimgrep', '--smart-case', '--skip-vcs-ignores', '--hidden',
         \ '--ignore', '.git', '--ignore', '.idea', '--ignore', '.stversions',
+        \ '--ignore', 'target', '--ignore', 'bundle',
         \ '--ignore', 'bower_modules', '--ignore', 'node_modules'
         \ ]
 
@@ -16,8 +17,11 @@ if executable('ag')
 endif
 
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'matchers', 'matcher_fuzzy')
-call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_selecta')
+call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'sorters', 'sorter_rank')
 call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async', 'converters', 'converter_relative_word')
+
+let g:unite_prompt='» '
+let g:unite_split_rule = 'botright'
 
 " General purpose profile for grep and navigating code
 call unite#custom#profile('navigate,source/grep', 'context', {
@@ -31,15 +35,13 @@ call unite#custom#profile('navigate,source/grep', 'context', {
         \ })
 
 call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
-      \'tmp\|vendor\|\.bundle\|target\|\.git\|\.rsync_cache')
+      \'tmp\|vendor\|\.bundle\|target\|\.git\|\resources')
 
-nnoremap <space>pf :Unite -no-split -buffer-name=files   -start-insert file_rec/git<cr>
-nnoremap <space>pF :Unite -no-split -buffer-name=files   -start-insert file_rec:!<cr>
-nnoremap <space>ff :Unite -no-split -buffer-name=files   -start-insert file<cr>
-nnoremap <space>bb :Unite -no-split -buffer-name=buffer  -quick-match buffer<cr>
-nnoremap <space>/  :Unite -no-split -buffer-name=files   -start-insert grep/git:.<cr>
-" nnoremap <space>y  :Unite -no-split -buffer-name=yank    history/yank<cr>
-" nnoremap <space>bb :Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+nnoremap <space>pf :Unite -buffer-name=files   -start-insert file file_mru file_rec/async<cr>
+nnoremap <space>ff :Unite -buffer-name=files   -start-insert file<cr>
+nnoremap <space>bb :Unite -buffer-name=buffer  -quick-match buffer<cr>
+nnoremap <space>/  :Unite -buffer-name=grep    -start-insert grep/git:.<cr>
+" nnoremap <space>pf :Unite -buffer-name=files   -start-insert file_rec/git<cr>
 
 let g:unite_quick_match_table =
       \ get(g:, 'unite_quick_match_table', {
