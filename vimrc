@@ -139,8 +139,6 @@ autocmd BufReadPost *
 
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 
-augroup END
-
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
       \ | wincmd p | diffthis
