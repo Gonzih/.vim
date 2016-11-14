@@ -40,7 +40,7 @@ call unite#custom#source('file,file_rec,file_rec/async', 'ignore_pattern',
 nnoremap <space>pf :Unite -buffer-name=files -start-insert file_rec/git<cr>
 nnoremap <space>ff :Unite -buffer-name=files -start-insert file<cr>
 nnoremap <space>bb :Unite -buffer-name=mru   -quick-match file_mru<cr>
-nnoremap <space>/  :Unite -buffer-name=grep  -start-insert grep:.<cr>
+nnoremap <space>/  :Unite -buffer-name=grep  -start-insert grep/git:.<cr>
 
 let g:unite_quick_match_table =
       \ get(g:, 'unite_quick_match_table', {
