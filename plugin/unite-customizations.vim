@@ -17,9 +17,9 @@ if executable('ag')
 endif
 "}}}
 
-call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async,file_rec/git', 'matchers', ['matcher_fuzzy', 'matcher_hide_hidden_files', 'matcher_hide_current_file'])
-call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async,file_rec/git', 'sorters', 'sorter_selecta')
-call unite#custom#source('file,file/new,buffer,file_rec,file_rec/async,file_rec/git', 'converters', 'converter_relative_word')
+call unite#custom#source('file,file/new,buffer,file_mru,file_rec,file_rec/async,file_rec/git', 'matchers', ['matcher_fuzzy', 'matcher_hide_hidden_files', 'matcher_hide_current_file'])
+call unite#custom#source('file,file/new,buffer,file_mru,file_rec,file_rec/async,file_rec/git', 'sorters', 'sorter_selecta')
+call unite#custom#source('file,file/new,buffer,file_mru,file_rec,file_rec/async,file_rec/git', 'converters', 'converter_relative_word')
 
 let g:unite_prompt='» '
 let g:unite_split_rule = 'botright'
