@@ -71,11 +71,11 @@ call dein#add('Shougo/neocomplete.vim')
 call dein#add('kien/rainbow_parentheses.vim')
 
 " Clojure
-call dein#add('guns/vim-clojure-static',                        {'on_ft': ['clojure']})
-call dein#add('guns/vim-clojure-highlight',                     {'on_ft': ['clojure']})
-call dein#add('tpope/vim-fireplace',                            {'on_ft': ['clojure']})
-call dein#add('tpope/vim-dispatch',                             {'on_ft': ['clojure']})
-call dein#add('vim-scripts/paredit.vim',                        {'on_ft': ['clojure']})
+call dein#add('guns/vim-clojure-static',    {'on_ft': ['clojure']})
+call dein#add('guns/vim-clojure-highlight', {'on_ft': ['clojure']})
+call dein#add('tpope/vim-fireplace',        {'on_ft': ['clojure']})
+call dein#add('tpope/vim-dispatch',         {'on_ft': ['clojure']})
+call dein#add('vim-scripts/paredit.vim',    {'on_ft': ['clojure']})
 
 call dein#add('tpope/timl')
 call dein#add('sjl/tslime2.vim')
