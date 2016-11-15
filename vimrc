@@ -1,5 +1,4 @@
 " ====================== DEPENDENCIES BEGIN ======================
-
 if &compatible
   set nocompatible
 endif
