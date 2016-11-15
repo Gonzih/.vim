@@ -1,4 +1,4 @@
-" ====================== BUNDLE BEGIN ======================
+" ====================== DEPENDENCIES BEGIN ======================
 
 if &compatible
   set nocompatible
@@ -12,7 +12,7 @@ call dein#add('Shougo/dein.vim')
 
 call dein#add('tpope/vim-commentary')
 " extend % in html
-call dein#add('edsono/vim-matchit')
+call dein#add('vim-scripts/matchit.zip')
 " ruby end stuff
 call dein#add('tpope/vim-endwise')
 " git stuff
@@ -97,7 +97,7 @@ call dein#end()
 filetype plugin indent on
 syntax enable
 
-" ====================== BUNDLE END ======================
+" ====================== DEPENDENCIES END ======================
 
 " Gruvbox
 if !has("gui_running")
@@ -107,7 +107,6 @@ endif
 " Enable filetype
 set autoindent
 syntax on
-set ofu=syntaxcomplete#Complete
 set hlsearch
 set nowrap
 set number
@@ -153,8 +152,6 @@ set t_Co=256
 set background=dark
 colorscheme gruvbox
 
-let g:rsenseUseOmniFunc = 1
-
 "List special symbols
 set listchars=tab:▸\ ,eol:¬,trail:•,extends:❯,precedes:❮
 set list
@@ -179,20 +176,8 @@ command W w !sudo tee % > /dev/null
 " command for capturing external command output
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
 
-"improve autocomplete menu color
-highlight Pmenu ctermbg=238 gui=bold
-
 " Set folding
 set foldmethod=marker
-
-" Enable indent guides
-"let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_color_change_percent = 10
-let g:indent_guides_start_level=2
-let g:indent_guides_guide_size=1
-
-" Powerline symbols are fancy now
-let g:Powerline_symbols = 'fancy'
 
 set viminfo+=!
 
@@ -210,22 +195,6 @@ endif
 let g:paredit_leader=','
 
 set shell=bash
-
-" Syntastic options
-let g:syntastic_mode_map = { 'mode': 'passive',
-                           \ 'active_filetypes': ['ruby', 'haskell', 'clojure', 'rust', 'go'],
-                           \ 'passive_filetypes': [] }
-
-" Airline
-let g:airline_powerline_fonts = 1
-
-let g:paredit_electric_return = 0
-
-" Fix some annoying bug in SuperTab
-let g:SuperTabCrMapping = 0
-
-" Notes
-let g:notes_directories = ['~/Dropbox/Vim Notes']
 
 let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
 
