@@ -138,11 +138,6 @@ autocmd BufReadPost *
 
 autocmd BufReadPost COMMIT_EDITMSG exe "normal! gg"
 
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-      \ | wincmd p | diffthis
-endif
-
 set autowrite
 set backup                     " Enable creation of backup file.
 set backupdir=~/.vim/backups " Where backups will go.
@@ -160,21 +155,9 @@ nmap <silent> <C-l> :silent noh<CR>
 
 set guioptions=ai
 
-"Auto cleaning fugitive buffers
-autocmd BufReadPost fugitive://* set bufhidden=delete
-
 "Git branch in statusline
 set statusline=%<%f\ %y\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
-
-"Fugitive aliases
-autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
-
-"W command that write files as root
-command! W w !sudo tee % > /dev/null
-
-" command for capturing external command output
-command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
 
 " Set folding
 set foldmethod=marker
@@ -197,10 +180,6 @@ let g:paredit_leader=','
 set shell=bash
 
 let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
-
-command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
-command! -nargs=* Tab Tabularize<args>
-command! -nargs=* -range=% Tab <line1>,<line2>Tabularize<args>
 
 " Persistend undo
 if exists("&undodir")
