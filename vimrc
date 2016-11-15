@@ -171,7 +171,7 @@ set laststatus=2
 autocmd User fugitive command! -bar -buffer -nargs=* Gci :Gcommit <args>
 
 "W command that write files as root
-command W w !sudo tee % > /dev/null
+command! W w !sudo tee % > /dev/null
 
 " command for capturing external command output
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
