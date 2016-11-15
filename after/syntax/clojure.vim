@@ -13,17 +13,6 @@ syntax match clojureConcealLambda /\v#\(/me=e-1 conceal cchar=ƒ
 hi link clojureConcealLambda Define
 hi! link Conceal Define
 
-if has("nvim")
-  " Open terminal and run lein figwheel
-  nmap <Leader>term <C-w>s:terminal<CR>lein figwheel<CR><C-\><C-n><C-w>p
-  " Evaluate anything from the visual mode in the next window
-  vmap <buffer> ,e y<C-w>wpi<CR><C-\><C-n><C-w>p
-  " Evaluate outer most form
-  nmap <buffer> ,e ma^v%,e`a
-  " Evaluate buffer"
-  nmap <buffer> ,b maggVG,e`a
-endif
-
 setlocal conceallevel=2
 
 " Clojure
