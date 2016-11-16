@@ -16,6 +16,6 @@ function AdjustFireplace()
   "
 endfunction
 
-au BufEnter *.cljc,*.cljs,*.clj call AdjustFireplace()
+au BufEnter *.cljc,*.cljs,*.clj,*.boot call AdjustFireplace()
 
 " vim: ts=2:sts=2:sw=2:expandtab
