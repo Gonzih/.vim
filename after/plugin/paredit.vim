@@ -8,6 +8,6 @@ function! AdjustParedit()
   silent! unmap <buffer> D
 endfunction
 
-au BufEnter *.lisp,*.asd,*.lsp,*.cl,*.scm,*.rkt,*.cljs,*.cljc,*.clj,*.boot call AdjustParedit()
+au BufEnter *.lisp,*.asd,*.lsp,*.cl,*.scm,*.rkt,*.cljs,*.cljc,*.clj,*.boot,*.edn call AdjustParedit()
 
 " vim: ts=2:sts=2:sw=2:expandtab
