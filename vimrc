@@ -91,6 +91,8 @@ call dein#add('sjl/gundo.vim')
 " You can specify revision/branch/tag.
 call dein#add('Shougo/vimshell')
 
+call dein#add('vimwiki/vimwiki')
+
 call dein#end()
 
 filetype plugin indent on
