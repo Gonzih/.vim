@@ -57,6 +57,7 @@ au Filetype rust       setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype nim        setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype c          setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype jinja      setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype vimwiki    setlocal ts=2 sts=2 sw=2 expandtab
 
 " ruby autocomplete
 au FileType ruby,eruby set omnifunc=rubycomplete#Complete
