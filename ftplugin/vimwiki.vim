@@ -1,5 +1,5 @@
-nmap << <Plug>VimwikiDecreaseLvlSingleItem
-nmap >> <Plug>VimwikiIncreaseLvlSingleItem
+nmap <silent><buffer> << <Plug>VimwikiDecreaseLvlSingleItem
+nmap <silent><buffer> >> <Plug>VimwikiIncreaseLvlSingleItem
 
-nmap <silent><buffer> gln gll
-nmap <silent><buffer> gld glh
+nmap <silent><buffer> gln <Plug>VimwikiDecreaseLvlSingleItem
+nmap <silent><buffer> gld <Plug>VimwikiIncreaseLvlSingleItem
