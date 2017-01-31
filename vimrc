@@ -22,7 +22,8 @@ call dein#add('tpope/vim-vinegar')
 call dein#add('godlygeek/tabular')
 
 " Bottom line
-call dein#add('bling/vim-airline')
+call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
 " Syntax checks
 call dein#add('scrooloose/syntastic')
 " Git status
