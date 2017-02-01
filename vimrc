@@ -151,7 +151,7 @@ set background=dark
 colorscheme gruvbox
 
 "List special symbols
-set listchars=tab:▸\ ,eol:¬,trail:•,extends:❯,precedes:❮
+set listchars=tab:▸\ ,eol:¬,trail:•,extends:⟩,precedes:⟨
 set list
 
 nmap <silent> <C-l> :silent noh<CR>
