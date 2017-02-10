@@ -57,6 +57,7 @@ call dein#add('rust-lang/rust.vim',                {'on_ft': ['rust']})
 call dein#add('racer-rust/vim-racer',              {'on_ft': ['rust']})
 call dein#add('rodjek/vim-puppet',                 {'on_ft': ['puppet']})
 call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
+call dein#add('jodosha/vim-godebug',               {'on_ft': ['go']})
 call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
 
 " Haskell
