@@ -96,6 +96,8 @@ call dein#add('Shougo/vimshell')
 
 call dein#add('vimwiki/vimwiki')
 
+call dein#add('vim-scripts/dbext.vim', {'on_ft': ['sql']})
+
 call dein#end()
 
 filetype plugin indent on
