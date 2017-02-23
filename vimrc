@@ -71,7 +71,7 @@ call dein#add('Raimondi/delimitMate')
 call dein#add('Shougo/neocomplete.vim')
 
 " Rainbow ()
-call dein#add('kien/rainbow_parentheses.vim')
+call dein#add('luochen1990/rainbow')
 
 " Clojure
 call dein#add('guns/vim-clojure-static',    {'on_ft': ['clojure']})
