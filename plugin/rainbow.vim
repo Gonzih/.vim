@@ -1,6 +1,6 @@
     let g:rainbow_conf = {
     \   'guifgs': ['royalblue3', 'seagreen3', 'darkorchid3', 'firebrick3', 'royalblue3', 'seagreen3', 'darkorchid3', 'firebrick3', 'royalblue3', 'seagreen3', 'darkorchid3', 'firebrick3', 'royalblue3', 'seagreen3', 'darkorchid3', 'firebrick3'],
-    \   'ctermfgs': ['brown','gray','red', 'darkmagenta', 'blue', 'darkgreen', 'darkcyan', 'darkred', 'red', 'darkblue'],
+    \   'ctermfgs': ['brown','red', 'darkmagenta', 'blue', 'darkgreen', 'darkcyan', 'darkred','gray', 'red', 'darkblue'],
     \   'operators': '_,_',
     \   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
     \   'separately': {
