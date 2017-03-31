@@ -80,6 +80,8 @@ call dein#add('tpope/vim-fireplace',        {'on_ft': ['clojure']})
 call dein#add('tpope/vim-dispatch',         {'on_ft': ['clojure']})
 call dein#add('vim-scripts/paredit.vim',    {'on_ft': ['clojure']})
 
+call dein#add('toml-lang/toml', {'on_ft': ['toml']})
+
 call dein#add('tpope/timl')
 call dein#add('sjl/tslime2.vim')
 
