@@ -31,6 +31,7 @@ au BufRead,BufNewFile build.boot      setlocal filetype=clojure
 au BufRead,BufNewFile *.edn           setlocal filetype=clojure
 au BufRead,BufNewFile *.dockerfile    setlocal filetype=dockerfile
 au BufRead,BufNewFile *.j2            setlocal filetype=jinja
+au BufRead,BufNewFile *.toml            setlocal filetype=toml
 
 
 au FileType arc call PareditInitBuffer()
