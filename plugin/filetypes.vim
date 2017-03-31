@@ -59,6 +59,7 @@ au Filetype nim        setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype c          setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype jinja      setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype vimwiki    setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype toml       setlocal ts=2 sts=2 sw=2 expandtab
 
 au Filetype make       setlocal ts=2 sts=2 sw=2 noexpandtab
 au Filetype groovy     setlocal ts=2 sts=2 sw=2 noexpandtab
