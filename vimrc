@@ -69,6 +69,7 @@ call dein#add('eagletmt/ghcmod-vim',     {'on_ft': ['haskell']})
 call dein#add('Raimondi/delimitMate')
 
 call dein#add('Shougo/neocomplete.vim')
+call dein#add('Shougo/deoplete.nvim')
 
 " Rainbow ()
 call dein#add('luochen1990/rainbow')
