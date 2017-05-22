@@ -199,4 +199,8 @@ if exists("&undodir")
     set undoreload=500
 endif
 
+if has('nvim')
+  let g:deoplete#enable_at_startup = 1
+endif
+
 " vim: ts=2:sts=2:sw=2:expandtab
