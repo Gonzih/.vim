@@ -68,8 +68,11 @@ call dein#add('eagletmt/ghcmod-vim',     {'on_ft': ['haskell']})
 " Autocomplete mode for delimiteres in insert mode
 call dein#add('Raimondi/delimitMate')
 
-call dein#add('Shougo/neocomplete.vim')
-call dein#add('Shougo/deoplete.nvim')
+if has('nvim')
+  call dein#add('Shougo/deoplete.nvim')
+else
+  call dein#add('Shougo/neocomplete.vim')
+endif
 
 " Rainbow ()
 call dein#add('luochen1990/rainbow')
