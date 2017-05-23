@@ -2,12 +2,10 @@ function AdjustFireplace()
   nnoremap <buffer> <C-w>d <C-w>h
   nnoremap <buffer> <C-w>j <C-w>d
 
-  if !has("nvim")
-    " Fireplace stuff
-    nmap <buffer> <Leader>mek <Plug>FireplaceK
-    nmap <buffer> <Leader>mef :Eval<CR>
-    nmap <buffer> <Leader>meb :%Eval<CR>
-  endif
+  " Fireplace stuff
+  nmap <buffer> <Leader>mek <Plug>FireplaceK
+  nmap <buffer> <Leader>mef :Eval<CR>
+  nmap <buffer> <Leader>meb :%Eval<CR>
 
   " Tmux stuff
   " nmap <buffer> <Leader>meb maggVG:SendSelectionToTmux<CR>`a
