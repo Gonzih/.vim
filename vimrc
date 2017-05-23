@@ -70,6 +70,7 @@ call dein#add('Raimondi/delimitMate')
 
 if has('nvim')
   call dein#add('Shougo/deoplete.nvim')
+  call dein#add('zchee/deoplete-go', {'build': 'make'})
 else
   call dein#add('Shougo/neocomplete.vim')
 endif
