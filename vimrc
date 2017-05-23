@@ -71,6 +71,7 @@ call dein#add('Raimondi/delimitMate')
 if has('nvim')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('zchee/deoplete-go', {'build': 'make'})
+  call dein#add('clojure-vim/async-clj-omni')
 else
   call dein#add('Shougo/neocomplete.vim')
 endif
