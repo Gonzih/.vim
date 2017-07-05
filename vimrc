@@ -60,9 +60,6 @@ call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
 " call dein#add('jodosha/vim-godebug',               {'on_ft': ['go']})
 call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
 
-if has('nvim')
-call dein#add('mhartington/nvim-typescript',       {'on_ft': ['typescript']})
-endif
 
 " Haskell
 call dein#add('wlangstroth/vim-haskell', {'on_ft': ['haskell']})
@@ -76,6 +73,8 @@ if has('nvim')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('zchee/deoplete-go', {'build': 'make'})
   call dein#add('clojure-vim/async-clj-omni')
+  call dein#add('mhartington/nvim-typescript', {'on_ft': ['typescript']})
+  call dein#add('leafgarland/typescript-vim',  {'on_ft': ['typescript']})
 else
   call dein#add('Shougo/neocomplete.vim')
 endif
