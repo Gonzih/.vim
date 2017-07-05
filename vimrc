@@ -60,6 +60,10 @@ call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
 " call dein#add('jodosha/vim-godebug',               {'on_ft': ['go']})
 call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
 
+if has('nvim')
+call dein#add('mhartington/nvim-typescript',       {'on_ft': ['typescript']})
+endif
+
 " Haskell
 call dein#add('wlangstroth/vim-haskell', {'on_ft': ['haskell']})
 call dein#add('bitc/vim-hdevtools',      {'on_ft': ['haskell']})
