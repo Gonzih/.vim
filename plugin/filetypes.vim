@@ -43,6 +43,7 @@ au Filetype elixir     setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype scss       setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype sass       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype css        setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype html       setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype eruby      setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
