@@ -13,3 +13,10 @@ endfunction
 "Trim empty lines at the EOF
 au BufWritePre * call MyTrimEndLines()
 au BufWritePre * call MyTrimTrailingWhitespaces()
+
+function TyporaStart()
+      call system("/usr/bin/typora \"" . expand("%") . "\" &")
+      setlocal autoread
+  endfunction
+
+command! Typora call TyporaStart()
