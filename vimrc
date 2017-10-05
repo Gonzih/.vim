@@ -59,6 +59,7 @@ call dein#add('rodjek/vim-puppet',                 {'on_ft': ['puppet']})
 call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
 " call dein#add('jodosha/vim-godebug',               {'on_ft': ['go']})
 call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
+call dein#add('hashivim/vim-terraform',            {'on_ft': ['terraform']})
 
 
 " Haskell

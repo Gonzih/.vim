@@ -33,6 +33,7 @@ au BufRead,BufNewFile *.dockerfile    setlocal filetype=dockerfile
 au BufRead,BufNewFile *.j2            setlocal filetype=jinja
 au BufRead,BufNewFile *.toml          setlocal filetype=toml
 au BufRead,BufNewFile *.ts            setlocal filetype=typescript
+au BufRead,BufNewFile *.tf            setlocal filetype=terraform
 
 
 au FileType arc call PareditInitBuffer()
