@@ -68,7 +68,7 @@ call dein#add('bitc/vim-hdevtools',      {'on_ft': ['haskell']})
 call dein#add('eagletmt/ghcmod-vim',     {'on_ft': ['haskell']})
 
 " Autocomplete mode for delimiteres in insert mode
-call dein#add('Raimondi/delimitMate')
+call dein#add('jiangmiao/auto-pairs')
 
 if has('nvim')
   call dein#add('Shougo/deoplete.nvim')
