@@ -19,7 +19,7 @@ call dein#add('tpope/vim-fugitive')
 " better netrw
 call dein#add('tpope/vim-vinegar')
 " db interface
-call dein#add('tpope/vim-db')
+call dein#add('tpope/vim-dadbod')
 " Tab/=
 call dein#add('godlygeek/tabular')
 
