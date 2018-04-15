@@ -38,9 +38,12 @@ call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/unite.vim')
 
+" Arduino
+call dein#add('stevearc/vim-arduino',            {'on_ft': ['arduino']})
+call dein#add('vim-scripts/Arduino-syntax-file', {'on_ft': ['arduino']})
+
 " FileTypes
 call dein#add('vim-ruby/vim-ruby',                 {'on_ft': ['ruby', 'erb']})
-call dein#add('vim-scripts/Arduino-syntax-file',   {'on_ft': ['arduino']})
 call dein#add('wlangstroth/vim-racket',            {'on_ft': ['racket']})
 call dein#add('derekwyatt/vim-scala',              {'on_ft': ['scala']})
 call dein#add('aliva/vim-fish',                    {'on_ft': ['fish']})
