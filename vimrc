@@ -92,8 +92,9 @@ call dein#add('luochen1990/rainbow')
 call dein#add('guns/vim-clojure-static',    {'on_ft': ['clojure']})
 call dein#add('guns/vim-clojure-highlight', {'on_ft': ['clojure']})
 call dein#add('tpope/vim-fireplace',        {'on_ft': ['clojure']})
-call dein#add('tpope/vim-dispatch',         {'on_ft': ['clojure']})
 call dein#add('vim-scripts/paredit.vim',    {'on_ft': ['clojure']})
+
+call dein#add('tpope/vim-dispatch')
 
 call dein#add('cespare/vim-toml', {'on_ft': ['toml']})
 
