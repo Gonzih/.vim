@@ -116,6 +116,8 @@ call dein#add('vimwiki/vimwiki')
 
 call dein#add('vim-scripts/dbext.vim', {'on_ft': ['sql']})
 
+call dein#add('liuchengxu/vim-which-key')
+
 call dein#end()
 
 filetype plugin indent on
