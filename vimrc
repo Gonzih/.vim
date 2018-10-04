@@ -89,10 +89,13 @@ endif
 call dein#add('luochen1990/rainbow')
 
 " Clojure
-call dein#add('guns/vim-clojure-static',    {'on_ft': ['clojure']})
-call dein#add('guns/vim-clojure-highlight', {'on_ft': ['clojure']})
-call dein#add('tpope/vim-fireplace',        {'on_ft': ['clojure']})
-call dein#add('vim-scripts/paredit.vim',    {'on_ft': ['clojure']})
+call dein#add('guns/vim-clojure-static',                    {'on_ft': ['clojure']})
+call dein#add('guns/vim-clojure-highlight',                 {'on_ft': ['clojure']})
+call dein#add('guns/vim-sexp',                              {'on_ft': ['clojure']})
+call dein#add('tpope/vim-sexp-mappings-for-regular-people', {'on_ft': ['clojure']})
+call dein#add('tpope/vim-fireplace',                        {'on_ft': ['clojure']})
+call dein#add('vim-scripts/paredit.vim',                    {'on_ft': ['clojure']})
+call dein#add('gberenfield/cljfold.vim',                    {'on_ft': ['clojure']})
 
 call dein#add('tpope/vim-dispatch')
 
