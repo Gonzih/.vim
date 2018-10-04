@@ -101,6 +101,8 @@ call dein#add('tpope/vim-dispatch')
 
 call dein#add('cespare/vim-toml', {'on_ft': ['toml']})
 
+call dein#add('cakebaker/scss-syntax.vim', {'on_ft': ['scss', 'sass']})
+
 call dein#add('tpope/timl')
 call dein#add('sjl/tslime2.vim')
 
