@@ -66,6 +66,7 @@ call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
 call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
 call dein#add('hashivim/vim-terraform',            {'on_ft': ['terraform']})
 call dein#add('dart-lang/dart-vim-plugin',         {'on_ft': ['dart']})
+call dein#add('reisub0/hot-reload.vim',            {'on_ft': ['dart']})
 
 
 " Haskell
