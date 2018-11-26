@@ -1,0 +1,2 @@
+source ~/.vim/plugin/keybindings.vim
+set vim-surround
