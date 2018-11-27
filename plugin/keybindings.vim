@@ -12,6 +12,7 @@ noremap j d
 noremap l n
 noremap L N
 noremap J D
+noremap jj dd
 
 " ; == :
 nnoremap ; :
