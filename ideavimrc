@@ -1,6 +1,6 @@
-let mapleader = " "
 source ~/.vim/plugin/keybindings.vim
-set vim-surround
 source ~/.vim/after/plugin/surround.vim
+nmap <leader>cl :action CommentByLineComment<cr>
+nmap <leader>== :action ReformatCode<cr>
 
-map <leader>cl :action CommentByLineComment<cr>
+set vim-surround

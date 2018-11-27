@@ -1,4 +1,4 @@
-let mapleader = "\<Space>"
+let mapleader = " "
 
 "Dvorak it!
 no d h
