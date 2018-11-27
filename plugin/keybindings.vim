@@ -1,17 +1,17 @@
 let mapleader = " "
 
 "Dvorak it!
-no d h
-no h j
-no H J
-no k t
-no K T
-no t k
-no n l
-no j d
-no l n
-no L N
-no J D
+noremap d h
+noremap h j
+noremap H J
+noremap k t
+noremap K T
+noremap t k
+noremap n l
+noremap j d
+noremap l n
+noremap L N
+noremap J D
 
 " ; == :
 nnoremap ; :
@@ -84,7 +84,7 @@ map <leader>gcf :Gcommit --fixup<CR>
 map <leader>gd :Gdiff<CR>
 map <leader>gb :Gblame<CR>
 
-nmap js <Plug>Dsurround
+noremap js <Plug>Dsurround
 
 " Commenting
 map <leader>cl gcc

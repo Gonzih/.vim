@@ -1,5 +1,6 @@
 source ~/.vim/plugin/keybindings.vim
-source ~/.vim/after/plugin/surround.vim
+
+map j j
 nmap <leader>cl :action CommentByLineComment<cr>
 nmap <leader>== :action ReformatCode<cr>
 nmap <c-\> :action Flutter.Toolbar.ReloadAction<cr>
@@ -9,4 +10,9 @@ nmap gT :action PreviousTab<cr>
 nmap <leader>bb :action RecentFiles<cr>
 nmap <leader>\ :action SearchEverywhere<cr>
 
+nmap jj :action VimDeleteLine<cr>
+vmap j :action VimDeleteVisual<cr>
+
 set vim-surround
+
+noremap js ds
