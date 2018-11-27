@@ -43,13 +43,13 @@ no <C-w>- <C-w>s
 nmap <Tab> <Plug>VinegarUp
 
 " copy text to "+ (clipboard)
-nmap <Leader>yy "+yy
-vmap <Leader>y "+y
+nmap <leader>yy "+yy
+vmap <leader>y "+y
 
 " paste text from "+ (clipboard)
-map <Leader>"p "+p
-map <Leader>"P "+P
-vmap <Leader>"p "+p
+map <leader>"p "+p
+map <leader>"P "+P
+vmap <leader>"p "+p
 
 noremap @; @:
 
@@ -76,19 +76,19 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 " Git!
-map <Leader>gp :Gpush<CR>
-map <Leader>gf :Gpull<CR>
-map <Leader>gs :Gstatus<CR>
-map <Leader>gcc :Gcommit --verbose<CR>
-map <Leader>gcf :Gcommit --fixup<CR>
-map <Leader>gd :Gdiff<CR>
-map <Leader>gb :Gblame<CR>
+map <leader>gp :Gpush<CR>
+map <leader>gf :Gpull<CR>
+map <leader>gs :Gstatus<CR>
+map <leader>gcc :Gcommit --verbose<CR>
+map <leader>gcf :Gcommit --fixup<CR>
+map <leader>gd :Gdiff<CR>
+map <leader>gb :Gblame<CR>
 
 nmap js <Plug>Dsurround
 
 " Commenting
-map <Leader>cl gcc
-vmap <Leader>cl gc
+map <leader>cl gcc
+vmap <leader>cl gc
 
 if has("nvim")
   tnoremap <Esc> <C-\><C-n>
