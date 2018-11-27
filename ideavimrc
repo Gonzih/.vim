@@ -2,5 +2,11 @@ source ~/.vim/plugin/keybindings.vim
 source ~/.vim/after/plugin/surround.vim
 nmap <leader>cl :action CommentByLineComment<cr>
 nmap <leader>== :action ReformatCode<cr>
+nmap <c-\> :action Flutter.Toolbar.ReloadAction<cr>
+nmap <c-|> :action Flutter.Toolbar.ReloadAction<cr>
+nmap gt :action NextTab<cr>
+nmap gT :action PreviousTab<cr>
+nmap <leader>bb :action RecentFiles<cr>
+nmap <leader>\ :action SearchEverywhere<cr>
 
 set vim-surround
