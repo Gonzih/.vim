@@ -66,6 +66,7 @@ call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
 call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
 call dein#add('hashivim/vim-terraform',            {'on_ft': ['terraform']})
 call dein#add('dart-lang/dart-vim-plugin',         {'on_ft': ['dart']})
+call dein#add('villainy/deoplete-dart',            {'on_ft': ['dart']})
 call dein#add('reisub0/hot-reload.vim',            {'on_ft': ['dart']})
 
 
@@ -78,10 +79,10 @@ call dein#add('eagletmt/ghcmod-vim',     {'on_ft': ['haskell']})
 call dein#add('jiangmiao/auto-pairs')
 
 if has('nvim')
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('zchee/deoplete-go', {'build': 'make'})
+  call dein#add('Shougo/deoplete.nvim',        {'do': ':UpdateRemotePlugins'})
+  call dein#add('zchee/deoplete-go',           {'build': 'make'})
   call dein#add('clojure-vim/async-clj-omni')
-  call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'rev': 'next'})
+  call dein#add('w0rp/ale')
   call dein#add('mhartington/nvim-typescript', {'on_ft': ['typescript']})
   call dein#add('leafgarland/typescript-vim',  {'on_ft': ['typescript']})
 else

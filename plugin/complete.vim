@@ -8,6 +8,7 @@ if has("nvim")
   let g:deoplete#enable_smart_case = 1
   let g:deoplete#keyword_patterns = {}
   let g:deoplete#keyword_patterns.clojure = '[\w!$%&*+/:<=>?@\^_~\-\.#]*'
+  let deoplete#sources#dart#dart_sdk_path = "/opt/dart-sdk/"
 
 	inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"
   inoremap <expr><C-d> deoplete#undo_completion()
