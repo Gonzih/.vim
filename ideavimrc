@@ -13,6 +13,8 @@ nmap <leader>pf :action SearchEverywhere<cr>
 
 nmap jj :action VimDeleteLine<cr>
 vmap j :action VimDeleteVisual<cr>
+nnoremap je de
+nnoremap jE dE
 
 set vim-surround
 
