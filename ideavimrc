@@ -11,8 +11,8 @@ nmap gT :action PreviousTab<cr>
 nmap <leader>bb :action RecentFiles<cr>
 nmap <leader>pf :action SearchEverywhere<cr>
 
-nmap jj :action VimDeleteLine<cr>
-vmap j :action VimDeleteVisual<cr>
+vnoremap j d
+nnoremap jj dd
 nnoremap je de
 nnoremap jE dE
 
