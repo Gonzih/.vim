@@ -83,8 +83,8 @@ if has('nvim')
   call dein#add('zchee/deoplete-go',           {'build': 'make'})
   call dein#add('clojure-vim/async-clj-omni')
   call dein#add('w0rp/ale')
-  call dein#add('mhartington/nvim-typescript', {'on_ft': ['typescript']})
-  call dein#add('leafgarland/typescript-vim',  {'on_ft': ['typescript']})
+  call dein#add('HerringtonDarkholme/yats.vim', {'on_ft': ['typescript']})
+  call dein#add('mhartington/nvim-typescript',  {'build': './install.sh', 'on_ft': ['typescript']})
 else
   call dein#add('Shougo/neocomplete.vim')
 endif
