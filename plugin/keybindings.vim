@@ -85,8 +85,6 @@ map <leader>gcf :Gcommit --fixup<CR>
 map <leader>gd :Gdiff<CR>
 map <leader>gb :Gblame<CR>
 
-noremap js <Plug>Dsurround
-
 " Commenting
 map <leader>cl gcc
 vmap <leader>cl gc
