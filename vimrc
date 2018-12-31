@@ -33,10 +33,8 @@ call dein#add('airblade/vim-gitgutter')
 " ,f stuff
 call dein#add('Lokaltog/vim-easymotion')
 
-"Unite
-call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
-call dein#add('Shougo/neomru.vim')
-call dein#add('Shougo/unite.vim')
+"FZF
+call dein#add('junegunn/fzf.vim')
 
 " Arduino
 call dein#add('stevearc/vim-arduino',            {'on_ft': ['arduino']})
