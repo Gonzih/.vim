@@ -9,9 +9,6 @@ call dein#begin('/home/gnzh/.vim/bundle/dein.vim/')
 
 call dein#add('Shougo/dein.vim')
 
-" buffers in teh status line
-call dein#add('fholgado/minibufexpl.vim')
-
 call dein#add('tpope/vim-commentary')
 " extend % in html
 call dein#add('vim-scripts/matchit.zip')
