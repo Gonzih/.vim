@@ -23,6 +23,9 @@ call dein#add('tpope/vim-dadbod')
 " Tab/=
 call dein#add('godlygeek/tabular')
 
+" Nix os syntax
+call dein#add('LnL7/vim-nix')
+
 " Bottom line
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
