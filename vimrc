@@ -114,6 +114,7 @@ call dein#add('tpope/vim-surround')
 
 " Themes
 call dein#add('morhetz/gruvbox')
+call dein#add('sjl/badwolf')
 
 call dein#add('sjl/gundo.vim')
 
@@ -181,7 +182,7 @@ set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+colorscheme badwolf
 
 "List special symbols
 set listchars=tab:▸\ ,eol:¬,trail:•,extends:⟩,precedes:⟨
