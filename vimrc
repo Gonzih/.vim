@@ -37,7 +37,7 @@ call dein#add('airblade/vim-gitgutter')
 call dein#add('Lokaltog/vim-easymotion')
 
 "FZF
-call dein#add('junegunn/fzf', {'dir': '~/.fzf', 'build': './install --all', 'merged': 0})
+call dein#add('junegunn/fzf',     {'build': './install --all', 'merged': 0})
 call dein#add('junegunn/fzf.vim', {'depends': 'junegunn/fzf'})
 
 " Arduino
