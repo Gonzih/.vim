@@ -92,3 +92,5 @@ vmap <leader>cl gc
 if has("nvim")
   tnoremap <Esc> <C-\><C-n>
 endif
+
+map Q <Nop>
