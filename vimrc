@@ -70,6 +70,7 @@ call dein#add('hashivim/vim-terraform',            {'on_ft': ['terraform']})
 call dein#add('dart-lang/dart-vim-plugin',         {'on_ft': ['dart']})
 call dein#add('villainy/deoplete-dart',            {'on_ft': ['dart']})
 call dein#add('reisub0/hot-reload.vim',            {'on_ft': ['dart']})
+call dein#add('reasonml-editor/vim-reason-plus',   {'on_ft': ['reason']})
 
 
 " Haskell
