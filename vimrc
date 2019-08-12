@@ -131,6 +131,8 @@ call dein#add('liuchengxu/vim-which-key')
 
 call dein#add('lervag/vimtex')
 
+call dein#add('nathanaelkane/vim-indent-guides')
+
 call dein#end()
 
 filetype plugin indent on
