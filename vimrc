@@ -133,6 +133,9 @@ call dein#add('lervag/vimtex')
 
 call dein#add('nathanaelkane/vim-indent-guides')
 
+call dein#add('c9s/vikube.vim')
+call dein#add('andrewstuart/vim-kubernetes')
+
 call dein#end()
 
 filetype plugin indent on
