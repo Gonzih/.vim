@@ -7,3 +7,4 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 
 autocmd FileType yaml :IndentGuidesEnable
+autocmd FileType go :IndentGuidesDisable
