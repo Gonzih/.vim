@@ -99,6 +99,7 @@ call dein#add('guns/vim-clojure-highlight',                 {'on_ft': ['clojure'
 " call dein#add('guns/vim-sexp',                              {'on_ft': ['clojure']})
 " call dein#add('tpope/vim-sexp-mappings-for-regular-people', {'on_ft': ['clojure']})
 call dein#add('tpope/vim-fireplace',                        {'on_ft': ['clojure']})
+call dein#add('SevereOverfl0w/vim-replant',                 {'on_ft': ['clojure'], 'do': ':UpdateRemotePlugins'})
 call dein#add('vim-scripts/paredit.vim',                    {'on_ft': ['clojure']})
 call dein#add('gberenfield/cljfold.vim',                    {'on_ft': ['clojure']})
 
