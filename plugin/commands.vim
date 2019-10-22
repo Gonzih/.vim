@@ -14,3 +14,5 @@ if !exists(":DiffOrig")
 endif
 
 command! Fish set nonu | terminal fish
+
+command! -nargs=* -range=% CamelToSnake s#\(\<\u\l\+\|\l\+\)\(\u\)#\l\1_\l\2#g
