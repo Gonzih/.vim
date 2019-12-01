@@ -61,7 +61,6 @@ call dein#add('ekalinin/Dockerfile.vim',           {'on_ft': ['Dockerfile']})
 call dein#add('zah/nimrod.vim',                    {'on_ft': ['nim']})
 call dein#add('wstrinz/shen.vim',                  {'on_ft': ['shen']})
 call dein#add('rust-lang/rust.vim',                {'on_ft': ['rust']})
-call dein#add('racer-rust/vim-racer',              {'on_ft': ['rust']})
 call dein#add('wagnerf42/vim-clippy.git',          {'on_ft': ['rust']})
 call dein#add('rodjek/vim-puppet',                 {'on_ft': ['puppet']})
 call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
@@ -75,6 +74,13 @@ call dein#add('reasonml-editor/vim-reason-plus',   {'on_ft': ['reason']})
 call dein#add('leafgarland/typescript-vim',        {'on_ft': ['typescript']})
 call dein#add('Quramy/tsuquyomi',                  {'on_ft': ['typescript']})
 
+
+" Completion
+call dein#add('prabirshrestha/async.vim')
+call dein#add('prabirshrestha/vim-lsp')
+call dein#add('lighttiger2505/deoplete-vim-lsp')
+" activate after nvim is updated in repo to support built in LSP
+" call dein#add('Shougo/deoplete-lsp')
 
 " Haskell
 call dein#add('wlangstroth/vim-haskell', {'on_ft': ['haskell']})
