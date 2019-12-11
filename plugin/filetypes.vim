@@ -36,6 +36,7 @@ au BufRead,BufNewFile *.ts            setlocal filetype=typescript
 au BufRead,BufNewFile *.tf            setlocal filetype=terraform
 au BufRead,BufNewFile *.dart          setlocal filetype=dart
 au BufRead,BufNewFile *.yml,*.yaml    setlocal filetype=yaml
+au BufRead,BufNewFile *.scad          setlocal filetype=openscad
 
 
 au FileType arc call PareditInitBuffer()
