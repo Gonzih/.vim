@@ -72,6 +72,7 @@ au Filetype proto      setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype sh         setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype bash       setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype json       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype openscad   setlocal ts=2 sts=2 sw=2 expandtab
 
 au Filetype make       setlocal ts=2 sts=2 sw=2 noexpandtab
 au Filetype groovy     setlocal ts=2 sts=2 sw=2 noexpandtab
