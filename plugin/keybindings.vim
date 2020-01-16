@@ -34,7 +34,7 @@ no <C-w>t <C-w>k
 no <C-w>h <C-w>j
 no <C-w>d <C-w>h
 
-no <C-w>\ <C-w>v
+" no <C-w>\ <C-w>v
 no <C-w>- <C-w>s
 
 " <> repeat forward and back for f, F, k, K
