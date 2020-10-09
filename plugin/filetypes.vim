@@ -62,6 +62,7 @@ au Filetype haskell    setlocal ts=8 sts=4 sw=4 expandtab smarttab shiftround no
 au Filetype rust       setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype nim        setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype c          setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype cpp        setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype jinja      setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype vimwiki    setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype toml       setlocal ts=2 sts=2 sw=2 expandtab

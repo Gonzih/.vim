@@ -96,6 +96,7 @@ if has('nvim')
   call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
   call dein#add('deoplete-plugins/deoplete-go', {'build': 'make'})
   call dein#add('clojure-vim/async-clj-omni')
+  call dein#add('deoplete-plugins/deoplete-clang')
   call dein#add('w0rp/ale')
 endif
 
