@@ -156,6 +156,10 @@ syntax enable
 
 " ====================== DEPENDENCIES END ======================
 
+" Read config files from a project dir
+set exrc
+set secure
+
 " Gruvbox
 if !has("gui_running")
   let g:gruvbox_italic=0
