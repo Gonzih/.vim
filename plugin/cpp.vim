@@ -6,4 +6,5 @@
 "   LIBCLANG_PATH="${pkgs.llvmPackages.libclang}/lib";
 
 
-let g:deoplete#sources#clang#libclang_path = $LIBCLANG_PATH.'/libclang.so'
+" let g:deoplete#sources#clang#libclang_path = $LIBCLANG_PATH.'/libclang.so'
+let g:clang_library_path = $LIBCLANG_PATH
