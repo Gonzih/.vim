@@ -7,4 +7,5 @@
 
 
 " let g:deoplete#sources#clang#libclang_path = $LIBCLANG_PATH.'/libclang.so'
+let g:clang_debug = 1
 let g:clang_library_path = $LIBCLANG_PATH

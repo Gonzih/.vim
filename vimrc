@@ -19,7 +19,7 @@ call dein#add('tpope/vim-fugitive')
 " better netrw
 call dein#add('tpope/vim-vinegar')
 " db interface
-call dein#add('tpope/vim-dadbod')
+" call dein#add('tpope/vim-dadbod')
 " Tab/=
 call dein#add('godlygeek/tabular')
 
@@ -79,26 +79,27 @@ call dein#add('sirtaj/vim-openscad',               {'on_ft': ['openscad']})
 
 " Completion
 call dein#add('prabirshrestha/async.vim')
-call dein#add('prabirshrestha/vim-lsp')
-call dein#add('lighttiger2505/deoplete-vim-lsp')
+" call dein#add('prabirshrestha/vim-lsp')
+" call dein#add('lighttiger2505/deoplete-vim-lsp')
 " activate after nvim is updated in repo to support built in LSP
 " call dein#add('Shougo/deoplete-lsp')
 
 " Haskell
-call dein#add('wlangstroth/vim-haskell', {'on_ft': ['haskell']})
-call dein#add('bitc/vim-hdevtools',      {'on_ft': ['haskell']})
-call dein#add('eagletmt/ghcmod-vim',     {'on_ft': ['haskell']})
+" call dein#add('wlangstroth/vim-haskell', {'on_ft': ['haskell']})
+" call dein#add('bitc/vim-hdevtools',      {'on_ft': ['haskell']})
+" call dein#add('eagletmt/ghcmod-vim',     {'on_ft': ['haskell']})
 
 " Autocomplete mode for delimiteres in insert mode
 call dein#add('jiangmiao/auto-pairs')
 
 if has('nvim')
   call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
-  call dein#add('deoplete-plugins/deoplete-go', {'build': 'make'})
-  call dein#add('clojure-vim/async-clj-omni')
+  " call dein#add('w0rp/ale')
+  "
+  " call dein#add('deoplete-plugins/deoplete-go', {'build': 'make'})
+  " call dein#add('clojure-vim/async-clj-omni')
   " call dein#add('deoplete-plugins/deoplete-clang')
   call dein#add('xavierd/clang_complete')
-  call dein#add('w0rp/ale')
 endif
 
 " Rainbow ()
@@ -120,8 +121,8 @@ call dein#add('cespare/vim-toml', {'on_ft': ['toml']})
 
 call dein#add('cakebaker/scss-syntax.vim', {'on_ft': ['scss', 'sass']})
 
-call dein#add('tpope/timl')
-call dein#add('sjl/tslime2.vim')
+" call dein#add('tpope/timl')
+" call dein#add('sjl/tslime2.vim')
 
 "Surround is the best!
 call dein#add('tpope/vim-surround')
@@ -145,8 +146,8 @@ call dein#add('lervag/vimtex')
 
 call dein#add('nathanaelkane/vim-indent-guides')
 
-call dein#add('c9s/vikube.vim')
-call dein#add('andrewstuart/vim-kubernetes')
+" call dein#add('c9s/vikube.vim')
+" call dein#add('andrewstuart/vim-kubernetes')
 
 call dein#add('majutsushi/tagbar')
 
