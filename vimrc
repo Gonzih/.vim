@@ -90,7 +90,7 @@ call dein#add('prabirshrestha/async.vim')
 " call dein#add('eagletmt/ghcmod-vim',     {'on_ft': ['haskell']})
 
 " Autocomplete mode for delimiteres in insert mode
-call dein#add('jiangmiao/auto-pairs')
+" call dein#add('jiangmiao/auto-pairs')
 
 if has('nvim')
   call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
@@ -208,7 +208,7 @@ set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
 set background=dark
-colorscheme badwolf
+colorscheme gruvbox
 " colorscheme gruvbox
 
 "List special symbols
