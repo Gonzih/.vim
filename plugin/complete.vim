@@ -5,12 +5,15 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 if has("nvim")
   let g:deoplete#enable_at_startup = 1
   " let g:deoplete#complete_method = "omnifunc"
-  let deoplete#sources#dart#dart_sdk_path = "/opt/dart-sdk/"
 
   call deoplete#custom#option('smart_case', 1)
   call deoplete#custom#option('keyword_patterns', {
         \ 'clojure': '[\w!$%&*+/:<=>?@\^_~\-\.#]*',
         \ })
+  call deoplete#custom#option('sources', {
+        \ 'rust': ['LanguageClient'],
+        \ })
+
 
 	inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"
   inoremap <expr><C-d> deoplete#undo_completion()

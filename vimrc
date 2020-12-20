@@ -83,6 +83,7 @@ call dein#add('prabirshrestha/async.vim')
 " call dein#add('lighttiger2505/deoplete-vim-lsp')
 " activate after nvim is updated in repo to support built in LSP
 " call dein#add('Shougo/deoplete-lsp')
+call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'merged': 0, 'rev': 'next'})
 
 " Haskell
 " call dein#add('wlangstroth/vim-haskell', {'on_ft': ['haskell']})
