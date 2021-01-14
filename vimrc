@@ -116,7 +116,7 @@ call dein#add('guns/vim-clojure-highlight',                 {'on_ft': ['clojure'
 " call dein#add('tpope/vim-fireplace',                        {'on_ft': ['clojure']})
 " call dein#add('SevereOverfl0w/vim-replant',                 {'on_ft': ['clojure'], 'do': ':UpdateRemotePlugins'})
 " call dein#add('gberenfield/cljfold.vim',                    {'on_ft': ['clojure']})
-call dein#add('Olical/conjure',                             {'on_ft': ['clojure']})
+call dein#add('Olical/conjure',                             {'on_ft': ['clojure'], 'rev': 'v4.11.0'})
 
 
 call dein#add('cespare/vim-toml', {'on_ft': ['toml']})
