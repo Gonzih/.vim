@@ -1,6 +1,6 @@
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
-\ 'clojure': ['clojure-lsp'],
+\ 'clojure': ['bash', '-c', 'clojure-lsp'],
 \ }
 
 nmap <Leader>lm <Plug>(lcn-menu)
