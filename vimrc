@@ -78,10 +78,10 @@ call dein#add('sirtaj/vim-openscad',               {'on_ft': ['openscad']})
 
 
 " Completion
-call dein#add('prabirshrestha/async.vim')
-call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'merged': 0, 'rev': 'next'})
+" call dein#add('prabirshrestha/async.vim')
 
 if has('nvim')
+  call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'merged': 0, 'rev': 'next'})
   call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
   call dein#add('xavierd/clang_complete')
 endif

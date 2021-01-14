@@ -17,5 +17,5 @@ command! -nargs=* -complete=shellcmd Fish !fish -c '<args>'
 
 " command! -nargs=* -range=% CamelToSnake s#\(\<\u\l\+\|\l\+\)\(\u\)#\l\1_\l\2#g
 
-command! DeinInstall call dein#install()
-command! DeinUpdate call dein#update()
+command! DeinInstall call dein#install() | UpdateRemotePlugins
+command! DeinUpdate call dein#update() | UpdateRemotePlugins

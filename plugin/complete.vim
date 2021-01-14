@@ -7,28 +7,13 @@ if has("nvim")
   " let g:deoplete#complete_method = "omnifunc"
 
   call deoplete#custom#option('smart_case', 1)
-  call deoplete#custom#option('keyword_patterns', {
-        \ 'clojure': '[\w!$%&*+/:<=>?@\^_~\-\.#]*',
-        \ })
   call deoplete#custom#option('sources', {
         \ 'rust': ['LanguageClient'],
+        \ 'clojure': ['LanguageClient'],
         \ })
-
 
 	inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"
   inoremap <expr><C-d> deoplete#undo_completion()
-endif
-
-if !has("nvim")
-  let g:neocomplete#enable_at_startup = 1
-  let g:neocomplete#enable_smart_case = 1
-
-  let g:neocomplete#sources#syntax#min_keyword_length = 3
-  let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-  inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-  inoremap <expr><C-d> neocomplete#undo_completion()
-  inoremap <expr><C-n> neocomplete#complete_common_string()
 endif
 
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
