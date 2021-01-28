@@ -125,6 +125,8 @@ call dein#add('nathanaelkane/vim-indent-guides')
 
 call dein#add('majutsushi/tagbar')
 
+call dein#add('rhysd/vim-grammarous')
+
 call dein#end()
 
 filetype plugin indent on
