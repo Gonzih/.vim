@@ -2,3 +2,4 @@ backups/*
 tmp/*
 bundle/*
 view/
+LanguageClient.log
