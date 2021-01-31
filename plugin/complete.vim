@@ -10,6 +10,8 @@ if has("nvim")
   call deoplete#custom#option('sources', {
         \ 'rust': ['LanguageClient'],
         \ 'clojure': ['LanguageClient'],
+        \ 'typescript': ['LanguageClient'],
+        \ 'typescript.tsx': ['LanguageClient'],
         \ })
 
 	inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"

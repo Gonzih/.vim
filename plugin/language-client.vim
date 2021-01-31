@@ -1,6 +1,8 @@
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
 \ 'clojure': ['bash', '-c', 'clojure-lsp'],
+\ 'typescript': ['typescript-language-server', '--stdio'],
+\ 'typescript.tsx': ['typescript-language-server', '--stdio'],
 \ }
 
 nmap <Leader>lm <Plug>(lcn-menu)

@@ -72,8 +72,7 @@ call dein#add('dart-lang/dart-vim-plugin',         {'on_ft': ['dart']})
 call dein#add('villainy/deoplete-dart',            {'on_ft': ['dart']})
 call dein#add('reisub0/hot-reload.vim',            {'on_ft': ['dart']})
 call dein#add('reasonml-editor/vim-reason-plus',   {'on_ft': ['reason']})
-call dein#add('leafgarland/typescript-vim',        {'on_ft': ['typescript']})
-call dein#add('Quramy/tsuquyomi',                  {'on_ft': ['typescript']})
+call dein#add('HerringtonDarkholme/yats.vim',      {'on_ft': ['typescript', 'typescript.tsx']})
 call dein#add('sirtaj/vim-openscad',               {'on_ft': ['openscad']})
 
 

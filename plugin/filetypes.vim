@@ -32,6 +32,7 @@ au BufRead,BufNewFile *.dockerfile            setlocal filetype=dockerfile
 au BufRead,BufNewFile *.j2                    setlocal filetype=jinja
 au BufRead,BufNewFile *.toml                  setlocal filetype=toml
 au BufRead,BufNewFile *.ts                    setlocal filetype=typescript
+au BufRead,BufNewFile *.tsx                   setlocal filetype=typescript.tsx
 au BufRead,BufNewFile *.tf                    setlocal filetype=terraform
 au BufRead,BufNewFile *.dart                  setlocal filetype=dart
 au BufRead,BufNewFile *.yml,*.yaml            setlocal filetype=yaml
