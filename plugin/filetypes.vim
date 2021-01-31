@@ -42,41 +42,41 @@ au BufRead,BufNewFile *.ex,*.exs,*.eex,*.leex setlocal filetype=elixir
 au FileType arc call PareditInitBuffer()
 "au FileType ruby call PareditInitBuffer()
 
-au Filetype ruby       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype elixir     setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype coffee     setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype scss       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype sass       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype css        setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype html       setlocal ts=4 sts=4 sw=4 expandtab
-au Filetype eruby      setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype arduino    setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype cucumber   setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype lisp       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype racket     setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype clojure    setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
-au Filetype fish       setlocal ts=4 sts=4 sw=4 noexpandtab
-au Filetype scala      setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype haskell    setlocal ts=8 sts=4 sw=4 expandtab smarttab shiftround nojoinspaces
-au Filetype rust       setlocal ts=4 sts=4 sw=4 expandtab
-au Filetype nim        setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype c          setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype cpp        setlocal ts=4 sts=4 sw=4 expandtab
-au Filetype jinja      setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype vimwiki    setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype toml       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype typescript setlocal ts=4 sts=4 sw=4 expandtab
-au Filetype terraform  setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype proto      setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype sh         setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype bash       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype json       setlocal ts=2 sts=2 sw=2 expandtab
-au Filetype openscad   setlocal ts=2 sts=2 sw=2 expandtab
-
-au Filetype make       setlocal ts=2 sts=2 sw=2 noexpandtab
-au Filetype groovy     setlocal ts=2 sts=2 sw=2 noexpandtab
+au Filetype ruby           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype elixir         setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype coffee         setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype scss           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype sass           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype css            setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype html           setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype eruby          setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype yaml           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype arduino        setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype cucumber       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype lisp           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype racket         setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype clojure        setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype javascript     setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype fish           setlocal ts=4 sts=4 sw=4 noexpandtab
+au Filetype scala          setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype haskell        setlocal ts=8 sts=4 sw=4 expandtab smarttab shiftround nojoinspaces
+au Filetype rust           setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype nim            setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype c              setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype cpp            setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype jinja          setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype vimwiki        setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype toml           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype typescript     setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype typescript.tsx setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype terraform      setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype proto          setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype sh             setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype bash           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype json           setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype openscad       setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype make           setlocal ts=2 sts=2 sw=2 noexpandtab
+au Filetype groovy         setlocal ts=2 sts=2 sw=2 noexpandtab
 
 
 " ruby autocomplete
