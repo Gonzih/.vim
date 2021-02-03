@@ -14,6 +14,7 @@ if has("nvim")
         \ 'typescript.tsx': ['LanguageClient'],
         \ 'dart': ['LanguageClient'],
         \ 'nix': ['LanguageClient'],
+        \ 'go': ['LanguageClient'],
         \ })
 
 	inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"
