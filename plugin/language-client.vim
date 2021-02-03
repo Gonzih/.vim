@@ -4,8 +4,8 @@ let g:LanguageClient_serverCommands = {
 \ 'typescript': ['typescript-language-server', '--stdio'],
 \ 'typescript.tsx': ['typescript-language-server', '--stdio'],
 \ 'dart': ['dart', $DART_SDK.'/bin/snapshots/analysis_server.dart.snapshot', '--lsp'],
-\ 'nix': ['rnix-lsp']
-\ 'go': ['gopls']
+\ 'nix': ['rnix-lsp'],
+\ 'go': ['gopls'],
 \ }
 
 nmap <Leader>lm <Plug>(lcn-menu)
