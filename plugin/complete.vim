@@ -13,6 +13,7 @@ if has("nvim")
         \ 'typescript': ['LanguageClient'],
         \ 'typescript.tsx': ['LanguageClient'],
         \ 'dart': ['LanguageClient'],
+        \ 'nix': ['LanguageClient'],
         \ })
 
 	inoremap <expr><BS>  deoplete#smart_close_popup()."\<C-h>"
