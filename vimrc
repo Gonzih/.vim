@@ -117,7 +117,7 @@ call dein#add('liuchengxu/vim-which-key')
 
 call dein#add('lervag/vimtex')
 
-call dein#add('nathanaelkane/vim-indent-guides')
+call dein#add('nathanaelkane/vim-indent-guides', {'on_ft': ['yaml']})
 
 call dein#add('majutsushi/tagbar')
 
