@@ -1,132 +1,151 @@
 " ====================== DEPENDENCIES BEGIN ======================
+"dein Scripts-----------------------------
 if &compatible
-  set nocompatible
+  set nocompatible               " Be iMproved
 endif
 
-set runtimepath+=/home/gnzh/.vim/bundle/dein.vim/repos/github.com/Shougo/dein.vim
+" Required:
+set runtimepath+=/home/gnzh/.cache/dein/repos/github.com/Shougo/dein.vim
 
-call dein#begin('/home/gnzh/.vim/bundle/dein.vim/')
+" Required:
+if dein#load_state('/home/gnzh/.cache/dein')
+  call dein#begin('/home/gnzh/.cache/dein')
 
-call dein#add('Shougo/dein.vim')
+  " Let dein manage dein
+  " Required:
+  call dein#add('/home/gnzh/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-call dein#add('tpope/vim-commentary')
-" extend % in html
-call dein#add('vim-scripts/matchit.zip')
-" ruby end stuff
-call dein#add('tpope/vim-endwise')
-" git stuff
-call dein#add('tpope/vim-fugitive')
-" better netrw
-call dein#add('tpope/vim-vinegar')
-" db interface
-" call dein#add('tpope/vim-dadbod')
-" Tab/=
-call dein#add('godlygeek/tabular')
+  call dein#add('Shougo/dein.vim')
 
-" Nix os syntax
-call dein#add('LnL7/vim-nix')
+  call dein#add('tpope/vim-commentary')
+  " extend % in html
+  call dein#add('vim-scripts/matchit.zip')
+  " ruby end stuff
+  call dein#add('tpope/vim-endwise')
+  " git stuff
+  call dein#add('tpope/vim-fugitive')
+  " better netrw
+  call dein#add('tpope/vim-vinegar')
+  " db interface
+  " call dein#add('tpope/vim-dadbod')
+  " Tab/=
+  call dein#add('godlygeek/tabular')
 
-" Bottom line
-call dein#add('vim-airline/vim-airline')
-call dein#add('vim-airline/vim-airline-themes')
-" Syntax checks
-call dein#add('scrooloose/syntastic')
-" Git status
-call dein#add('airblade/vim-gitgutter')
-" ,f stuff
-call dein#add('Lokaltog/vim-easymotion')
+  " Nix os syntax
+  call dein#add('LnL7/vim-nix')
 
-"FZF
-call dein#add('junegunn/fzf',     {'build': './install --all', 'merged': 0})
-call dein#add('junegunn/fzf.vim', {'depends': 'junegunn/fzf'})
+  " Bottom line
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+  " Syntax checks
+  call dein#add('scrooloose/syntastic')
+  " Git status
+  call dein#add('airblade/vim-gitgutter')
+  " ,f stuff
+  call dein#add('Lokaltog/vim-easymotion')
 
-" Arduino
-call dein#add('stevearc/vim-arduino',            {'on_ft': ['arduino']})
-call dein#add('vim-scripts/Arduino-syntax-file', {'on_ft': ['arduino']})
+  "FZF
+  call dein#add('junegunn/fzf',     {'build': './install --all', 'merged': 0})
+  call dein#add('junegunn/fzf.vim', {'depends': 'junegunn/fzf'})
 
-" FileTypes
-call dein#add('vim-ruby/vim-ruby',                 {'on_ft': ['ruby', 'erb']})
-call dein#add('wlangstroth/vim-racket',            {'on_ft': ['racket']})
-" call dein#add('derekwyatt/vim-scala',              {'on_ft': ['scala']})
-call dein#add('aliva/vim-fish',                    {'on_ft': ['fish']})
-call dein#add('elixir-lang/vim-elixir',            {'on_ft': ['elixir']})
-call dein#add('slashmili/alchemist.vim',           {'on_ft': ['elixir']})
-call dein#add('gabrielelana/vim-markdown',         {'on_ft': ['markdown']})
-call dein#add('stephpy/vim-yaml',                  {'on_ft': ['yaml']})
-call dein#add('pearofducks/ansible-vim',           {'on_ft': ['yaml.ansible']})
-call dein#add('pangloss/vim-javascript',           {'on_ft': ['javascript', 'jsx']})
-call dein#add('mxw/vim-jsx',                       {'on_ft': ['javascript', 'jsx']})
-call dein#add('Matt-Deacalion/vim-systemd-syntax', {'on_ft': ['systemd']})
-" call dein#add('lambdatoast/elm.vim',               {'on_ft': ['elm']})
-call dein#add('ekalinin/Dockerfile.vim',           {'on_ft': ['Dockerfile']})
-" call dein#add('zah/nimrod.vim',                    {'on_ft': ['nim']})
-call dein#add('rust-lang/rust.vim',                {'on_ft': ['rust']})
-call dein#add('wagnerf42/vim-clippy.git',          {'on_ft': ['rust']})
-call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
-" call dein#add('jodosha/vim-godebug',               {'on_ft': ['go']})
-" call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
-call dein#add('hashivim/vim-terraform',            {'on_ft': ['terraform']})
-call dein#add('dart-lang/dart-vim-plugin',         {'on_ft': ['dart']})
-call dein#add('thosakwe/vim-flutter',              {'on_ft': ['dart']})
-" call dein#add('reasonml-editor/vim-reason-plus',   {'on_ft': ['reason']})
-call dein#add('HerringtonDarkholme/yats.vim',      {'on_ft': ['typescript', 'typescript.tsx']})
-call dein#add('sirtaj/vim-openscad',               {'on_ft': ['openscad']})
+  " Arduino
+  call dein#add('stevearc/vim-arduino',            {'on_ft': ['arduino']})
+  call dein#add('vim-scripts/Arduino-syntax-file', {'on_ft': ['arduino']})
+
+  " FileTypes
+  call dein#add('vim-ruby/vim-ruby',                 {'on_ft': ['ruby', 'erb']})
+  call dein#add('wlangstroth/vim-racket',            {'on_ft': ['racket']})
+  " call dein#add('derekwyatt/vim-scala',              {'on_ft': ['scala']})
+  call dein#add('aliva/vim-fish',                    {'on_ft': ['fish']})
+  call dein#add('elixir-lang/vim-elixir',            {'on_ft': ['elixir']})
+  call dein#add('slashmili/alchemist.vim',           {'on_ft': ['elixir']})
+  call dein#add('gabrielelana/vim-markdown',         {'on_ft': ['markdown']})
+  call dein#add('stephpy/vim-yaml',                  {'on_ft': ['yaml']})
+  call dein#add('pearofducks/ansible-vim',           {'on_ft': ['yaml.ansible']})
+  call dein#add('pangloss/vim-javascript',           {'on_ft': ['javascript', 'jsx']})
+  call dein#add('mxw/vim-jsx',                       {'on_ft': ['javascript', 'jsx']})
+  call dein#add('Matt-Deacalion/vim-systemd-syntax', {'on_ft': ['systemd']})
+  " call dein#add('lambdatoast/elm.vim',               {'on_ft': ['elm']})
+  call dein#add('ekalinin/Dockerfile.vim',           {'on_ft': ['Dockerfile']})
+  " call dein#add('zah/nimrod.vim',                    {'on_ft': ['nim']})
+  call dein#add('rust-lang/rust.vim',                {'on_ft': ['rust']})
+  call dein#add('wagnerf42/vim-clippy.git',          {'on_ft': ['rust']})
+  call dein#add('fatih/vim-go',                      {'on_ft': ['go']})
+  " call dein#add('jodosha/vim-godebug',               {'on_ft': ['go']})
+  " call dein#add('lepture/vim-jinja',                 {'on_ft': ['jinja']})
+  call dein#add('hashivim/vim-terraform',            {'on_ft': ['terraform']})
+  call dein#add('dart-lang/dart-vim-plugin',         {'on_ft': ['dart']})
+  call dein#add('thosakwe/vim-flutter',              {'on_ft': ['dart']})
+  " call dein#add('reasonml-editor/vim-reason-plus',   {'on_ft': ['reason']})
+  call dein#add('HerringtonDarkholme/yats.vim',      {'on_ft': ['typescript', 'typescript.tsx']})
+  call dein#add('sirtaj/vim-openscad',               {'on_ft': ['openscad']})
 
 
-" Completion
-" call dein#add('prabirshrestha/async.vim')
+  " Completion
+  " call dein#add('prabirshrestha/async.vim')
 
-if has('nvim')
-  call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'merged': 0, 'rev': 'next'})
-  call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
-  call dein#add('xavierd/clang_complete')
+  if has('nvim')
+    call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'merged': 0, 'rev': 'next'})
+    call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
+    call dein#add('xavierd/clang_complete')
+  endif
+
+  " Rainbow ()
+  call dein#add('luochen1990/rainbow')
+
+  " Clojure
+  call dein#add('vim-scripts/paredit.vim',                    {'on_ft': ['clojure']})
+  call dein#add('guns/vim-clojure-static',                    {'on_ft': ['clojure']})
+  call dein#add('guns/vim-clojure-highlight',                 {'on_ft': ['clojure']})
+  " call dein#add('gberenfield/cljfold.vim',                    {'on_ft': ['clojure']})
+  call dein#add('Olical/conjure',                             {'on_ft': ['clojure'], 'rev': 'v4.11.0'})
+
+
+  call dein#add('cespare/vim-toml', {'on_ft': ['toml']})
+
+  call dein#add('cakebaker/scss-syntax.vim', {'on_ft': ['scss', 'sass']})
+
+  "Surround is the best!
+  call dein#add('tpope/vim-surround')
+
+  " Themes
+  call dein#add('morhetz/gruvbox')
+  call dein#add('sjl/badwolf')
+
+  call dein#add('sjl/gundo.vim')
+
+  " You can specify revision/branch/tag.
+  call dein#add('Shougo/vimshell')
+
+  call dein#add('vimwiki/vimwiki')
+
+  call dein#add('vim-scripts/dbext.vim', {'on_ft': ['sql']})
+
+  call dein#add('liuchengxu/vim-which-key')
+
+  call dein#add('lervag/vimtex')
+
+  call dein#add('nathanaelkane/vim-indent-guides', {'on_ft': ['yaml']})
+
+  call dein#add('majutsushi/tagbar')
+
+  call dein#add('rhysd/vim-grammarous')
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
 endif
 
-" Rainbow ()
-call dein#add('luochen1990/rainbow')
-
-" Clojure
-call dein#add('vim-scripts/paredit.vim',                    {'on_ft': ['clojure']})
-call dein#add('guns/vim-clojure-static',                    {'on_ft': ['clojure']})
-call dein#add('guns/vim-clojure-highlight',                 {'on_ft': ['clojure']})
-" call dein#add('gberenfield/cljfold.vim',                    {'on_ft': ['clojure']})
-call dein#add('Olical/conjure',                             {'on_ft': ['clojure'], 'rev': 'v4.11.0'})
-
-
-call dein#add('cespare/vim-toml', {'on_ft': ['toml']})
-
-call dein#add('cakebaker/scss-syntax.vim', {'on_ft': ['scss', 'sass']})
-
-"Surround is the best!
-call dein#add('tpope/vim-surround')
-
-" Themes
-call dein#add('morhetz/gruvbox')
-call dein#add('sjl/badwolf')
-
-call dein#add('sjl/gundo.vim')
-
-" You can specify revision/branch/tag.
-call dein#add('Shougo/vimshell')
-
-call dein#add('vimwiki/vimwiki')
-
-call dein#add('vim-scripts/dbext.vim', {'on_ft': ['sql']})
-
-call dein#add('liuchengxu/vim-which-key')
-
-call dein#add('lervag/vimtex')
-
-call dein#add('nathanaelkane/vim-indent-guides', {'on_ft': ['yaml']})
-
-call dein#add('majutsushi/tagbar')
-
-call dein#add('rhysd/vim-grammarous')
-
-call dein#end()
-
+" Required:
 filetype plugin indent on
 syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------
 
 " ====================== DEPENDENCIES END ======================
 
