@@ -77,8 +77,8 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 " Git!
-map <leader>gp :Gpush<CR>
-map <leader>gf :Gpull<CR>
+map <leader>gp :Git push<CR>
+map <leader>gf :Git pull<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>gcc :Gcommit --verbose<CR>
 map <leader>gcf :Gcommit --fixup<CR>
