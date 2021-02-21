@@ -125,7 +125,8 @@ if dein#load_state('/home/gnzh/.cache/dein')
 
   call dein#add('lervag/vimtex')
 
-  call dein#add('nathanaelkane/vim-indent-guides', {'on_ft': ['yaml']})
+  " disabel for now, annoying
+  " call dein#add('nathanaelkane/vim-indent-guides', {'on_ft': ['yaml']})
 
   call dein#add('majutsushi/tagbar')
 
