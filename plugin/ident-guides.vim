@@ -6,5 +6,5 @@ let g:indent_guides_color_change_percent = 3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 
-autocmd FileType yaml :IndentGuidesEnable
-autocmd FileType go :IndentGuidesDisable
+" autocmd FileType yaml :IndentGuidesEnable
+" autocmd FileType go :IndentGuidesDisable
