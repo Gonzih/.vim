@@ -15,3 +15,5 @@ nmap <silent> gd <Plug>(lcn-definition)
 " nmap <silent> <Leader>lr <Plug>(lcn-rename)
 
 let g:LanguageClient_loggingFile = expand('~/.vim/LanguageClient.log')
+
+command! -nargs=1 LanguageClientExecute call LanguageClient#workspace_executeCommand('<args>')
