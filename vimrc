@@ -15,8 +15,6 @@ if dein#load_state('/home/gnzh/.cache/dein')
   " Required:
   call dein#add('/home/gnzh/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-  call dein#add('Shougo/dein.vim')
-
   call dein#add('tpope/vim-commentary')
   " extend % in html
   call dein#add('vim-scripts/matchit.zip')
