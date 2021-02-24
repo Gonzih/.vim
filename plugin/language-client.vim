@@ -6,7 +6,7 @@ let g:LanguageClient_serverCommands = {
 \ 'dart': ['dart', $DART_SDK.'/bin/snapshots/analysis_server.dart.snapshot', '--lsp'],
 \ 'nix': ['rnix-lsp'],
 \ 'go': ['gopls'],
-\ 'scala': ['metals'],
+\ 'scala': ['metals-vim'],
 \ }
 
 nmap <Leader>lm <Plug>(lcn-menu)
