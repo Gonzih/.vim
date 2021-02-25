@@ -53,7 +53,7 @@ if dein#load_state('/home/gnzh/.cache/dein')
   " FileTypes
   call dein#add('vim-ruby/vim-ruby',                 {'on_ft': ['ruby', 'erb']})
   call dein#add('wlangstroth/vim-racket',            {'on_ft': ['racket']})
-  " call dein#add('derekwyatt/vim-scala',              {'on_ft': ['scala']})
+  call dein#add('derekwyatt/vim-scala',              {'on_ft': ['scala']})
   call dein#add('aliva/vim-fish',                    {'on_ft': ['fish']})
   call dein#add('elixir-lang/vim-elixir',            {'on_ft': ['elixir']})
   call dein#add('slashmili/alchemist.vim',           {'on_ft': ['elixir']})
