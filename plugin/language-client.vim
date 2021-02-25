@@ -17,5 +17,6 @@ nmap <silent> gd <Plug>(lcn-definition)
 let g:LanguageClient_loggingFile = expand('~/.vim/LanguageClient.log')
 
 command! -nargs=1 LanguageClientExecute call LanguageClient#workspace_executeCommand('<args>')
+command! -nargs=0 LanguageClientFormat call LanguageClient#textDocument_formatting_sync()
 
 autocmd BufWritePre *.scala :call LanguageClient#textDocument_formatting_sync()
