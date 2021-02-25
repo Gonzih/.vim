@@ -59,6 +59,7 @@ au Filetype clojure        setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype javascript     setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype fish           setlocal ts=4 sts=4 sw=4 noexpandtab
 au Filetype scala          setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype sbt            setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype haskell        setlocal ts=8 sts=4 sw=4 expandtab smarttab shiftround nojoinspaces
 au Filetype rust           setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype nim            setlocal ts=2 sts=2 sw=2 expandtab
