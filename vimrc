@@ -109,6 +109,7 @@ if dein#load_state('/home/gnzh/.cache/dein')
   " Themes
   call dein#add('morhetz/gruvbox')
   call dein#add('sjl/badwolf')
+  call dein#add('sonph/onehalf', {'rtp': 'vim'})
 
   call dein#add('sjl/gundo.vim')
 
@@ -198,8 +199,7 @@ set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
 set background=dark
-colorscheme badwolf
-" colorscheme gruvbox
+colorscheme onehalfdark
 
 "List special symbols
 set listchars=tab:▸\ ,eol:¬,trail:•,extends:⟩,precedes:⟨
