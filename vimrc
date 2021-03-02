@@ -198,7 +198,7 @@ set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+colorscheme badwolf
 " colorscheme gruvbox
 
 "List special symbols
