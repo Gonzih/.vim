@@ -7,7 +7,7 @@ let g:LanguageClient_serverCommands = {
 \ 'nix': ['rnix-lsp'],
 \ 'go': ['gopls'],
 \ 'scala': ['metals-vim'],
-\ 'haskell': ['haskell-language-server'],
+\ 'haskell': ['haskell-language-server', '--lsp'],
 \ }
 
 nmap <Leader>lm <Plug>(lcn-menu)
