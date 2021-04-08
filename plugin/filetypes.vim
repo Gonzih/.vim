@@ -38,6 +38,7 @@ au BufRead,BufNewFile *.dart                  setlocal filetype=dart
 au BufRead,BufNewFile *.yml,*.yaml            setlocal filetype=yaml
 au BufRead,BufNewFile *.scad                  setlocal filetype=openscad
 au BufRead,BufNewFile *.ex,*.exs,*.eex,*.leex setlocal filetype=elixir
+au BufRead,BufNewFile *.jl                    setlocal filetype=julia
 
 au FileType arc call PareditInitBuffer()
 "au FileType ruby call PareditInitBuffer()
