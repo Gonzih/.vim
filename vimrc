@@ -78,6 +78,7 @@ if dein#load_state('/home/gnzh/.cache/dein')
   " call dein#add('reasonml-editor/vim-reason-plus',   {'on_ft': ['reason']})
   call dein#add('HerringtonDarkholme/yats.vim',      {'on_ft': ['typescript', 'typescript.tsx']})
   call dein#add('sirtaj/vim-openscad',               {'on_ft': ['openscad']})
+  call dein#add('JuliaEditorSupport/julia-vim',      {'on_ft': ['julia']})
 
 
   " Completion
