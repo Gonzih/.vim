@@ -133,6 +133,8 @@ if dein#load_state('/home/gnzh/.cache/dein')
 
   call dein#add('rhysd/vim-grammarous')
 
+  call dein#add('glacambre/firenvim', { 'hook_post_update': { _ -> firenvim#install(0) } })
+
   " Required:
   call dein#end()
   call dein#save_state()
