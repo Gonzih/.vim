@@ -8,7 +8,7 @@ let g:firenvim_config = {
 let __fg = g:firenvim_config['globalSettings']
 let __fl = g:firenvim_config['localSettings']
 
-let __fl['https://notion\.so/'] = { 'takeover': 'never', 'priority': 1 }
+let __fl['https://www\.notion\.so/'] = { 'takeover': 'never', 'priority': 1 }
 
 let __fg['ignoreKeys'] = {
                          \ 'all': ['<C-->', '<C-+>', '<C-CR>', '<S-CR>', '<C-s>'],
