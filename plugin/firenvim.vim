@@ -16,7 +16,7 @@ let __fg['ignoreKeys'] = {
                          \ }
 
 if exists('g:started_by_firenvim')
-  set guifont=Victor\ Mono:h10
+  set guifont=Victor\ Mono:h9
 end
 
 " au BufEnter github.com_*.txt set filetype=markdown
