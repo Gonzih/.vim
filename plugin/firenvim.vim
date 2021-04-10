@@ -22,3 +22,6 @@ end
 " au BufEnter github.com_*.txt set filetype=markdown
 au BufEnter localhost_edit_* nnoremap <leader><leader> :w<CR>:call firenvim#press_keys("\<C-s\>")<CR>
 au BufEnter localhost_edit_* nnoremap <leader><CR> :w<CR>:call firenvim#press_keys("\<C-CR\>")<CR>:q<CR>
+
+au BufEnter colab.research.google.com_* nnoremap <leader><CR> :w<CR>:call firenvim#press_keys("\<C-CR\>")<CR>:q<CR>
+au BufEnter colab.research.google.com_* set ft=julia
