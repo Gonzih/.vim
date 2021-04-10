@@ -81,6 +81,7 @@ au Filetype make           setlocal ts=2 sts=2 sw=2 noexpandtab
 au Filetype groovy         setlocal ts=2 sts=2 sw=2 noexpandtab
 au Filetype sql            setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype julia          setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype vim            setlocal ts=2 sts=2 sw=2 expandtab
 
 
 " ruby autocomplete
