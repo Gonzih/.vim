@@ -27,6 +27,7 @@ if exists('g:started_by_firenvim')
   " jupyter lab
   au BufEnter 127.0.0.1_lab-* nnoremap <leader><leader> :w<CR>:call firenvim#press_keys("\<C-CR\>")<CR>
   au BufEnter localhost_lab-* nnoremap <leader><leader> :w<CR>:call firenvim#press_keys("\<C-CR\>")<CR>
+  au BufEnter 192.168.*_lab-* nnoremap <leader><leader> :w<CR>:call firenvim#press_keys("\<C-CR\>")<CR>
 
   " google colab
   au BufEnter colab.research.google.com_* nnoremap <leader><leader> :w<CR>:call firenvim#press_keys("\<C-CR\>")<CR>
