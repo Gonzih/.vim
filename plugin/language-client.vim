@@ -14,6 +14,7 @@ nmap <Leader>lm <Plug>(lcn-menu)
 nmap <silent> K <Plug>(lcn-hover)
 nmap <silent> gd <Plug>(lcn-definition)
 nmap <silent> <Leader>lr <Plug>(lcn-rename)
+nmap <silent> <F2> <Plug>(lcn-rename)
 
 let g:LanguageClient_loggingFile = expand('~/.vim/LanguageClient.log')
 
