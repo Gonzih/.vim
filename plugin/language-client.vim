@@ -7,6 +7,7 @@ let g:LanguageClient_serverCommands = {
 \ 'nix': ['rnix-lsp'],
 \ 'go': ['gopls'],
 \ 'scala': ['metals-vim'],
+\ 'python': ['pyright-langserver', '--stdio'],
 \ 'haskell': ['haskell-language-server', '--lsp'],
 \ }
 
