@@ -1,5 +1,5 @@
-" let g:LanguageClient_loggingLevel = 'WARN'
-let g:LanguageClient_loggingLevel = 'DEBUG'
+let g:LanguageClient_loggingLevel = 'WARN'
+" let g:LanguageClient_loggingLevel = 'DEBUG'
 
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
