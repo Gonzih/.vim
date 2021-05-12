@@ -1,3 +1,6 @@
+" let g:LanguageClient_loggingLevel = 'WARN'
+let g:LanguageClient_loggingLevel = 'DEBUG'
+
 let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
 \ 'clojure': ['bash', '-c', 'clojure-lsp'],
@@ -10,6 +13,7 @@ let g:LanguageClient_serverCommands = {
 \ 'python': ['pyls'],
 \ 'haskell': ['haskell-language-server', '--lsp'],
 \ }
+" \ 'python': ['pyright-langserver', '--stdio'],
 
 nmap <Leader>lm <Plug>(lcn-menu)
 nmap <silent> K <Plug>(lcn-hover)
@@ -21,5 +25,8 @@ let g:LanguageClient_loggingFile = expand('~/.vim/LanguageClient.log')
 
 command! -nargs=1 LanguageClientExecute call LanguageClient#workspace_executeCommand('<args>')
 command! -nargs=0 LanguageClientFormat call LanguageClient#textDocument_formatting_sync()
+command! -nargs=0 LanguageClientOrganizeImports call LanguageClient#executeCodeAction('source.organizeImports')
+
 
 autocmd BufWritePre *.scala :call LanguageClient#textDocument_formatting_sync()
+autocmd BufWritePre *.py :call LanguageClient#textDocument_formatting_sync()

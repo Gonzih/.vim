@@ -39,6 +39,7 @@ au BufRead,BufNewFile *.yml,*.yaml            setlocal filetype=yaml
 au BufRead,BufNewFile *.scad                  setlocal filetype=openscad
 au BufRead,BufNewFile *.ex,*.exs,*.eex,*.leex setlocal filetype=elixir
 au BufRead,BufNewFile *.jl                    setlocal filetype=julia
+au BufRead,BufNewFile *.py                    setlocal filetype=python
 
 au FileType arc call PareditInitBuffer()
 "au FileType ruby call PareditInitBuffer()
@@ -82,6 +83,7 @@ au Filetype groovy         setlocal ts=2 sts=2 sw=2 noexpandtab
 au Filetype sql            setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype julia          setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype vim            setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype python         setlocal ts=4 sts=4 sw=4 expandtab
 
 
 " ruby autocomplete
