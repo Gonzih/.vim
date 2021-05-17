@@ -87,6 +87,7 @@ if dein#load_state('/home/gnzh/.cache/dein')
 
   if has('nvim')
     call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'merged': 0, 'rev': 'next'})
+    call dein#add('neovim/nvim-lspconfig', {'on_ft': ['disablethatshitfornow']})
     call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
     call dein#add('xavierd/clang_complete')
   endif

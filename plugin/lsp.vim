@@ -1,12 +1,11 @@
-" call lsp#add_server_config('rust', { 'execute_path': '/run/current-system/sw/bin/rls', 'args': [] }, {})
-" call lsp#add_server_config('go', { 'execute_path': expand('$GOPATH/bin/go-langserver'),
-"       \ 'args': ['-format-tool', 'gofmt', '-lint-tool', 'golint', '-gocodecompletion']})
-
-if executable('rls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'rls',
-        \ 'cmd': {server_info->['/run/current-system/sw/bin/rls']},
-        \ 'workspace_config': {'rust': {'clippy_preference': 'on'}},
-        \ 'whitelist': ['rust'],
-        \ })
-endif
+" lua << EOF
+" require'lspconfig'.rust_analyzer.setup{}
+" require'lspconfig'.clojure_lsp.setup{}
+" require'lspconfig'.clojure_lsp.setup{}
+" require'lspconfig'.dartls.setup{
+"   cmd = { "dart", "$DART_SDK./snapshots/analysis_server.dart.snapshot", "--lsp" }
+" }
+" require'lspconfig'.gopls.setup{}
+" require'lspconfig'.metals.setup{}
+" lua require'lspconfig'.pyls.setup{}
+" eof
