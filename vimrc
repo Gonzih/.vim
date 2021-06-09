@@ -205,7 +205,7 @@ set directory=~/.vim/tmp     " Where temporary files will go.
 
 set t_Co=256
 set background=dark
-colorscheme onehalfdark
+colorscheme badwolf
 
 "List special symbols
 set listchars=tab:▸\ ,eol:¬,trail:•,extends:⟩,precedes:⟨
