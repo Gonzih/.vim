@@ -80,6 +80,7 @@ if dein#load_state('/home/gnzh/.cache/dein')
   call dein#add('sirtaj/vim-openscad',               {'on_ft': ['openscad']})
   call dein#add('JuliaEditorSupport/julia-vim')
   call dein#add('vim-python/python-syntax',          {'on_ft': ['python']})
+  call dein#add('prettier/vim-prettier',             {'build': 'yarn install', 'on_ft': ['javascript', 'typescript', 'typescript.tsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']})
 
 
   " Completion
