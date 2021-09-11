@@ -13,6 +13,8 @@ let g:LanguageClient_serverCommands = {
 \ 'python': ['pyls'],
 \ 'haskell': ['haskell-language-server', '--lsp'],
 \ }
+\ 'cs': ['C:\ProgramData\chocolatey\bin\OmniSharp.exe', '--languageserver'],
+\}
 " \ 'python': ['pyright-langserver', '--stdio'],
 
 nmap <Leader>lm <Plug>(lcn-menu)
