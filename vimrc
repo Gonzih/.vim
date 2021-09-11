@@ -5,15 +5,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/home/gnzh/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/home/gnzh/.cache/dein')
-  call dein#begin('/home/gnzh/.cache/dein')
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/home/gnzh/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   call dein#add('tpope/vim-commentary')
   " extend % in html
@@ -239,7 +239,7 @@ endif
 
 set shell=bash
 
-let g:netrw_home = "/home/gnzh/.vim/tmp/netrw"
+let g:netrw_home = "~/.vim/tmp/netrw"
 
 " Persistend undo
 if exists("&undodir")
