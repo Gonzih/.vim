@@ -238,7 +238,9 @@ if &term =~ '^screen'
     execute "set <xLeft>=\e[1;*D"
 endif
 
-set shell=bash
+if !has('win32')
+  set shell=bash
+endif
 
 let g:netrw_home = "~/.vim/tmp/netrw"
 
