@@ -1,4 +1,5 @@
 let g:LanguageClient_loggingLevel = 'WARN'
+" let g:LanguageClient_loggingLevel = 'INFO'
 " let g:LanguageClient_loggingLevel = 'DEBUG'
 
 let g:LanguageClient_serverCommands = {
@@ -15,6 +16,10 @@ let g:LanguageClient_serverCommands = {
 \ 'cs': ['C:\ProgramData\chocolatey\bin\OmniSharp.exe', '--languageserver'],
 \ }
 " \ 'python': ['pyright-langserver', '--stdio'],
+
+let g:LanguageClient_rootMarkers = {
+\ 'cs': ['*.csproj', '*.sln'],
+\ }
 
 nmap <Leader>lm <Plug>(lcn-menu)
 nmap <silent> K <Plug>(lcn-hover)
