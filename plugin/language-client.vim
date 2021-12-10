@@ -36,5 +36,5 @@ command! -nargs=0 LanguageClientOrganizeImports call LanguageClient#executeCodeA
 
 
 autocmd BufWritePre *.scala :call LanguageClient#textDocument_formatting_sync()
-autocmd BufWritePre *.py :call LanguageClient#textDocument_formatting_sync()
+" autocmd BufWritePre *.py :call LanguageClient#textDocument_formatting_sync()
 autocmd BufWritePre *.ts,*.tsx :call LanguageClient#textDocument_formatting_sync()
