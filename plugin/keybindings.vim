@@ -79,11 +79,11 @@ let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 " Git!
 map <leader>gp :Git push<CR>
 map <leader>gf :Git pull<CR>
-map <leader>gs :Gstatus<CR>
-map <leader>gcc :Gcommit --verbose<CR>
-map <leader>gcf :Gcommit --fixup<CR>
-map <leader>gd :Gdiff<CR>
-map <leader>gb :Gblame<CR>
+map <leader>gs :Git<CR>
+map <leader>gcc :Git commit --verbose<CR>
+map <leader>gcf :Git commit --fixup<CR>
+map <leader>gd :Git diff<CR>
+map <leader>gb :Git blame<CR>
 
 " Commenting
 map <leader>cl gcc
