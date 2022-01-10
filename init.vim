@@ -83,6 +83,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('prettier/vim-prettier',             {'build': 'yarn install', 'on_ft': ['javascript', 'typescript', 'typescript.tsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']})
   call dein#add('OmniSharp/omnisharp-vim',           {'on_ft': ['cs']})
   call dein#add('tikhomirov/vim-glsl',               {'on_ft': ['glsl']})
+  call dein#add('TovarishFin/vim-solidity',          {'on_ft': ['solidity']})
 
 
   " Completion
