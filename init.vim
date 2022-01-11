@@ -84,6 +84,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('OmniSharp/omnisharp-vim',           {'on_ft': ['cs']})
   call dein#add('tikhomirov/vim-glsl',               {'on_ft': ['glsl']})
   call dein#add('TovarishFin/vim-solidity',          {'on_ft': ['solidity']})
+  call dein#add('jparise/vim-graphql',               {'on_ft': ['graphql']})
 
 
   " Completion

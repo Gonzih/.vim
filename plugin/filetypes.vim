@@ -41,6 +41,7 @@ au BufRead,BufNewFile *.ex,*.exs,*.eex,*.leex setlocal filetype=elixir
 au BufRead,BufNewFile *.jl                    setlocal filetype=julia
 au BufRead,BufNewFile *.py                    setlocal filetype=python
 au BufRead,BufNewFile *.sol                   setlocal filetype=solidity
+au BufRead,BufNewFile *.graphql,*.graphqls    setlocal filetype=graphql
 
 au FileType arc call PareditInitBuffer()
 "au FileType ruby call PareditInitBuffer()
@@ -86,6 +87,7 @@ au Filetype julia          setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype vim            setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype python         setlocal ts=4 sts=4 sw=4 expandtab
 au Filetype solidity       setlocal ts=4 sts=4 sw=4 expandtab
+au Filetype graphql        setlocal ts=2 sts=2 sw=2 expandtab
 
 
 " ruby autocomplete
