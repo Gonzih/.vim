@@ -1,3 +1,19 @@
+let $CACHE = expand('~/.cache')
+if !($CACHE->isdirectory())
+  call mkdir($CACHE, 'p')
+endif
+if &runtimepath !~# '/dein.vim'
+  let s:dir = 'dein.vim'->fnamemodify(':p')
+  if !(s:dir->isdirectory())
+    let s:dir = $CACHE .. '/dein/repos/github.com/Shougo/dein.vim'
+    if !(s:dir->isdirectory())
+      execute '!git clone https://github.com/Shougo/dein.vim' s:dir
+    endif
+  endif
+  execute 'set runtimepath^='
+        \ .. s:dir->fnamemodify(':p')->substitute('[/\\]$', '', '')
+endif
+
 " ====================== DEPENDENCIES BEGIN ======================
 "dein Scripts-----------------------------
 if &compatible
@@ -142,6 +158,8 @@ if dein#load_state('~/.cache/dein')
 
   call dein#add('glacambre/firenvim', { 'hook_post_update': { _ -> firenvim#install(0) } })
 
+  call dein#add('github/copilot.vim')
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -253,5 +271,7 @@ if exists("&undodir")
     set undolevels=500
     set undoreload=500
 endif
+
+let g:deoplete#enable_at_startup = 1
 
 " vim: ts=2:sts=2:sw=2:expandtab
