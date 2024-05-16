@@ -159,6 +159,9 @@ if dein#load_state('~/.cache/dein')
   call dein#add('glacambre/firenvim', { 'hook_post_update': { _ -> firenvim#install(0) } })
 
   call dein#add('github/copilot.vim')
+  call dein#add('zbirenbaum/copilot.lua')
+  call dein#add('nvim-lua/plenary.nvim')
+  call dein#add('CopilotC-Nvim/CopilotChat.nvim', { 'rev': 'canary' })
 
   " Required:
   call dein#end()
@@ -273,5 +276,12 @@ if exists("&undodir")
 endif
 
 let g:deoplete#enable_at_startup = 1
+
+lua << EOF
+require("CopilotChat").setup {
+  debug = true, -- Enable debugging
+  -- See Configuration section for rest
+}
+EOF
 
 " vim: ts=2:sts=2:sw=2:expandtab
