@@ -290,7 +290,7 @@ require("CopilotChat").setup {
       insert = '<C-l>'
     },
     submit_prompt = {
-      insert = '<C-CR>'
+      insert = '<CR>'
     },
   },
   -- See Configuration section for rest

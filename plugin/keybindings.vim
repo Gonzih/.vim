@@ -89,6 +89,8 @@ map <leader>gb :Git blame<CR>
 map <leader>cl gcc
 vmap <leader>cl gc
 
+map <leader>cc :CopilotChat<CR>
+
 if has("nvim")
   tnoremap <Esc> <C-\><C-n>
 endif
