@@ -279,7 +279,20 @@ let g:deoplete#enable_at_startup = 1
 
 lua << EOF
 require("CopilotChat").setup {
-  debug = true, -- Enable debugging
+  debug = false, -- Enable debugging
+  mappings = {
+    close = {
+      normal = 'q',
+      insert = '<C-m>'
+    },
+    reset = {
+      normal ='<C-l>',
+      insert = '<C-l>'
+    },
+    submit_prompt = {
+      insert = '<C-CR>'
+    },
+  },
   -- See Configuration section for rest
 }
 EOF
