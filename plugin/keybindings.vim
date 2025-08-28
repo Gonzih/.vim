@@ -89,7 +89,7 @@ map <leader>gb :Git blame<CR>
 map <leader>cl gcc
 vmap <leader>cl gc
 
-map <leader>cc :CopilotChat<CR>
+" <leader>cc is now used for CodeCompanion (configured in Lua)
 
 if has("nvim")
   tnoremap <Esc> <C-\><C-n>

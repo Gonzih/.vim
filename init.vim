@@ -51,12 +51,12 @@ if dein#load_state('~/.cache/dein')
   " Bottom line
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
-  " Syntax checks
-  call dein#add('scrooloose/syntastic')
+  " Modern linting (replaces syntastic)
+  call dein#add('dense-analysis/ale')
   " Git status
   call dein#add('airblade/vim-gitgutter')
-  " ,f stuff
-  call dein#add('Lokaltog/vim-easymotion')
+  " Modern motion plugin (replaces vim-easymotion)
+  call dein#add('phaazon/hop.nvim')
 
   "FZF
   call dein#add('junegunn/fzf',     {'build': './install --all', 'merged': 0})
@@ -107,10 +107,14 @@ if dein#load_state('~/.cache/dein')
   " call dein#add('prabirshrestha/async.vim')
 
   if has('nvim')
-    call dein#add('autozimu/LanguageClient-neovim', {'build': 'bash install.sh', 'merged': 0, 'rev': 'next'})
-    call dein#add('neovim/nvim-lspconfig', {'on_ft': ['disablethatshitfornow']})
-    call dein#add('Shougo/deoplete.nvim',         {'do': ':UpdateRemotePlugins'})
-    call dein#add('xavierd/clang_complete')
+    " Modern LSP setup
+    call dein#add('neovim/nvim-lspconfig')
+    call dein#add('hrsh7th/nvim-cmp')
+    call dein#add('hrsh7th/cmp-nvim-lsp')
+    call dein#add('hrsh7th/cmp-buffer')
+    call dein#add('hrsh7th/cmp-path')
+    call dein#add('L3MON4D3/LuaSnip')
+    call dein#add('saadparwaiz1/cmp_luasnip')
   endif
 
   " Rainbow ()
@@ -156,12 +160,14 @@ if dein#load_state('~/.cache/dein')
 
   call dein#add('rhysd/vim-grammarous')
 
-  call dein#add('glacambre/firenvim', { 'hook_post_update': { _ -> firenvim#install(0) } })
+  " call dein#add('glacambre/firenvim', { 'hook_post_update': { _ -> firenvim#install(0) } })
 
-  call dein#add('github/copilot.vim')
-  call dein#add('zbirenbaum/copilot.lua')
+
+  " AI CODING & Modern Neovim
   call dein#add('nvim-lua/plenary.nvim')
-  call dein#add('CopilotC-Nvim/CopilotChat.nvim', { 'rev': 'canary' })
+  call dein#add('nvim-treesitter/nvim-treesitter', {'build': ':TSUpdate'})
+  call dein#add('nvim-treesitter/nvim-treesitter-textobjects')
+  call dein#add('olimorris/codecompanion.nvim')
 
   " Required:
   call dein#end()
@@ -239,7 +245,7 @@ set list
 
 nmap <silent> <C-l> :silent noh<CR>
 
-set guioptions=ai
+" set guioptions=ai
 
 "Git branch in statusline
 set statusline=%<%f\ %y\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -275,26 +281,12 @@ if exists("&undodir")
     set undoreload=500
 endif
 
-let g:deoplete#enable_at_startup = 1
-
-lua << EOF
-require("CopilotChat").setup {
-  debug = false, -- Enable debugging
-  mappings = {
-    close = {
-      normal = 'q',
-      insert = '<C-m>'
-    },
-    reset = {
-      normal ='<C-l>',
-      insert = '<C-l>'
-    },
-    submit_prompt = {
-      insert = '<CR>'
-    },
-  },
-  -- See Configuration section for rest
-}
-EOF
+" Load modern Lua configuration
+if has('nvim')
+  lua require('plugins.treesitter')
+  lua require('plugins.lsp')
+  lua require('plugins.hop')
+  lua require('plugins.codecompanion')
+endif
 
 " vim: ts=2:sts=2:sw=2:expandtab
