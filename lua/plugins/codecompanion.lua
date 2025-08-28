@@ -1,18 +1,26 @@
--- CodeCompanion configuration with Gemini CLI
+-- CodeCompanion configuration with Anthropic and Gemini adapters
 require("codecompanion").setup({
   strategies = {
     chat = {
-      adapter = "gemini",
+      adapter = "anthropic",
     },
     inline = {
-      adapter = "gemini",
+      adapter = "anthropic", 
     },
     agent = {
-      adapter = "gemini",
+      adapter = "anthropic",
     },
   },
   adapters = {
     http = {
+      anthropic = function()
+        return require("codecompanion.adapters").extend("anthropic", {
+          env = {
+            -- Read API key from .env file in nvim directory
+            api_key = "cmd:grep '^ANTHROPIC_API_KEY=' ~/.config/nvim/.env | cut -d'=' -f2 | tr -d '\"' | tr -d \"'\"",
+          },
+        })
+      end,
       gemini = function()
         return require("codecompanion.adapters").extend("gemini", {
           env = {
@@ -62,3 +70,7 @@ vim.keymap.set("v", "<Leader>ca", "<cmd>CodeCompanionAdd<cr>", { noremap = true,
 -- Inline assistant
 vim.keymap.set("v", "ga", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true, desc = "Add to chat" })
 vim.keymap.set("v", "gs", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true, desc = "Toggle chat" })
+
+-- Quick adapter switching
+vim.keymap.set("n", "<Leader>ca", "<cmd>CodeCompanion anthropic<cr>", { noremap = true, silent = true, desc = "CodeCompanion with Anthropic" })
+vim.keymap.set("n", "<Leader>cg", "<cmd>CodeCompanion gemini<cr>", { noremap = true, silent = true, desc = "CodeCompanion with Gemini" })
